@@ -1,0 +1,17 @@
+
+            {% layout none %}
+            {
+                "items": [
+                    {% for item in cart.items %}
+                        {
+                            "variant_id": {{ item.variant_id }},
+                            "product_collections": [
+                                {% for collection in item.product.collections %}
+                                    {{ collection.id }}{% unless forloop.last == true %},{% endunless %}
+                                {% endfor %}
+                            ]
+                        }
+                        {% unless forloop.last == true %},{% endunless %}
+                    {% endfor %}
+                ]
+            }
