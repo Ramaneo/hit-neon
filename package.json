@@ -1,0 +1,25 @@
+{
+  "name": "hit-neon",
+  "version": "1.0.0",
+  "description": "e-commerce website based on shopify/liquid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkankyilmaz/hit-neon.git"
+  },
+  "keywords": [
+    "e-commerce"
+  ],
+  "author": "hakan karayilmaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkankyilmaz/hit-neon/issues"
+  },
+  "homepage": "https://github.com/hkankyilmaz/hit-neon#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
