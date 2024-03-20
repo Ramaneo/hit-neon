@@ -174,12 +174,31 @@
               "apply_p": false,
               "apply_custom": ".montserrat-medium"
             }
+          },
+          "image_B6TCA7": {
+            "type": "image",
+            "settings": {
+              "name": "montserrat-bold",
+              "custom_font_weight": "none",
+              "custom_font_style": "none",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Bold.ttf?v=1710922812",
+              "apply_h1": false,
+              "apply_h2": false,
+              "apply_h3": false,
+              "apply_h4": false,
+              "apply_h5": false,
+              "apply_h6": false,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ".montserrat-bold"
+            }
           }
         },
         "block_order": [
           "image_ATtEtt",
           "image_4cgNak",
-          "image_XqUMx8"
+          "image_XqUMx8",
+          "image_B6TCA7"
         ],
         "settings": {
           "enable": true
