@@ -10,6 +10,11 @@
 
     </custom-banner-container>
 
+        <button-wrapper-cbc-mobile>
+            <button class="one">Create Your Design</button>
+            <button class="two" >Upload Your Design/Logo</button>
+        </button-wrapper-cbc-mobile>
+
 
 </section>
 
@@ -29,7 +34,13 @@
 
     }
 
-    button-wrapper-cbc button {
+    button-wrapper-cbc,button-wrapper-cbc-mobile {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    button-wrapper-cbc button,button-wrapper-cbc-mobile button{
        width: 590.633px;
        height: 73.489px;
        cursor: pointer;
@@ -37,7 +48,10 @@
        display: flex;
        justify-content: center;
        align-items: center;
-
+       cursor: pointer;
+       background-color: #fff;
+       outline: none;
+         border: none;
         /* Typography */
 
         color: #333;
@@ -46,11 +60,71 @@
         font-style: normal;
         font-weight: 700;
         line-height: 20px; 
+      
+    }
+    button-wrapper-cbc button:hover,button-wrapper-cbc-mobile button:hover {
+        background-color: palevioletred;
+        color: #fff;
     }
 
     button-wrapper-cbc .one {
        margin-right: 40px;
+       
     }
+
+
+    @media (max-width: 1300px) {
+
+        button-wrapper-cbc  {
+            flex-direction: column;
+        }
+        button-wrapper-cbc-mobile {
+            flex-direction: column;
+        }
+
+        button-wrapper-cbc .one,button-wrapper-cbc-mobile .one {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 641px) {
+
+        button-wrapper-cbc {
+            display: none;
+        }
+
+        button-wrapper-cbc-mobile {
+            flex-direction: column;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        button-wrapper-cbc-mobile .one {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        button-wrapper-cbc-mobile button {
+            font-size: 14px;
+            width: 80%;
+            height: 40px;
+            font-family: "montserrat-regular";
+            background-color: #fff;
+            border: 1px solid #333;
+        }
+        button-wrapper-cbc-mobile button:hover {
+            border: none;
+        }
+    }  
+
+    @media (min-width: 641px) {
+
+        button-wrapper-cbc-mobile {
+            display: none;
+        }
+
+      
+    }  
 
 
 
