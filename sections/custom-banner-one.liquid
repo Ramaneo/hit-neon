@@ -1,16 +1,43 @@
-<section>
+<section id="section-{{ section.id }}" >
 
 
     <custom-banner-container>
 
-        <button-wrapper>
-            <button>Create Your Design</button>
-            <button>Upload Your Design/Logo</button>
-        </button-wrapper>
+        <button-wrapper-cbc>
+            <button class="one">Create Your Design</button>
+            <button class="two" >Upload Your Design/Logo</button>
+        </button-wrapper-cbc>
 
     </custom-banner-container>
 
 
-
-
 </section>
+
+
+<style>
+
+    custom-banner-container {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 720px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244");
+      background-size: cover;
+      background-repeat: no-repeat;   
+
+    }
+
+    button-wrapper-cbc button {
+       width: 590.633px;
+       height: 73.489px;
+       cursor: pointer;
+    }
+
+    button-wrapper-cbc .one {
+       margin-right: 40px;
+    }
+
+
+
+</style>
