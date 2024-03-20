@@ -156,11 +156,30 @@
               "apply_p": false,
               "apply_custom": ".montserrat-regular"
             }
+          },
+          "image_XqUMx8": {
+            "type": "image",
+            "settings": {
+              "name": "montserrat-medium",
+              "custom_font_weight": "none",
+              "custom_font_style": "none",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Medium.otf?v=1710922569",
+              "apply_h1": false,
+              "apply_h2": false,
+              "apply_h3": false,
+              "apply_h4": false,
+              "apply_h5": false,
+              "apply_h6": false,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ".montserrat-medium"
+            }
           }
         },
         "block_order": [
           "image_ATtEtt",
-          "image_4cgNak"
+          "image_4cgNak",
+          "image_XqUMx8"
         ],
         "settings": {
           "enable": true
