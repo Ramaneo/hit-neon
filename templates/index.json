@@ -157,22 +157,12 @@
     "multicolumn_xeaqiR": {
       "type": "multicolumn",
       "blocks": {
-        "column_yQVEDQ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/custom_made.png",
-            "title": "<strong>Custom Made<\/strong>",
-            "text": "<p>Each order is inspected by our designers and tailored based on your needs<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_LeJhNi": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/premium_quality.png",
+            "image": "shopify:\/\/shop_images\/Group_16_551a2d13-27a8-43b0-a319-aa759bebc6e6.png",
             "title": "<strong>Premium Quality<\/strong>",
-            "text": "<p>Made from top grade acrylic plastic and premium quality silicone covered IP65-2 led lights<\/p>",
+            "text": "<p>Made of high quality and durable materials, our neon signs shine brightly while consuming minimal energy for the longest lifespan possible.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -180,29 +170,28 @@
         "column_zwhJ6q": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/value_for_money.png",
-            "title": "<strong>Value For Money<\/strong>",
-            "text": "<p>Being a direct from the manufacturer brand and cutting all middlemen, retail markups are avoided.<\/p>",
+            "image": "shopify:\/\/shop_images\/Layer_1-2_37f475f1-884c-4d8f-baa1-a290876bf6fb.png",
+            "title": "<strong>Fast & Safe Delivery<\/strong>",
+            "text": "<p>Sit back and relax. Thanks to our fast and safe delivery service, your neon sign will arrive promptly and securely in 6-10 business days.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_GpiQfQ": {
+        "column_yQVEDQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/easy_installation.png",
-            "title": "<strong>Seamless Installation<\/strong>",
-            "text": "<p>Signs come with pre-drilled holes, mounting accessories and local adapter. <\/p>",
+            "image": "shopify:\/\/shop_images\/Layer_1-2.png",
+            "title": "<strong>Full Customization<\/strong>",
+            "text": "<p>Bring your vision to life in a vibrant neon glow! Unleash your creativity with full customization options, all tailored to you. <\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_yQVEDQ",
         "column_LeJhNi",
         "column_zwhJ6q",
-        "column_GpiQfQ"
+        "column_yQVEDQ"
       ],
       "custom_css": [
         "h2 {text-align: center;}"
@@ -212,7 +201,7 @@
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
@@ -221,6 +210,62 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_UpEVt4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aQmPLD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_1-2_043c93d3-08a8-43a2-afc8-51b2d775487e.png",
+            "title": "<strong>Secure Payment<\/strong>",
+            "text": "<p>Shop confidently. Our secure payment system keeps your personal and financial information safe.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qWtEqw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SVG.png",
+            "title": "<strong>2 Year Warranty<\/strong>",
+            "text": "<p>In the rare case of a manufacturing issue, we offer replacements at no extra cost.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8LhdYK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_1-2_043c93d3-08a8-43a2-afc8-51b2d775487e.png",
+            "title": "<strong>Seamless Installation<\/strong>",
+            "text": "<p>Our signs come with pre-drilled holes, mounting accessories and local adapters that make installation a breeze. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aQmPLD",
+        "column_qWtEqw",
+        "column_8LhdYK"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -442,6 +487,7 @@
     "image-with-text",
     "custom_marquee_bQprAf",
     "multicolumn_xeaqiR",
+    "multicolumn_UpEVt4",
     "custom_marquee_eyQfE4",
     "multicolumn_4QLtnL",
     "collapsible_content_3LxzPa",
