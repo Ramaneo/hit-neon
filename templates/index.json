@@ -370,6 +370,40 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "rich_text_keeiCe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ii3Utc": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>ABOUT HIT NEON®<\/strong><\/h2><p>Welcome to the Hit Neon® family! We're here to illuminate your world with the enchanting glow of neon lights. That's the essence of Hit Neon® – empowering you to fully customize your space. With a dedicated team of creative minds, we strive to deliver the finest neon signs imaginable. Our global reach ensures that every customer receives the gift of elegance. Hit Neon® isn't just about bespoke neon sign services; it's a concept that promises endless fun and creativity with LED neon sign supplies, allowing you to infuse your business, office or home decor with your unique imagination.<\/p><h2><strong>ILLUMINATE YOUR WORLD: A DAZZLING SELECTION OF NEON SIGNS<\/strong><\/h2><p>Discover our captivating array of neon signs, designed to command attention in various settings worldwide, from iconic landmarks and bustling businesses to cozy cafes and cherished homes. Explore our range, featuring tailored sidewalk signs, vibrant bar displays, personalized creations for weddings, businesses, and dining establishments, along with charming artworks to elevate any living space. Delve into our collection and uncover creative designs that will light up your days.<\/p><h2><strong>DESIGN YOUR OWN: CUSTOM LED NEON SIGNS<\/strong><\/h2><p>Step into a world where fun meets creativity and sophistication, where quality reigns supreme. Elevate every aspect of your life – from the comfort of your home to the bustling atmosphere of your business or the magic of a special event – with our dazzling LED signs. Let the vibrant glow of our creations light up every corner, casting a spell of joy and inspiration.Whether you're seeking a ready-made design crafted by our team of creative geniuses or yearning to infuse your personal touch, our options cater to every desire. Dive into our extensive collection of pre-designed masterpieces, each a testament to the artistry and skill of our in-house team. Or embark on a journey of customization, transforming your vision into reality with unique, one-of-a-kind creations.With our simple-to-design solutions and user-friendly approach, navigating this journey of light and wonder is a breeze. We believe that every step should be as enjoyable as the end result, so we've made sure that crafting your perfect LED sign is not only effortless but also a delightfully fun experience.And when it comes to hanging your masterpiece, simplicity is key. Our products come equipped with pre-drilled holes, ensuring quick and easy installation. No need for complicated setups or tedious processes – just effortless installation, allowing you to bask in the glow of your creation in no time.<\/p><h2><strong>YOUR NEON SIGNS PARTNER<\/strong><\/h2><p>Crafted from premium materials, our neon lights are delivered to your doorstep securely packaged, ensuring their pristine condition upon arrival. Engineered for durability, our products are built to last, all while offering the most competitive prices in the market.<\/p>"
+          }
+        },
+        "button_JP7LAr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_ii3Utc",
+        "button_JP7LAr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -382,6 +416,7 @@
     "multicolumn_xeaqiR",
     "custom_marquee_eyQfE4",
     "multicolumn_4QLtnL",
-    "collapsible_content_3LxzPa"
+    "collapsible_content_3LxzPa",
+    "rich_text_keeiCe"
   ]
 }
