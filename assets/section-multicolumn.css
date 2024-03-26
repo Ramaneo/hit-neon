@@ -223,6 +223,7 @@
   border-radius: calc(
     var(--text-boxes-radius) - var(--text-boxes-border-width)
   );
+  margin: 0;
 }
 
 .multicolumn.background-none .multicolumn-card {
