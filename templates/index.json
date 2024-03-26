@@ -186,12 +186,45 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_c9kM4c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_1-2_043c93d3-08a8-43a2-afc8-51b2d775487e.png",
+            "title": "<strong>Secure Payment<\/strong>",
+            "text": "<p>Shop confidently. Our secure payment system keeps your personal and financial information safe.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wkGBpX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SVG.png",
+            "title": "<strong>2 Year Warranty<\/strong>",
+            "text": "<p>In the rare case of a manufacturing issue, we offer replacements at no extra cost.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_78NE4x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_1-2_043c93d3-08a8-43a2-afc8-51b2d775487e.png",
+            "title": "<strong>Seamless Installation<\/strong>",
+            "text": "<p>Our signs come with pre-drilled holes, mounting accessories and local adapters that make installation a breeze. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_LeJhNi",
         "column_zwhJ6q",
-        "column_yQVEDQ"
+        "column_yQVEDQ",
+        "column_c9kM4c",
+        "column_wkGBpX",
+        "column_78NE4x"
       ],
       "custom_css": [
         "h2 {text-align: center;}"
@@ -210,62 +243,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_UpEVt4": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_aQmPLD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Layer_1-2_043c93d3-08a8-43a2-afc8-51b2d775487e.png",
-            "title": "<strong>Secure Payment<\/strong>",
-            "text": "<p>Shop confidently. Our secure payment system keeps your personal and financial information safe.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_qWtEqw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SVG.png",
-            "title": "<strong>2 Year Warranty<\/strong>",
-            "text": "<p>In the rare case of a manufacturing issue, we offer replacements at no extra cost.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_8LhdYK": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Layer_1-2_043c93d3-08a8-43a2-afc8-51b2d775487e.png",
-            "title": "<strong>Seamless Installation<\/strong>",
-            "text": "<p>Our signs come with pre-drilled holes, mounting accessories and local adapters that make installation a breeze. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_aQmPLD",
-        "column_qWtEqw",
-        "column_8LhdYK"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "fifth",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -487,7 +464,6 @@
     "image-with-text",
     "custom_marquee_bQprAf",
     "multicolumn_xeaqiR",
-    "multicolumn_UpEVt4",
     "custom_marquee_eyQfE4",
     "multicolumn_4QLtnL",
     "collapsible_content_3LxzPa",
