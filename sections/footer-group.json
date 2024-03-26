@@ -8,20 +8,37 @@
         "link_list_fkQ7xw": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "<strong>About Us<\/strong>",
             "menu": "footer"
           }
         },
-        "brand_information_6CnKB9": {
-          "type": "brand_information",
+        "link_list_TPBY4K": {
+          "type": "link_list",
           "settings": {
-            "show_social": true
+            "heading": "<strong>Custom Neon Signs<\/strong>",
+            "menu": "footer"
+          }
+        },
+        "link_list_KF3gqB": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>Collection<\/strong>",
+            "menu": "footer"
+          }
+        },
+        "text_cVwnJU": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Support<\/strong>",
+            "subtext": "<p><strong>For Order Related<\/strong><\/p><p>(302) 600-1080<\/p><p>hello@hitneon.com<\/p><p><strong>For General Queries<\/strong><\/p><p>(302) 600-1080<\/p><p>hello@hitneon.com<\/p>"
           }
         }
       },
       "block_order": [
         "link_list_fkQ7xw",
-        "brand_information_6CnKB9"
+        "link_list_TPBY4K",
+        "link_list_KF3gqB",
+        "text_cVwnJU"
       ],
       "settings": {
         "color_scheme": "inverse",
