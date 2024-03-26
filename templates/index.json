@@ -199,7 +199,7 @@
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_width": "third",
+        "image_width": "fifth",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
@@ -255,7 +255,7 @@
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_width": "third",
+        "image_width": "fifth",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
