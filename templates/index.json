@@ -56,8 +56,8 @@
         "column_DVYq4J"
       ],
       "settings": {
-        "title": "Let's Create",
-        "heading_size": "h1",
+        "title": "<strong>Let's Create<\/strong>",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "portrait",
         "columns_desktop": 4,
@@ -83,8 +83,8 @@
         "h2 {text-align: center;}"
       ],
       "settings": {
-        "title": "Popular Designs",
-        "heading_size": "h1",
+        "title": "<strong>Popular Designs<\/strong>",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -252,74 +252,21 @@
         "content": "• 10000+ Satisfied Customers"
       }
     },
-    "multicolumn_4QLtnL": {
-      "type": "multicolumn",
+    "17119705317e18ca9a": {
+      "type": "apps",
       "blocks": {
-        "column_RPJ3re": {
-          "type": "column",
+        "judge_me_reviews_featured_carousel_9ih3Pk": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
-            "title": "<strong>Jessia<\/strong>",
-            "text": "<p>My sign was more than I expected. I was not even expecting a remote! It looks amazing, has different light settings and modes! I have already recommended to friends!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_9e8XD7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
-            "title": "<strong>Karen<\/strong>",
-            "text": "<p>This sign is so amazing. It’s<br\/>better than I could have imagined it. And I received it in time for Christmas<br\/>for my grandson. He loved it!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_AYdnmc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "title": "<strong>Fred<\/strong>",
-            "text": "<p>Super easy process to design sign<br\/>and SEE the product before buying. Seller was a pleasure to work with and<br\/>delivers on promises! Comes perfectly packaged in a sturdy box, ready to use<br\/>upon unboxing.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_wdiQUG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
-            "title": "<strong>Tom<\/strong>",
-            "text": "<p>Great work, and a great seller to<br\/>deal with. Very satisfied with my purchase.<\/p>",
-            "link_label": "",
-            "link": ""
+            "maxwidth": 1080
           }
         }
       },
       "block_order": [
-        "column_RPJ3re",
-        "column_9e8XD7",
-        "column_AYdnmc",
-        "column_wdiQUG"
-      ],
-      "custom_css": [
-
+        "judge_me_reviews_featured_carousel_9ih3Pk"
       ],
       "settings": {
-        "title": "Reviews",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "SEE MORE",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     },
     "collapsible_content_3LxzPa": {
@@ -445,7 +392,7 @@
     "custom_marquee_bQprAf",
     "multicolumn_xeaqiR",
     "custom_marquee_eyQfE4",
-    "multicolumn_4QLtnL",
+    "17119705317e18ca9a",
     "collapsible_content_3LxzPa",
     "rich_text_keeiCe",
     "newsletter_kgiXCR",
