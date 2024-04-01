@@ -1,131 +1,264 @@
-<section id="section-{{ section.id }}" >
-
-
+<section id="section-{{ section.id }}">
+  {% comment %}
     <custom-banner-container>
-
-        <button-wrapper-cbc>
-            <button class="one">Create Your Design</button>
-            <button class="two" >Upload Your Design/Logo</button>
-        </button-wrapper-cbc>
-
+      <button-wrapper-cbc>
+        <button class="one">Create Your Design</button>
+        <button class="two">Upload Your Design/Logo</button>
+      </button-wrapper-cbc>
     </custom-banner-container>
 
-        <button-wrapper-cbc-mobile>
-            <button class="one">Create Your Design</button>
-            <button class="two" >Upload Your Design/Logo</button>
-        </button-wrapper-cbc-mobile>
+    <button-wrapper-cbc-mobile>
+      <button class="one">Create Your Design</button>
+      <button class="two">Upload Your Design/Logo</button>
+    </button-wrapper-cbc-mobile>
+  {% endcomment %}
 
-
+  <custom-banner-container>
+    <button class="neon-button">Create Your Design</button>
+    <button class="neon-button">Upload Your Design/Logo</button>
+  </custom-banner-container>
 </section>
 
-
 <style>
+  {% comment %} custom-banner-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
 
-    custom-banner-container {
-      width: 100vw;
+  }
+
+  button-wrapper-cbc,button-wrapper-cbc-mobile {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  button-wrapper-cbc button,button-wrapper-cbc-mobile button{
+     width: 590.633px;
+     height: 73.489px;
+     cursor: pointer;
+     font-family: "montserrat-bold";
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     background-color: #fff;
+     outline: none;
+       border: none;
+      /* Typography */
+
+      color: #333;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+
+  }
+  button-wrapper-cbc button:hover,button-wrapper-cbc-mobile button:hover {
+      background-color: palevioletred;
+      color: #fff;
+  }
+
+  button-wrapper-cbc .one {
+     margin-right: 40px;
+
+  }
+
+
+  @media (max-width: 1300px) {
+
+      button-wrapper-cbc  {
+          flex-direction: column;
+      }
+      button-wrapper-cbc-mobile {
+          flex-direction: column;
+      }
+
+      button-wrapper-cbc .one,button-wrapper-cbc-mobile .one {
+          margin-right: 0px;
+          margin-bottom: 20px;
+      }
+  }
+
+  @media (max-width: 641px) {
+
+      button-wrapper-cbc {
+          display: none;
+      }
+
+      button-wrapper-cbc-mobile {
+          flex-direction: column;
+          margin: auto;
+          margin-bottom: 20px;
+      }
+
+      button-wrapper-cbc-mobile .one {
+          margin-right: 0px;
+          margin-bottom: 20px;
+      }
+      button-wrapper-cbc-mobile button {
+          font-size: 14px;
+          width: 80%;
+          height: 40px;
+          font-family: "montserrat-regular";
+          background-color: #fff;
+          border: 1px solid #333;
+      }
+      button-wrapper-cbc-mobile button:hover {
+          border: none;
+      }
+  }
+
+  @media (min-width: 641px) {
+
+      button-wrapper-cbc-mobile {
+          display: none;
+      }
+
+
+  }   {% endcomment %}
+
+
+  :root {
+      /*  change this for scaling  */
+      --m: 4rem;
+
+      --red: #ff6565;
+      --pink: #ff64f9;
+      --purple: #6b5fff;
+      --blue: #4d8aff;
+      --green: #5bff89;
+      --yellow: #ffee55;
+      --orange: #ff6d1b;
+    }
+    /* body {
+        background-color: #141516;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      } */
+
+      custom-banner-container {
+        background-color: #141516;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          height: 720px;
+          margin-bottom: 40px;
+          position: sticky;
+          {% comment %} padding: 0px 50px; {% endcomment %}
+        gap: 20px;
+        overflow: hidden;
+
+  /* Background image */
+  background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244");
+  background-size: cover;
+
+  /* Blur overlay */
+  &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150%;
+      height: 150%;
+      background-image: inherit;
+      background-size: cover;
+      filter: blur(50px) grayscale(0.5);
+      z-index: -1;
+      left: -90px;
+      top: -90px
+
+  }
+        }
+
+    .neon-button {
+      border: calc(0.08 * var(--m)) solid transparent;
+      position: relative;
+      color: #f3f3f3;
+      font-family: "montserrat-bold";
+      {% comment %} font-size: var(--m); {% endcomment %}
+      font-size: 20px;
+
+      border-radius: calc(0.7 * var(--m));
+      padding: calc(0.5 * var(--m)) calc(1 * var(--m));
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 720px;
-      background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244");
-      background-size: cover;
-      background-repeat: no-repeat;  
-      margin-bottom: 40px; 
+      cursor: pointer;
+      {% comment %} flex: 1; {% endcomment %}
+      width: 500.633px;
+
+      background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+        linear-gradient(
+          90deg,
+          var(--orange),
+          var(--yellow),
+          var(--green),
+          var(--blue),
+          var(--purple),
+          var(--pink),
+          var(--red)
+        );
+      background-origin: border-box;
+      background-clip: padding-box, border-box, border-box;
+      background-size: 200%;
+      animation: animate 2s infinite linear;
 
     }
 
-    button-wrapper-cbc,button-wrapper-cbc-mobile {
-       display: flex;
-       justify-content: center;
-       align-items: center;
+    .neon-button::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--orange),
+        var(--yellow),
+        var(--green),
+        var(--blue),
+        var(--purple),
+        var(--pink),
+        var(--red)
+      );
+      height: 30%;
+      width: 60%;
+      position: absolute;
+      bottom: -20%;
+      z-index: -1;
+      background-size: 200%;
+      animation: animate 2s infinite linear;
+      filter: blur(calc(0.8 * var(--m)));
+
     }
 
-    button-wrapper-cbc button,button-wrapper-cbc-mobile button{
-       width: 590.633px;
-       height: 73.489px;
-       cursor: pointer;
-       font-family: "montserrat-bold";
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       cursor: pointer;
-       background-color: #fff;
-       outline: none;
-         border: none;
-        /* Typography */
-
-        color: #333;
-        text-align: center;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px; 
-      
-    }
-    button-wrapper-cbc button:hover,button-wrapper-cbc-mobile button:hover {
-        background-color: palevioletred;
-        color: #fff;
+    .neon-button:hover,
+    .neon-button:hover::before {
+      animation: animate 0.5s infinite linear;
     }
 
-    button-wrapper-cbc .one {
-       margin-right: 40px;
-       
+    @keyframes animate {
+      0% {
+        background-position: 0;
+      }
+      100% {
+        background-position: 200%;
+      }
     }
 
-
-    @media (max-width: 1300px) {
-
-        button-wrapper-cbc  {
-            flex-direction: column;
-        }
-        button-wrapper-cbc-mobile {
-            flex-direction: column;
-        }
-
-        button-wrapper-cbc .one,button-wrapper-cbc-mobile .one {
-            margin-right: 0px;
-            margin-bottom: 20px;
-        }
+    @media screen and (max-width: 1000px) {
+      :root {
+        --m: 2rem;
+      }
     }
-
-    @media (max-width: 641px) {
-
-        button-wrapper-cbc {
-            display: none;
-        }
-
-        button-wrapper-cbc-mobile {
-            flex-direction: column;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-
-        button-wrapper-cbc-mobile .one {
-            margin-right: 0px;
-            margin-bottom: 20px;
-        }
-        button-wrapper-cbc-mobile button {
-            font-size: 14px;
-            width: 80%;
-            height: 40px;
-            font-family: "montserrat-regular";
-            background-color: #fff;
-            border: 1px solid #333;
-        }
-        button-wrapper-cbc-mobile button:hover {
-            border: none;
-        }
-    }  
-
-    @media (min-width: 641px) {
-
-        button-wrapper-cbc-mobile {
-            display: none;
-        }
-
-      
-    }  
-
-
-
 </style>
