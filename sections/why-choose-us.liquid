@@ -6,7 +6,7 @@
     background-size: cover;
     background-blend-mode: hard-light;
   }
-  @media (min-width: 768px) {
+  {% comment %} @media (min-width: 768px) { {% endcomment %}
     .why-choose-us-image {
       padding: 50px 0px;
       display: flex;
@@ -14,8 +14,8 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-  }
-  @media (min-width: 768px) {
+  {% comment %} } {% endcomment %}
+  {% comment %} @media (min-width: 768px) { {% endcomment %}
     .details {
       flex-basis: 31%;
       max-width: 31%;
@@ -25,7 +25,7 @@
       align-items: center;
       margin: 20px 0;
     }
-  }
+  {% comment %} } {% endcomment %}
   span.name {
     font-size: 20px;
     font-weight: 600;
@@ -37,7 +37,7 @@
     color: #000;
     margin-top: 12px;
   }
-  @media (min-width: 768px) {
+  {% comment %} @media (min-width: 768px) { {% endcomment %}
     span.description p {
       margin: 0;
       font-size: 14px;
@@ -49,7 +49,7 @@
       text-align: center;
       color: #000;
     }
-  }
+  {% comment %} } {% endcomment %}
 </style>
 
 <section>
