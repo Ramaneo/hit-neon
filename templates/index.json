@@ -154,6 +154,11 @@
         "content": "Why Choose Us"
       }
     },
+    "why_choose_us_KBzaJ3": {
+      "type": "why-choose-us",
+      "settings": {
+      }
+    },
     "multicolumn_xeaqiR": {
       "type": "multicolumn",
       "blocks": {
@@ -390,6 +395,7 @@
     "featured_collection",
     "image-with-text",
     "custom_marquee_bQprAf",
+    "why_choose_us_KBzaJ3",
     "multicolumn_xeaqiR",
     "custom_marquee_eyQfE4",
     "17119705317e18ca9a",
