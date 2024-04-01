@@ -11,14 +11,14 @@
     overflow: hidden;
     user-select: none;
     gap: var(--gap);
-    height: 100px;
+    height: 75px !important;
   }
   .text-container {
     background: #04062a;
     line-height: normal;
     margin-bottom: 17px;
     position: relative;
-    height: 100px;
+    height: 75px !important;
   }
   .enable-animation .marquee__content {
     {% comment %} animation: scroll 23s linear infinite; {% endcomment %}
@@ -62,6 +62,11 @@
     width: 10px;
     transform: rotate(2deg);
   }
+
+  li.text-details {
+    font-size: 30px !important;
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(0);

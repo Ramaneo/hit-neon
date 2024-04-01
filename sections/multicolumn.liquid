@@ -122,14 +122,18 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext" style="font-weight: 600; font-size: 14px">{{ block.settings.title }}</h3>
+                  <h3 class="inline-richtext" style="font-weight: 600; font-size: 12px">{{ block.settings.title }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
-                    class="link animate-arrow filled-button"
+                    class="
+                      link
+                      animate-arrow
+                      filled-button
+                    "
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
@@ -137,8 +141,8 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
-                  >
+                    {% comment %} <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span> {% endcomment %}
+                  </a>
                 {%- endif -%}
               </div>
             </div>

@@ -606,6 +606,14 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -634,10 +642,6 @@ video {
   display: none;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -656,9 +660,12 @@ video {
   white-space: nowrap;
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .uppercase {
