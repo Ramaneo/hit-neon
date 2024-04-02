@@ -1,0 +1,324 @@
+<style>
+   .our-expertise h3 {
+     font-size: 1.5em;
+
+     &.faq {
+     margin: 1em 0;
+     text-align: left;
+
+       @include media(max-width $small-screen) {
+       margin-left: 20px;
+         }
+     }
+   }
+
+   .faq-container {
+     max-width: 1280px;
+       padding-bottom: 1.5em;
+       margin: 0 auto;
+       width: 90%;
+   }
+
+    .mobile-expertise-faq {
+      max-width: 73.4rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+   p.mobile-faq-menu {
+     margin: auto;
+     padding: 20px;
+     padding-left: 0;
+     font-size: 15px;
+     font-weight: 700;     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+     {% comment %} font-weight: 700; {% endcomment %}
+   }
+   .mobile-faq-menu {
+     cursor: pointer;
+   }
+
+   .expertise-faq {
+     display: inline-block;
+   }
+
+   .contact-faq {
+      background: #f3f3f3;
+       height: 1000px;
+       width: 375px;
+       float: right;
+       display: inline-block;
+
+       @include media(max-width $large-screen) {
+       float: none;
+       display: block;
+     }
+   }
+
+   .mobile-faq {
+
+   }
+  {% comment %} .container {
+    max-width:960px;
+    margin:0 auto;
+    padding:1em 0 1em 0;
+  } {% endcomment %}
+
+
+   p.faq-accordion {
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 14px;
+    font-weight: 600;
+   }
+
+   /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+   p.faq-accordion.active, p.accordion:hover {
+   }
+
+   /* Unicode character for "plus" sign (+) */
+   p.faq-accordion:after {
+    content: '\2795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+   }
+
+   p.mobile-faq-menu:after {
+    content: '\2795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+   }
+
+
+   /* Unicode character for "minus" sign (-) */
+   p.faq-accordion.active:after {
+    content: "\2796";
+   }
+
+   p.mobile-faq-menu.active:after {
+      content: "\2796";
+   }
+
+   /* Style the element that is used for the panel class */
+   div.faq-panel {
+    // padding: 5px 18px;
+    {% comment %} background-color: white; {% endcomment %}
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    text-align: left;
+    max-width: 580px;
+    // margin: 5px 0px;
+   }
+
+   p.faq-panel {
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+
+   div.faq-panel.show {
+    opacity: 1;
+    max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+   }
+
+   div.mobile-faq-panel {
+      // padding: 5px 18px;
+    {% comment %} background-color: white; {% endcomment %}
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    text-align: left;
+    padding-left: 18px;
+    // max-width: 580px;
+    // margin: 5px 0px;
+   }
+
+   div.mobile-faq-panel.show {
+      opacity: 1;
+    max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+   }
+</style>
+
+<section style="background-color: #e8f4fa; margin-top: 30px; padding-top: 7rem; padding-bottom: 7rem;">
+  <div class="collapsible-content__header scroll-trigger animate--slide-in" style="text-align: center;">
+    <p class="caption-with-letter-spacing">Frequently Asked Questions</p>
+
+    <h2
+      class="collapsible-content__heading inline-richtext h1"
+      style="font-size: calc(var(--font-heading-scale)* 2.4rem) !important;"
+    >
+      FAQs
+    </h2>
+  </div>
+  <div style="max-width: 120rem; justify-content: center; margin-left: auto; margin-right: auto;">
+    <div class="mobile-expertise-faq">
+      <div>
+        <p class="mobile-faq-menu">General</p>
+        <div class="mobile-faq-panel">
+          <div class="expertise-faq">
+            <div>
+              <p class="faq-accordion">Why LED Neon signs are better?</p>
+              <div class="faq-panel">
+                <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
+                  LED Neon Signs are a superior choice compared to glass neon signs due to various reasons. They are
+                  more durable, energy-efficient, flexible in design, and safer to use. LED signs require minimal
+                  maintenance and have a longer lifespan. Additionally, they provide excellent brightness and
+                  visibility, ensuring clear and vibrant illumination. LED signs also offer cost-effectiveness in terms
+                  of energy savings and reduced maintenance and replacement costs. Overall, LED Neon Signs combine
+                  appealing features, affordability, and efficiency, making them a preferred option for signage needs.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p class="faq-accordion">What if I want a sign that is partially neon?</p>
+              <div class="faq-panel">
+                <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
+                  We offer UV-printed signs, UV-printed Neon signs, 3D Acrylic Signs, Illuminator Luxury Signs, and Neon
+                  Signs. You can send us the reference image and our designers will provide you with the best design and
+                  mockup for the same. In case you need a partial neon sign, we can create a combination of the above
+                  mentioned signs using lightweight LED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mobile-faq-menu">Shipping and Returns</p>
+        <div class="mobile-faq-panel">
+          <div class="expertise-faq">
+            <div>
+              <p class="faq-accordion">What if I want a sign that is partially neon?</p>
+              <div class="faq-panel">
+                <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
+                  We offer UV-printed signs, UV-printed Neon signs, 3D Acrylic Signs, Illuminator Luxury Signs, and Neon
+                  Signs. You can send us the reference image and our designers will provide you with the best design and
+                  mockup for the same. In case you need a partial neon sign, we can create a combination of the above
+                  mentioned signs using lightweight LED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mobile-faq-menu">Installation</p>
+        <div class="mobile-faq-panel">
+          <div class="expertise-faq">
+            <div>
+              <p class="faq-accordion">What if I want a sign that is partially neon?</p>
+              <div class="faq-panel">
+                <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
+                  We offer UV-printed signs, UV-printed Neon signs, 3D Acrylic Signs, Illuminator Luxury Signs, and Neon
+                  Signs. You can send us the reference image and our designers will provide you with the best design and
+                  mockup for the same. In case you need a partial neon sign, we can create a combination of the above
+                  mentioned signs using lightweight LED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mobile-faq-menu">Technical</p>
+        <div class="mobile-faq-panel">
+          <div class="expertise-faq">
+            <div>
+              <p class="faq-accordion">What if I want a sign that is partially neon?</p>
+              <div class="faq-panel">
+                <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
+                  We offer UV-printed signs, UV-printed Neon signs, 3D Acrylic Signs, Illuminator Luxury Signs, and Neon
+                  Signs. You can send us the reference image and our designers will provide you with the best design and
+                  mockup for the same. In case you need a partial neon sign, we can create a combination of the above
+                  mentioned signs using lightweight LED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mobile-faq-menu">Custom Orders</p>
+        <div class="mobile-faq-panel">
+          <div class="expertise-faq">
+            <div>
+              <p class="faq-accordion">What if I want a sign that is partially neon?</p>
+              <div class="faq-panel">
+                <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
+                  We offer UV-printed signs, UV-printed Neon signs, 3D Acrylic Signs, Illuminator Luxury Signs, and Neon
+                  Signs. You can send us the reference image and our designers will provide you with the best design and
+                  mockup for the same. In case you need a partial neon sign, we can create a combination of the above
+                  mentioned signs using lightweight LED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function (event) {
+    var acc = document.getElementsByClassName('faq-accordion');
+    var panel = document.getElementsByClassName('faq-panel');
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].onclick = function () {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+        if (setClasses) {
+          this.classList.toggle('active');
+          this.nextElementSibling.classList.toggle('show');
+        }
+      };
+    }
+    function setClass(els, className, fnName) {
+      for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+      }
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function (event) {
+    var acc = document.getElementsByClassName('mobile-faq-menu');
+    var panel = document.getElementsByClassName('mobile-faq-panel');
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].onclick = function () {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+        if (setClasses) {
+          this.classList.toggle('active');
+          this.nextElementSibling.classList.toggle('show');
+        }
+      };
+    }
+    function setClass(els, className, fnName) {
+      for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "presets": [
+    {
+      "name": "Frequently Asked Questions",
+      "category": "Reference"
+    }
+  ]
+}
+{% endschema %}
