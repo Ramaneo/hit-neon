@@ -207,17 +207,6 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_keeiCe": {
-      "type": "rich-text",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "about_hit_neon_4FNBDE": {
       "type": "about-hit-neon",
       "settings": {
@@ -275,7 +264,6 @@
     "custom_marquee_eyQfE4",
     "17119705317e18ca9a",
     "collapsible_content_3LxzPa",
-    "rich_text_keeiCe",
     "about_hit_neon_4FNBDE",
     "newsletter_kgiXCR",
     "custom_marquee_qcHkzL"
