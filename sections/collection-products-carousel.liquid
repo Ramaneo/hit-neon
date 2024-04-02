@@ -201,7 +201,7 @@
                                     class="full-unstyled-link"
                                     aria-labelledby="StandardCardNoMediaLink-template--16585127297206__04a63442-5b8f-4975-9129-f4af08f3330f-7512281546934 NoMediaStandardBadge-template--16585127297206__04a63442-5b8f-4975-9129-f4af08f3330f-7512281546934"
                                   >
-                                    Always And Forever Neon Sign
+                                    {{ product.title }}
                                   </a>
                                 </h3>
                               </div>
@@ -226,7 +226,7 @@
                                   class="full-unstyled-link"
                                   aria-labelledby="CardLink-template--16585127297206__04a63442-5b8f-4975-9129-f4af08f3330f-7512281546934 Badge-template--16585127297206__04a63442-5b8f-4975-9129-f4af08f3330f-7512281546934"
                                 >
-                                  Always And Forever Neon Sign
+                                  {{ product.title }}
                                 </a>
                               </h3>
                               <!-- TrustBox script -->
@@ -257,35 +257,7 @@
                               <!-- End TrustBox widget -->
                               <div class="card-information">
                                 <span class="caption-large light"></span>
-                                <div class="price  price--on-sale ">
-                                  <div class="price__container">
-                                    <div class="price__regular">
-                                      <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                      <span class="price-item price-item--regular">
-                                        <span class="d-none"> From</span> <strong> $207.00 USD</strong>
-                                      </span>
-                                    </div>
-                                    <div class="price__sale">
-                                      <span class="visually-hidden visually-hidden--inline">Sale price</span>
-                                      <span class="price-item price-item--sale price-item--last">
-                                        <span class="d-none">From</span> <strong> $207.00 USD</strong>
-                                      </span>
-                                      <span class="visually-hidden visually-hidden--inline">Regular price</span>
-                                      <span>
-                                        <s class="price-item price-item--regular"> $259.00 USD </s>
-                                      </span>
-                                    </div>
-                                    <small class="unit-price caption hidden">
-                                      <span class="visually-hidden">Unit price</span>
-                                      <span class="price-item price-item--last">
-                                        <span></span>
-                                        <span aria-hidden="true">/</span>
-                                        <span class="visually-hidden">&nbsp;per&nbsp;</span>
-                                        <span> </span>
-                                      </span>
-                                    </small>
-                                  </div>
-                                </div>
+                                {% render 'price', product: product, show_compare_at_price: true %}
                               </div>
                             </div>
                             <div class="card__badge bottom left">
