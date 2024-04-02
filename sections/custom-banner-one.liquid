@@ -14,7 +14,7 @@
   {% endcomment %}
 
   <custom-banner-container>
-    <button class="neon-button">Create Your Design</button>
+    <button class="neon-button2">Create Your Design</button>
     <button class="neon-button">Upload Your Design/Logo</button>
   </custom-banner-container>
 </section>
@@ -137,6 +137,7 @@
       --green: #5bff89;
       --yellow: #ffee55;
       --orange: #ff6d1b;
+      --yellowish: #E8D5AB;
     }
     /* body {
         background-color: #141516;
@@ -216,7 +217,39 @@
       background-clip: padding-box, border-box, border-box;
       background-size: 200%;
       animation: animate 2s infinite linear;
+    }
+    .neon-button2 {
+      border: calc(0.08 * var(--m)) solid transparent;
+      position: relative;
+      color: #f3f3f3;
+      font-family: "montserrat-bold";
+      {% comment %} font-size: var(--m); {% endcomment %}
+      font-size: 20px;
 
+      border-radius: calc(0.7 * var(--m));
+      padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      {% comment %} flex: 1; {% endcomment %}
+      width: 500.633px;
+
+      background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+        linear-gradient(
+          90deg,
+          var(--orange),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--orange)
+        );
+      background-origin: border-box;
+      background-clip: padding-box, border-box, border-box;
+      background-size: 200%;
+      animation: animate 2s infinite linear;
     }
 
     .neon-button::before {
@@ -241,9 +274,35 @@
       filter: blur(calc(0.8 * var(--m)));
 
     }
+    .neon-button2::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--orange),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--orange)
+      );
+      height: 30%;
+      width: 60%;
+      position: absolute;
+      bottom: -20%;
+      z-index: -1;
+      background-size: 200%;
+      animation: animate 2s infinite linear;
+      filter: blur(calc(0.8 * var(--m)));
+
+    }
 
     .neon-button:hover,
     .neon-button:hover::before {
+      animation: animate 0.5s infinite linear;
+    }
+    .neon-button2:hover,
+    .neon-button2:hover::before {
       animation: animate 0.5s infinite linear;
     }
 
