@@ -156,55 +156,9 @@
         "include_margins": true
       }
     },
-    "collapsible_content_3LxzPa": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_JwrwLi": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Why choose Hit Neon for neon signs?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_6wNckz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What is the difference between LED neon and glass neon?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_KfD74m": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you have a warranty? What does the warranty include?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_JwrwLi",
-        "collapsible_row_6wNckz",
-        "collapsible_row_KfD74m"
-      ],
+    "faq_iUizgD": {
+      "type": "faq",
       "settings": {
-        "caption": "Frequently Asked Questions",
-        "heading": "FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "section",
-        "color_scheme": "accent-1",
-        "container_color_scheme": "accent-1",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "about_hit_neon_4FNBDE": {
@@ -263,7 +217,7 @@
     "why_choose_us_KBzaJ3",
     "custom_marquee_eyQfE4",
     "17119705317e18ca9a",
-    "collapsible_content_3LxzPa",
+    "faq_iUizgD",
     "about_hit_neon_4FNBDE",
     "newsletter_kgiXCR",
     "custom_marquee_qcHkzL"
