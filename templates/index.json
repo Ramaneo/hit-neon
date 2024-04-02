@@ -77,37 +77,6 @@
       "settings": {
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "custom_css": [
-        "h2 {text-align: center;}"
-      ],
-      "settings": {
-        "title": "<strong>Popular Designs<\/strong>",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 5,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 40
-      }
-    },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
@@ -146,6 +115,11 @@
         "mobile_content_alignment": "left",
         "padding_top": 40,
         "padding_bottom": 0
+      }
+    },
+    "collection_products_carousel_TCRbyM": {
+      "type": "collection-products-carousel",
+      "settings": {
       }
     },
     "custom_marquee_bQprAf": {
@@ -300,8 +274,8 @@
     "custom-banner-one",
     "multicolumn_hgL4KE",
     "neon_marquee_BcDkck",
-    "featured_collection",
     "image-with-text",
+    "collection_products_carousel_TCRbyM",
     "custom_marquee_bQprAf",
     "why_choose_us_KBzaJ3",
     "custom_marquee_eyQfE4",
