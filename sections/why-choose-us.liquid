@@ -6,37 +6,22 @@
     background-size: cover;
     background-blend-mode: hard-light;
   }
-  {% comment %} @media (min-width: 768px) { {% endcomment %}
-    .why-choose-us-image {
-      padding: 50px 0px;
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  {% comment %} } {% endcomment %}
-  {% comment %} @media (min-width: 768px) { {% endcomment %}
-    .details {
-      flex-basis: 31%;
-      max-width: 31%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px 0;
-    }
-  {% comment %} } {% endcomment %}
-  span.name {
-    font-size: 20px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: 12px;
+  .why-choose-us-image {
+    padding: 50px 0px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  {% comment %} @media (min-width: 768px) { {% endcomment %}
+  .details {
+    flex-basis: 31%;
+    max-width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  @media (min-width: 768px) {
     span.description p {
       margin: 0;
       font-size: 14px;
@@ -48,10 +33,52 @@
       text-align: center;
       color: #000;
     }
-    .icon-box {
-      height: 50px; width: 50px; text-align: center;
+    span.name {
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+      margin-top: 12px;
     }
-  {% comment %} } {% endcomment %}
+  }
+  .icon-box {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    span.description p {
+      font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    }
+      span.name {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000;
+      }
+      .details svg {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    }
+  }
 </style>
 
 <section>
