@@ -25,6 +25,27 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  @media (min-width: 768px) {
+    .footer__content-top {
+      display: block;
+    }
+    .footer_content-mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .footer__content-top {
+      display: none;
+    }
+    .footer_content-mobile {
+      display: block;
+    }
+
+    .footer-item {
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -44,7 +65,8 @@
   -%}
   {%- if section.blocks.size > 0
     or section.settings.newsletter_enable
-    or section.settings.show_social and has_social_icons == true
+    or section.settings.show_social
+    and has_social_icons == true
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
@@ -245,7 +267,63 @@
       </div>
     {%- endunless -%}
   {%- endif -%}
-
+  <div class="footer_content-mobile">
+    <div style="max-width: 120rem; justify-content: center; margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem;">
+      <div class="mobile-expertise-faq">
+        <div>
+          <p class="faq-accordion">About Us</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <a class="footer-item">Contact Us</a>
+            <a class="footer-item">Collaboration/Associations</a>
+            <a class="footer-item">Blog</a>
+            <a class="footer-item">Promotional Offers & Codes</a>
+            <a class="footer-item">Refund & Cancellation Policy</a>
+            <a class="footer-item">Shipping Policy</a>
+            <a class="footer-item">Warranty</a>
+            <a class="footer-item">Privacy Policy</a>
+            <a class="footer-item">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <p class="faq-accordion">Custom Neon Signs</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <a class="footer-item">Design Your Custom Neon Sign</a>
+            <a class="footer-item">Custom Image / Logo / Artwork Sign</a>
+            <a class="footer-item">3D Acrylic Signs</a>
+          </div>
+        </div>
+        <div>
+          <p class="faq-accordion">Collection</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <a class="footer-item">Create Your Design</a>
+            <a class="footer-item">Upload Your Design</a>
+            <a class="footer-item">Shop Our Designs</a>
+            <a class="footer-item">Guides</a>
+            <a class="footer-item">Reviews</a>
+            <a class="footer-item">FAQ</a>
+            <a class="footer-item">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="faq-accordion">Support</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            For Order Related<br>
+            📞 (302) 600-1080
+            <br>
+            ✉️ hello@hitneon.com
+            <br>
+            <br>
+            For General Queries
+            <br>
+            📞 (302) 600-1080
+            <br>
+            ✉️ hello@hitneon.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% comment %} BOTTOM FOOTER SECTION {% endcomment %}
   <div
     class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -371,6 +449,50 @@
     </div>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function (event) {
+    var acc = document.getElementsByClassName('faq-accordion');
+    var panel = document.getElementsByClassName('faq-panel');
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].onclick = function () {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+        if (setClasses) {
+          this.classList.toggle('active');
+          this.nextElementSibling.classList.toggle('show');
+        }
+      };
+    }
+    function setClass(els, className, fnName) {
+      for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+      }
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function (event) {
+    var acc = document.getElementsByClassName('mobile-faq-menu');
+    var panel = document.getElementsByClassName('mobile-faq-panel');
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].onclick = function () {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+        if (setClasses) {
+          this.classList.toggle('active');
+          this.nextElementSibling.classList.toggle('show');
+        }
+      };
+    }
+    function setClass(els, className, fnName) {
+      for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+      }
+    }
+  });
+</script>
 
 {% schema %}
 {
