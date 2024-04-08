@@ -54,9 +54,13 @@
      }
    }
 
-   .mobile-faq {
-
+   @media (max-width: 767px) {
+    .faq-section {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
    }
+
   {% comment %} .container {
     max-width:960px;
     margin:0 auto;
@@ -148,7 +152,10 @@
    }
 </style>
 
-<section style="background-color: #e8f4fa; margin-top: 30px; padding-top: 7rem; padding-bottom: 7rem;">
+<section
+  class="faq-section"
+  style="background-color: #e8f4fa; margin-top: 30px; padding-top: 7rem; padding-bottom: 7rem;"
+>
   <div class="collapsible-content__header scroll-trigger animate--slide-in" style="text-align: center;">
     <p class="caption-with-letter-spacing">Frequently Asked Questions</p>
 
