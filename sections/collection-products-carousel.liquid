@@ -169,7 +169,7 @@
     {% endfor %}
   </ul>
   {% for collection in collections %}
-    <slider-component class="slider-mobile-gutter page-width">
+    <slider-component class="slider-mobile-gutter">
       <div class="products-container" id="products-container-{{ collection.handle }}">
         <ul class="grid product-grid contains-card owl-carousel contains-card--product contains-card--standard grid---col-desktop grid--1-col-tablet-down owl-loaded owl-drag">
           {% for product in collection.products %}
