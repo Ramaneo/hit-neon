@@ -1,1 +1,383 @@
-{"sections":{"rich_text_YcNMfy":{"type":"rich-text","blocks":{"heading_tABTyy":{"type":"heading","settings":{"heading":"Create Your Custom Neon Sign","heading_size":"h2"}}},"block_order":["heading_tABTyy"],"disabled":true,"custom_css":[],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":52}},"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"product-rating":{"type":"rating","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"share":{"type":"share","settings":{"share_label":"Share"}},"description_zRfBeh":{"type":"description","settings":{}}},"block_order":["vendor","title","product-rating","price","variant_picker","quantity_selector","buy_buttons","share","description_zRfBeh"],"disabled":true,"settings":{"enable_sticky_info":true,"color_scheme":"background-1","media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"thumbnail","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":false,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"170497290749eb8e9d":{"type":"apps","blocks":{"neon_sign_customiser_neon_customiser_eecRDW":{"type":"shopify:\/\/apps\/neon-sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515","settings":{"customiser_id":"","scroll_order":false,"height":100,"height_reduction":0,"height_reduction_mobile":0,"price_box_options":"bottom","rtl":false}}},"block_order":["neon_sign_customiser_neon_customiser_eecRDW"],"settings":{"include_margins":true}},"related-products":{"type":"related-products","disabled":true,"settings":{"heading":"YOU MAY ALSO LIKE","heading_size":"h1","products_to_show":4,"columns_desktop":4,"color_scheme":"background-1","image_ratio":"portrait","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":0,"padding_bottom":40}},"multicolumn_kzG6XD":{"type":"multicolumn","blocks":{"column_fEWHfE":{"type":"column","settings":{"title":"Custom Made","text":"<p>Each order is inspected by our designers and tailored based on your needs<\/p>","link_label":"","link":""}},"column_itjfPF":{"type":"column","settings":{"title":"<strong>Premium Quality<\/strong>","text":"<p>Made from top grade acrylic plastic and premium quality silicone covered IP65-2 led lights<\/p>","link_label":"","link":""}},"column_VFQBCW":{"type":"column","settings":{"title":"<strong>Value For Money<\/strong>","text":"<p>Being a direct from the manufacturer brand and cutting all middlemen, retail markups are avoided.<\/p>","link_label":"","link":""}},"column_8FLgD6":{"type":"column","settings":{"title":"<strong>Seamless Installation<\/strong>","text":"<p>Signs come with pre-drilled holes, mounting accessories and local adapter. <\/p>","link_label":"","link":""}}},"block_order":["column_fEWHfE","column_itjfPF","column_VFQBCW","column_8FLgD6"],"settings":{"title":"Why Choose Us?","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"primary","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"multicolumn_iGfCt3":{"type":"multicolumn","blocks":{"column_tND3Yq":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/1.png","title":"Jessia","text":"<p>My sign was more than I expected. I was not even expecting a remote! It looks amazing, has different light settings and modes! I have already recommended to friends!<\/p>","link_label":"","link":""}},"column_zG87tW":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/2.png","title":"Karen","text":"<p>This sign is so amazing. It’s<br\/>better than I could have imagined it. And I received it in time for Christmas<br\/>for my grandson. He loved it!<\/p>","link_label":"","link":""}},"column_3LAahf":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/3.png","title":"Fred","text":"<p>Super easy process to design sign<br\/>and SEE the product before buying. Seller was a pleasure to work with and<br\/>delivers on promises! Comes perfectly packaged in a sturdy box, ready to use<br\/>upon unboxing.<\/p>","link_label":"","link":""}},"column_CzXkNf":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/4.png","title":"Tom","text":"<p>Great work, and a great seller to<br\/>deal with. Very satisfied with my purchase.<\/p>","link_label":"","link":""}}},"block_order":["column_tND3Yq","column_zG87tW","column_3LAahf","column_CzXkNf"],"settings":{"title":"Reviews","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"primary","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"collapsible_content_brcDCp":{"type":"collapsible-content","blocks":{"collapsible_row_EHNrii":{"type":"collapsible_row","settings":{"heading":"General","icon":"none","row_content":"","page":""}},"collapsible_row_FgnVBY":{"type":"collapsible_row","settings":{"heading":"Product Options","icon":"none","row_content":"","page":""}},"collapsible_row_gUBHH3":{"type":"collapsible_row","settings":{"heading":"Shipping and Returns","icon":"none","row_content":"","page":""}},"collapsible_row_weVthq":{"type":"collapsible_row","settings":{"heading":"Installation","icon":"none","row_content":"","page":""}},"collapsible_row_YQ4tWQ":{"type":"collapsible_row","settings":{"heading":"Technical Specs","icon":"none","row_content":"","page":""}}},"block_order":["collapsible_row_EHNrii","collapsible_row_FgnVBY","collapsible_row_gUBHH3","collapsible_row_weVthq","collapsible_row_YQ4tWQ"],"settings":{"caption":"","heading":"FAQ","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"","container_color_scheme":"","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"170636199475d863b7":{"type":"apps","blocks":{"judge_me_reviews_review_widget_bK9B4E":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_review_widget_bK9B4E"],"settings":{"include_margins":true}}},"order":["rich_text_YcNMfy","main","170497290749eb8e9d","related-products","multicolumn_kzG6XD","multicolumn_iGfCt3","collapsible_content_brcDCp","170636199475d863b7"]}
+{
+  "sections": {
+    "rich_text_YcNMfy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tABTyy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Create Your Custom Neon Sign",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tABTyy"
+      ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "product-rating": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "description_zRfBeh": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "product-rating",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "description_zRfBeh"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "170497290749eb8e9d": {
+      "type": "apps",
+      "blocks": {
+        "neon_sign_customiser_neon_customiser_eecRDW": {
+          "type": "shopify:\/\/apps\/neon-sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515",
+          "settings": {
+            "customiser_id": "",
+            "scroll_order": false,
+            "height": 80,
+            "height_reduction": 0,
+            "height_reduction_mobile": 0,
+            "price_box_options": "bottom",
+            "rtl": false
+          }
+        }
+      },
+      "block_order": [
+        "neon_sign_customiser_neon_customiser_eecRDW"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "multicolumn_kzG6XD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fEWHfE": {
+          "type": "column",
+          "settings": {
+            "title": "Custom Made",
+            "text": "<p>Each order is inspected by our designers and tailored based on your needs<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_itjfPF": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Premium Quality<\/strong>",
+            "text": "<p>Made from top grade acrylic plastic and premium quality silicone covered IP65-2 led lights<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VFQBCW": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Value For Money<\/strong>",
+            "text": "<p>Being a direct from the manufacturer brand and cutting all middlemen, retail markups are avoided.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8FLgD6": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Seamless Installation<\/strong>",
+            "text": "<p>Signs come with pre-drilled holes, mounting accessories and local adapter. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fEWHfE",
+        "column_itjfPF",
+        "column_VFQBCW",
+        "column_8FLgD6"
+      ],
+      "settings": {
+        "title": "Why Choose Us?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_iGfCt3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tND3Yq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.png",
+            "title": "Jessia",
+            "text": "<p>My sign was more than I expected. I was not even expecting a remote! It looks amazing, has different light settings and modes! I have already recommended to friends!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zG87tW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "title": "Karen",
+            "text": "<p>This sign is so amazing. It’s<br\/>better than I could have imagined it. And I received it in time for Christmas<br\/>for my grandson. He loved it!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3LAahf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.png",
+            "title": "Fred",
+            "text": "<p>Super easy process to design sign<br\/>and SEE the product before buying. Seller was a pleasure to work with and<br\/>delivers on promises! Comes perfectly packaged in a sturdy box, ready to use<br\/>upon unboxing.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CzXkNf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4.png",
+            "title": "Tom",
+            "text": "<p>Great work, and a great seller to<br\/>deal with. Very satisfied with my purchase.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tND3Yq",
+        "column_zG87tW",
+        "column_3LAahf",
+        "column_CzXkNf"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_brcDCp": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_EHNrii": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "General",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_FgnVBY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Product Options",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_gUBHH3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping and Returns",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_weVthq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Installation",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_YQ4tWQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Technical Specs",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_EHNrii",
+        "collapsible_row_FgnVBY",
+        "collapsible_row_gUBHH3",
+        "collapsible_row_weVthq",
+        "collapsible_row_YQ4tWQ"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "170636199475d863b7": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_bK9B4E": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_bK9B4E"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "rich_text_YcNMfy",
+    "main",
+    "170497290749eb8e9d",
+    "related-products",
+    "multicolumn_kzG6XD",
+    "multicolumn_iGfCt3",
+    "collapsible_content_brcDCp",
+    "170636199475d863b7"
+  ]
+}
