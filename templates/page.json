@@ -11,12 +11,12 @@
     },
     "upload_design_form_A3Yrt4": {
       "type": "upload-design-form",
+      "disabled": true,
       "settings": {
       }
     },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
