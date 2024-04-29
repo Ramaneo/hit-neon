@@ -1,34 +1,13 @@
 {
   "sections": {
-    "custom_marquee_eJbdMh": {
-      "type": "custom-marquee",
-      "custom_css": [
-        ".font-container {position: relative; transform: rotate(0deg); margin-top: 50px;}"
-      ],
-      "settings": {
-        "content": "Custom Designed LED Neon Sign"
-      }
-    },
-    "upload_design_form_A3Yrt4": {
-      "type": "upload-design-form",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     }
   },
-  "order": [
-    "custom_marquee_eJbdMh",
-    "upload_design_form_A3Yrt4",
-    "main"
-  ]
+  "order": ["main"]
 }

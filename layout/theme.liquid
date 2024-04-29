@@ -308,6 +308,14 @@
       }
     </script>
     {% include 'hulk_po_vd' %}
+
+    {% if page.handle == 'custom-designed-led-neon-sign' %}
+      <style>
+        .main-page-title {
+          display: none !important;
+        }
+      </style>
+    {% endif %}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

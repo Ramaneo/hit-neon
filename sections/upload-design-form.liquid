@@ -51,9 +51,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
   }
   .upload-submit {
     border: none;
@@ -63,7 +60,6 @@
     color: white;
     border-radius: 8px;
     cursor: pointer;
-    width: 100%;
   }
   {% comment %}  {% endcomment %}
 
@@ -163,17 +159,7 @@
 </style>
 
 <section style="display: flex; ">
-  <div
-    style="
-      {% comment %} flex: 1;
-      width: 100%;
-      background-color: #ffd7aa;
-      margin: 40px;
-      border-radius: 33px; {% endcomment %}
-    "
-  >
-    <span></span>
-  </div>
+  <div style="flex: 1"><span></span></div>
   <div class="upload-design-container">
     {% form 'contact' %}
       {{ form.errors | default_errors }}
@@ -303,10 +289,6 @@
     } else {
       $textContainer.text(filesCount + ' files selected');
     }
-  });
-
-  $delete.on('click', function () {
-    $('.image-input').val(null);
   });
 </script>
 
