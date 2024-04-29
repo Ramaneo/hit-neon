@@ -2,6 +2,9 @@
   "sections": {
     "custom_marquee_eJbdMh": {
       "type": "custom-marquee",
+      "custom_css": [
+        ".font-container {position: relative; transform: rotate(0deg); margin-top: 50px;}"
+      ],
       "settings": {
         "content": "Custom Designed LED Neon Sign"
       }
@@ -13,6 +16,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
