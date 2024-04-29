@@ -1,5 +1,11 @@
 {
   "sections": {
+    "custom_marquee_eJbdMh": {
+      "type": "custom-marquee",
+      "settings": {
+        "content": "Custom Designed LED Neon Sign"
+      }
+    },
     "upload_design_form_A3Yrt4": {
       "type": "upload-design-form",
       "settings": {
@@ -14,6 +20,7 @@
     }
   },
   "order": [
+    "custom_marquee_eJbdMh",
     "upload_design_form_A3Yrt4",
     "main"
   ]
