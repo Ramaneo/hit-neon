@@ -81,7 +81,10 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container">
+            <div
+              class="multicolumn-card content-container"
+              style="height: 100%; display: flex; flex-direction: column;"
+            >
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -126,7 +129,10 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div
+                class="multicolumn-card__info"
+                style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;"
+              >
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext lets-create-title" style="font-weight: 600; font-size: 12px">
                     {{ block.settings.title }}
