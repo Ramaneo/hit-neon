@@ -120,7 +120,7 @@
             "scroll_order": false,
             "height": 80,
             "height_reduction": 0,
-            "height_reduction_mobile": 250,
+            "height_reduction_mobile": 150,
             "price_box_options": "bottom",
             "rtl": false
           }
