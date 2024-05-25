@@ -11,13 +11,9 @@
           }
         }
       },
-      "block_order": [
-        "heading_tABTyy"
-      ],
+      "block_order": ["heading_tABTyy"],
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -39,18 +35,15 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "product-rating": {
           "type": "rating",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -60,8 +53,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -78,8 +70,7 @@
         },
         "description_zRfBeh": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -114,7 +105,7 @@
       "type": "apps",
       "blocks": {
         "neon_sign_customiser_neon_customiser_eecRDW": {
-          "type": "shopify:\/\/apps\/neon-sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515",
+          "type": "shopify://apps/neon-sign-customiser/blocks/neon-customiser/29c3b558-f454-440f-b53e-26c5e867a515",
           "settings": {
             "customiser_id": "",
             "scroll_order": false,
@@ -126,12 +117,14 @@
           }
         }
       },
-      "block_order": [
-        "neon_sign_customiser_neon_customiser_eecRDW"
-      ],
+      "block_order": ["neon_sign_customiser_neon_customiser_eecRDW"],
       "settings": {
         "include_margins": true
       }
+    },
+    "whats_in_tabs": {
+      "type": "whats-in-tabs",
+      "settings": {}
     },
     "related-products": {
       "type": "related-products",
@@ -159,7 +152,7 @@
           "type": "column",
           "settings": {
             "title": "Custom Made",
-            "text": "<p>Each order is inspected by our designers and tailored based on your needs<\/p>",
+            "text": "<p>Each order is inspected by our designers and tailored based on your needs</p>",
             "link_label": "",
             "link": ""
           }
@@ -167,8 +160,8 @@
         "column_itjfPF": {
           "type": "column",
           "settings": {
-            "title": "<strong>Premium Quality<\/strong>",
-            "text": "<p>Made from top grade acrylic plastic and premium quality silicone covered IP65-2 led lights<\/p>",
+            "title": "<strong>Premium Quality</strong>",
+            "text": "<p>Made from top grade acrylic plastic and premium quality silicone covered IP65-2 led lights</p>",
             "link_label": "",
             "link": ""
           }
@@ -176,8 +169,8 @@
         "column_VFQBCW": {
           "type": "column",
           "settings": {
-            "title": "<strong>Value For Money<\/strong>",
-            "text": "<p>Being a direct from the manufacturer brand and cutting all middlemen, retail markups are avoided.<\/p>",
+            "title": "<strong>Value For Money</strong>",
+            "text": "<p>Being a direct from the manufacturer brand and cutting all middlemen, retail markups are avoided.</p>",
             "link_label": "",
             "link": ""
           }
@@ -185,8 +178,8 @@
         "column_8FLgD6": {
           "type": "column",
           "settings": {
-            "title": "<strong>Seamless Installation<\/strong>",
-            "text": "<p>Signs come with pre-drilled holes, mounting accessories and local adapter. <\/p>",
+            "title": "<strong>Seamless Installation</strong>",
+            "text": "<p>Signs come with pre-drilled holes, mounting accessories and local adapter. </p>",
             "link_label": "",
             "link": ""
           }
@@ -221,9 +214,9 @@
         "column_tND3Yq": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.png",
+            "image": "shopify://shop_images/1.png",
             "title": "Jessia",
-            "text": "<p>My sign was more than I expected. I was not even expecting a remote! It looks amazing, has different light settings and modes! I have already recommended to friends!<\/p>",
+            "text": "<p>My sign was more than I expected. I was not even expecting a remote! It looks amazing, has different light settings and modes! I have already recommended to friends!</p>",
             "link_label": "",
             "link": ""
           }
@@ -231,9 +224,9 @@
         "column_zG87tW": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify://shop_images/2.png",
             "title": "Karen",
-            "text": "<p>This sign is so amazing. It’s<br\/>better than I could have imagined it. And I received it in time for Christmas<br\/>for my grandson. He loved it!<\/p>",
+            "text": "<p>This sign is so amazing. It’s<br/>better than I could have imagined it. And I received it in time for Christmas<br/>for my grandson. He loved it!</p>",
             "link_label": "",
             "link": ""
           }
@@ -241,9 +234,9 @@
         "column_3LAahf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
+            "image": "shopify://shop_images/3.png",
             "title": "Fred",
-            "text": "<p>Super easy process to design sign<br\/>and SEE the product before buying. Seller was a pleasure to work with and<br\/>delivers on promises! Comes perfectly packaged in a sturdy box, ready to use<br\/>upon unboxing.<\/p>",
+            "text": "<p>Super easy process to design sign<br/>and SEE the product before buying. Seller was a pleasure to work with and<br/>delivers on promises! Comes perfectly packaged in a sturdy box, ready to use<br/>upon unboxing.</p>",
             "link_label": "",
             "link": ""
           }
@@ -251,9 +244,9 @@
         "column_CzXkNf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.png",
+            "image": "shopify://shop_images/4.png",
             "title": "Tom",
-            "text": "<p>Great work, and a great seller to<br\/>deal with. Very satisfied with my purchase.<\/p>",
+            "text": "<p>Great work, and a great seller to<br/>deal with. Very satisfied with my purchase.</p>",
             "link_label": "",
             "link": ""
           }
@@ -357,14 +350,11 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_bK9B4E": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
-      "block_order": [
-        "judge_me_reviews_review_widget_bK9B4E"
-      ],
+      "block_order": ["judge_me_reviews_review_widget_bK9B4E"],
       "settings": {
         "include_margins": true
       }
@@ -374,6 +364,7 @@
     "rich_text_YcNMfy",
     "main",
     "170497290749eb8e9d",
+    "whats_in_tabs",
     "related-products",
     "multicolumn_kzG6XD",
     "multicolumn_iGfCt3",

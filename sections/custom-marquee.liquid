@@ -23,7 +23,7 @@
   .enable-animation .marquee__content {
     {% comment %} animation: scroll 23s linear infinite; {% endcomment %}
     {% comment %} animation: scroll {{ section.settings.speed }}s linear infinite; {% endcomment %}
-    animation: scroll {% section.settings.speed %}s linear infinite;
+    animation: scroll 23s linear infinite;
     scroll-behavior: smooth;
     justify-content: space-around;
   }
@@ -112,12 +112,6 @@
       "id": "content",
       "type": "text",
       "label": "Content Text"
-    },
-    {
-      "id": "speed",
-      "type": "number",
-      "label": "Banner Scroll Speed",
-      "default": 23
     }
   ],
   "presets": [

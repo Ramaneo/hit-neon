@@ -1,0 +1,117 @@
+<style>
+  .ootb-tabcordion--tabs {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    border-bottom: 2px solid #fc8500;
+    justify-content: center;
+  }
+
+  .ootb-tabcordion--tabs .tab.is-active {
+    background: #fc8500 !important;
+    color: #fff !important;
+  }
+
+  .ootb-tabcordion--tabs .tab {
+    display: block;
+    color: #6d6d6d;
+    padding: 17px 28px !important;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    background: #fff;
+  }
+
+  @media (min-width: 768px) {
+    .tab {
+      letter-spacing: normal;
+      color: #6d6d6d;
+    }
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.is-active {
+    display: block;
+  }
+</style>
+
+<section>
+  <div class="page-width" style="margin-top: 80px; margin-bottom: 80px;">
+    <div class="ootb-tabcordion--tabs" role="tablist" aria-label="TabCordion">
+      <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-content" id="tab1">
+        What’s In The Box
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="tab2-content" id="tab2" tabindex="-1">
+        Product Description
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="tab3-content" id="tab3" tabindex="-1">
+        Warranty
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="tab4-content" id="tab4" tabindex="-1">
+        Refund &amp; Cancellation
+      </button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="tab5-content" id="tab5" tabindex="-1">
+        Shipping
+      </button>
+    </div>
+    <div id="tab1-content" class="tab-content is-active">
+      <p>Content for What’s In The Box.</p>
+    </div>
+    <div id="tab2-content" class="tab-content">
+      <p>Content for Product Description.</p>
+    </div>
+    <div id="tab3-content" class="tab-content">
+      <p>Content for Warranty.</p>
+    </div>
+    <div id="tab4-content" class="tab-content">
+      <p>Content for Refund &amp; Cancellation.</p>
+    </div>
+    <div id="tab5-content" class="tab-content">
+      <p>Content for Shipping.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.ootb-tabcordion--tabs .tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        // Remove active class from all tabs
+        tabs.forEach((t) => t.classList.remove('is-active'));
+        // Hide all tab contents
+        tabContents.forEach((content) => content.classList.remove('is-active'));
+
+        // Add active class to the clicked tab
+        tab.classList.add('is-active');
+        // Show the corresponding tab content
+        const tabContent = document.getElementById(tab.getAttribute('aria-controls'));
+        tabContent.classList.add('is-active');
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "presets": [
+    {
+      "name": "Whats in Tabs",
+      "category": "Reference"
+    }
+  ]
+}
+{% endschema %}
