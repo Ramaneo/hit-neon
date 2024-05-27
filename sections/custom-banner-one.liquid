@@ -1,4 +1,4 @@
-<section id="section-{{ section.id }}" style="height: 720px; display: flex; justify-content: center">
+<section id="section-{{ section.id }}" class="section-banner-one">
   {% comment %}
     <custom-banner-container>
       <button-wrapper-cbc>
@@ -138,7 +138,12 @@
       z-index: -1;
       height: 720px;
     }
+    .section-banner-one {
+      height: 720px; display: flex; justify-content: center;
+    }
   }
+
+
 
   :root {
       /*  change this for scaling  */
@@ -182,7 +187,10 @@
           height: 100%;
           object-fit: cover;
           z-index: -1;
-          height: 720px;
+          height: 640px;
+        }
+        .section-banner-one {
+          height: 640px; display: flex; justify-content: center;
         }
       }
 
