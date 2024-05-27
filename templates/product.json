@@ -10,14 +10,32 @@
             "text_style": "uppercase"
           }
         },
-        "title": { "type": "title", "settings": {} },
-        "product-rating": { "type": "rating", "settings": {} },
-        "price": { "type": "price", "settings": {} },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "product-rating": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": { "picker_type": "button" }
+          "settings": {
+            "picker_type": "button"
+          }
         },
-        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -25,7 +43,11 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": { "type": "description", "settings": {} }
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
       },
       "block_order": [
         "vendor",
@@ -73,7 +95,8 @@
     },
     "whats_in_tabs": {
       "type": "whats-in-tabs",
-      "settings": {}
+      "settings": {
+      }
     },
     "custom_marquee_installation": {
       "type": "custom-marquee",
@@ -83,22 +106,29 @@
     },
     "product_installation": {
       "type": "product-installation",
-      "settings": {}
+      "settings": {
+      }
     },
     "faq_product": {
       "type": "faq",
-      "settings": {}
+      "settings": {
+      }
     },
     "17063619172267ceec": {
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_r3nTjp": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         }
       },
-      "block_order": ["judge_me_reviews_review_widget_r3nTjp"],
-      "settings": { "include_margins": true }
+      "block_order": [
+        "judge_me_reviews_review_widget_r3nTjp"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
