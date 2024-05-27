@@ -1,0 +1,279 @@
+<style>
+  .tabs {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+  }
+
+  .tabs li {
+    padding: 0;
+    text-align: center;
+  }
+
+  .tabs a {
+    display: block;
+    text-decoration: none;
+    color: #6d6d6d;
+    padding: 18px 26px;
+    border-radius: 20px;
+    line-height: 3.13px;
+    width: max-content;
+  }
+
+  .collection-button {
+    cursor: pointer !important;
+  }
+
+  .tabs a.active-content {
+    background-color: #8ecae6;
+    color: #fff;
+  }
+
+  .products-container {
+    display: none;
+  }
+
+  .owl-carousel .owl-dots.disabled,
+  .owl-carousel .owl-nav.disabled {
+    display: flex;
+  }
+
+  a.full-unstyled-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .slick-slide img {
+    border-radius: 14px;
+  }
+
+  @media (min-width: 767px) {
+    .neon-name.medium {
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: normal;
+      text-align: left;
+      padding: 15px 0px;
+    }
+
+    .slick-slide .paragraph {
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #333;
+      max-width: 350px;
+      text-align: left;
+    }
+
+    .products-container .owl-nav button.owl-prev {
+      color: #8ecae6;
+      border-radius: 50%;
+      border: 1px solid #8ecae6;
+      height: 40px;
+      margin: 0 5px;
+      font-size: 40px;
+      line-height: normal;
+      display: flex;
+      width: 40px;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      padding-bottom: 6px !important;
+      left: -5%;
+    }
+    .products-container .owl-nav button.owl-next {
+      color: #8ecae6;
+      border-radius: 50%;
+      border: 1px solid #8ecae6;
+      height: 40px;
+      margin: 0 5px;
+      font-size: 40px;
+      line-height: normal;
+      display: flex;
+      width: 40px;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      padding-bottom: 6px !important;
+      right: -5%;
+    }
+    .products-container .owl-nav button {
+      position: absolute;
+      top: 33%;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .card .media.media--hover-effect > img:only-child,
+  .card-wrapper .media.media--hover-effect > img:only-child {
+    border-radius: 15px;
+  }
+
+  @media (max-width: 767px) {
+    ul.tabs {
+      display: flex;
+      overflow-y: scroll;
+      align-items: center;
+      align-content: center;
+    }
+
+    ul.tabs {
+      display: flex;
+      flex-flow: wrap;
+    }
+
+    ul.tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .products-container .owl-nav {
+      display: none;
+      justify-content: center;
+    }
+
+    .products-container .owl-nav button.owl-prev {
+      color: rgba(var(--color-foreground), 0.75);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .products-container .owl-nav button.owl-next {
+      color: rgba(var(--color-foreground), 0.75);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+</style>
+
+<section style="margin-top: 100px; max-width: 120rem; padding: 0 10px; margin-left: auto; margin-right: auto;">
+  <slider-component class="slider-mobile-gutter">
+    <div class="products-container" id="products-container-static-collection" style="display: block;">
+      <ul class="grid product-grid contains-card owl-carousel contains-card--product contains-card--standard grid---col-desktop grid--1-col-tablet-down owl-loaded owl-drag">
+        <!-- Static Item 1 -->
+        <li class="item grid__item" style="width: 100%; max-width: 100%;">
+          <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1">
+            <div class="col-xs-12 col-sm-6" style="width: 100%; display: inline-block;">
+              <div class="slickitem">
+                <div class="category-img">
+                  <div style="width: 100%; background-color: gray;"></div>
+                  <img
+                    class="lazyloaded"
+                    data-src="https://cdn.shopify.com/s/files/1/0587/7350/4182/files/wall_mount.jpg?v=1675335570"
+                    src="https://cdn.shopify.com/s/files/1/0587/7350/4182/files/wall_mount.jpg?v=1675335570"
+                  >
+                </div>
+                <div class="neon-name medium">EASY TO MOUNT</div>
+                <div class="paragraph">
+                  Every sign comes with a basic mounting kit. Wall-mount your sign in a few simple steps. Drill the
+                  holes, as per the pre-drilled holes on the sign. Place your sign against the wall based on the
+                  positioning of the holes and fix it using the provided spacers/standoffs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Repeat the above block for each of the 6 static items with different content -->
+        <!-- Static Item 2 -->
+        <li class="item grid__item" style="width: 100%; max-width: 100%;">
+          <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1">
+            <div class="col-xs-12 col-sm-6" style="width: 100%; display: inline-block;">
+              <div class="slickitem">
+                <div class="category-img">
+                  <div style="width: 100%; background-color: gray;"></div>
+                  <img
+                    class="lazyloaded"
+                    data-src="https://cdn.shopify.com/s/files/1/0587/7350/4182/files/wall_mount.jpg?v=1675335570"
+                    src="https://cdn.shopify.com/s/files/1/0587/7350/4182/files/wall_mount.jpg?v=1675335570"
+                  >
+                </div>
+                <div class="neon-name medium">EASY TO MOUNT</div>
+                <div class="paragraph">
+                  Every sign comes with a basic mounting kit. Wall-mount your sign in a few simple steps. Drill the
+                  holes, as per the pre-drilled holes on the sign. Place your sign against the wall based on the
+                  positioning of the holes and fix it using the provided spacers/standoffs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Add more items as needed up to item 6 -->
+      </ul>
+    </div>
+  </slider-component>
+</section>
+
+<script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      center: true,
+      items:2,
+      loop:false,
+      margin:40,
+      responsive:{
+          600:{
+              items:4
+          }
+      }
+      {% comment %} loop: true,
+      margin: 10,
+      nav: true,
+      autoHeight: true,
+      responsive: {
+        0: {
+          items: 1.2,
+        },
+        600: {},
+        1000: {},
+      }, {% endcomment %}
+    });
+
+    const collectionButtons = document.querySelectorAll('.collection-button');
+
+    $('.collection-button').on('click', function () {
+      collectionButtons.forEach((btn) => {
+        btn.classList.remove('active-content');
+      });
+      this.classList.add('active-content');
+
+      var collectionId = $(this).data('collection-id');
+      $('.products-container').hide();
+      $('#products-container-' + collectionId).show();
+    });
+
+    $(document).ready(function () {
+      $('.collection-button:first').trigger('click');
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "presets": [
+    {
+      "name": "Collections Carousel",
+      "category": "Reference"
+    }
+  ]
+}
+{% endschema %}

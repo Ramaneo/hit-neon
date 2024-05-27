@@ -1,13 +1,21 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "upload-page",
       "settings": { "padding_top": 28, "padding_bottom": 28 }
     },
     "170608740355674f3e": {
       "type": "apps",
       "settings": { "include_margins": true }
+    },
+    "whats_in_tabs": {
+      "type": "whats-in-tabs",
+      "settings": {}
+    },
+    "faq_upload": {
+      "type": "faq",
+      "settings": {}
     }
   },
-  "order": ["main", "170608740355674f3e"]
+  "order": ["main", "170608740355674f3e", "whats_in_tabs", "faq_upload"]
 }

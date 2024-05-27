@@ -75,6 +75,20 @@
       "type": "whats-in-tabs",
       "settings": {}
     },
+    "custom_marquee_installation": {
+      "type": "custom-marquee",
+      "settings": {
+        "content": "Installation"
+      }
+    },
+    "product_installation": {
+      "type": "product-installation",
+      "settings": {}
+    },
+    "faq_product": {
+      "type": "faq",
+      "settings": {}
+    },
     "17063619172267ceec": {
       "type": "apps",
       "blocks": {
@@ -87,5 +101,13 @@
       "settings": { "include_margins": true }
     }
   },
-  "order": ["main", "whats_in_tabs", "17063619172267ceec", "related-products"]
+  "order": [
+    "main",
+    "whats_in_tabs",
+    "custom_marquee_installation",
+    "product_installation",
+    "faq_product",
+    "17063619172267ceec",
+    "related-products"
+  ]
 }
