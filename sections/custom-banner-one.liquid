@@ -1,4 +1,4 @@
-<section id="section-{{ section.id }}">
+<section id="section-{{ section.id }}" style="height: 720px; display: flex; justify-content: center">
   {% comment %}
     <custom-banner-container>
       <button-wrapper-cbc>
@@ -13,6 +13,10 @@
     </button-wrapper-cbc-mobile>
   {% endcomment %}
 
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="https://cdn.shopify.com/videos/c/o/v/b3b7a8ac76c14bbdb015668eb96267a4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   <custom-banner-container>
     <a href="/products/create-your-own-custom-neon-sign" class="neon-button2">Create Your Design</a>
     <a href="/pages/custom-designed-led-neon-sign" class="neon-button">Upload Your Design/Logo</a>
@@ -118,13 +122,23 @@
 
   @media (min-width: 641px) {
 
-      button-wrapper-cbc-mobile {
-          display: none;
-      }
+    button-wrapper-cbc-mobile {
+      display: none;
+    }
 
 
   }   {% endcomment %}
 
+  @media (min-width: 641px) {
+    .background-video {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+      height: 720px;
+    }
+  }
 
   :root {
       /*  change this for scaling  */
@@ -161,17 +175,26 @@
         .neon-button2 {
           width: 100% !important;
         }
+        .background-video {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+          height: 720px;
+        }
       }
 
 
       custom-banner-container {
-        background-color: #141516;
+        {% comment %} background-color: #141516; {% endcomment %}
           {% comment %} width: 100vw; {% endcomment %}
           display: flex;
           justify-content: center;
           flex-direction: row;
           align-items: center;
-          height: 720px;
+          {% comment %} height: 720px; {% endcomment %}
           margin-bottom: 40px;
           position: sticky;
           {% comment %} padding: 0px 50px; {% endcomment %}
@@ -179,7 +202,7 @@
         overflow: hidden;
 
   /* Background image */
-  background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244");
+  {% comment %} background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244"); {% endcomment %}
   background-size: cover;
 
   /* Blur overlay */
