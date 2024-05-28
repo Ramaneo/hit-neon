@@ -1,8 +1,8 @@
 {
   "current": {
-    "logo": "shopify://shop_images/text_effect_127_137f30ca-2bb8-42b5-a615-a9a20ce80ded.png",
+    "logo": "shopify:\/\/shop_images\/text_effect_127_137f30ca-2bb8-42b5-a615-a9a20ce80ded.png",
     "logo_width": 120,
-    "favicon": "shopify://shop_images/Asset_8.svg",
+    "favicon": "shopify:\/\/shop_images\/Asset_8.svg",
     "type_header_font": "montserrat_n4",
     "heading_scale": 100,
     "type_body_font": "montserrat_n4",
@@ -99,7 +99,7 @@
     "sale_badge_color_scheme": "inverse",
     "sold_out_badge_color_scheme": "background-1",
     "brand_headline": "HitNeon Neon Signs",
-    "brand_description": "<p>Custom Neon Signs</p><p>Farko Tech Inc</p><p>98 Cuttermill Road Suite #466S</p><p>Great Neck, NY 11021</p><p><strong>PHONE: </strong><a href=\"tel:0018339464422\" title=\"tel:0018339464422\">+1 (833) 946 44 22</a></p><p><strong>EMAIL:</strong> hello@hitneon.com</p>",
+    "brand_description": "<p>Custom Neon Signs<\/p><p>Farko Tech Inc<\/p><p>98 Cuttermill Road Suite #466S<\/p><p>Great Neck, NY 11021<\/p><p><strong>PHONE: <\/strong><a href=\"tel:0018339464422\" title=\"tel:0018339464422\">+1 (833) 946 44 22<\/a><\/p><p><strong>EMAIL:<\/strong> hello@hitneon.com<\/p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -129,7 +129,7 @@
               "name": "montserrat-regular",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Regular.ttf?v=1710922370",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Regular.ttf?v=1710922370",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -147,7 +147,7 @@
               "name": "montserrat-light",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Light.otf?v=1710922482",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Light.otf?v=1710922482",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -165,7 +165,7 @@
               "name": "montserrat-medium",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Medium.otf?v=1710922569",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Medium.otf?v=1710922569",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -183,7 +183,7 @@
               "name": "montserrat-bold",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Bold.ttf?v=1710922812",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Bold.ttf?v=1710922812",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -226,17 +226,21 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "319724205969189013": {
-        "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     },
     "color_schemes": {
@@ -292,6 +296,17 @@
           "button": "#1f1f21",
           "button_label": "#00fced",
           "secondary_button_label": "#1f1f21",
+          "shadow": "#ffffff"
+        }
+      },
+      "scheme-d0ae5861-4a00-46fa-8278-5d475304c1d8": {
+        "settings": {
+          "background": "#219ebc",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#ffcb47",
+          "button_label": "#1f1f21",
+          "secondary_button_label": "#ffcb47",
           "shadow": "#ffffff"
         }
       }
@@ -453,7 +468,7 @@
       "sale_badge_color_scheme": "inverse",
       "sold_out_badge_color_scheme": "background-1",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
