@@ -145,219 +145,28 @@
         "padding_bottom": 40
       }
     },
-    "multicolumn_kzG6XD": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_fEWHfE": {
-          "type": "column",
-          "settings": {
-            "title": "Custom Made",
-            "text": "<p>Each order is inspected by our designers and tailored based on your needs</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_itjfPF": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Premium Quality</strong>",
-            "text": "<p>Made from top grade acrylic plastic and premium quality silicone covered IP65-2 led lights</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_VFQBCW": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Value For Money</strong>",
-            "text": "<p>Being a direct from the manufacturer brand and cutting all middlemen, retail markups are avoided.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_8FLgD6": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Seamless Installation</strong>",
-            "text": "<p>Signs come with pre-drilled holes, mounting accessories and local adapter. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_fEWHfE",
-        "column_itjfPF",
-        "column_VFQBCW",
-        "column_8FLgD6"
-      ],
-      "settings": {
-        "title": "Why Choose Us?",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+    "why_choose_us": {
+      "type": "why-choose-us",
+      "settings": {}
     },
-    "multicolumn_iGfCt3": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_tND3Yq": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/1.png",
-            "title": "Jessia",
-            "text": "<p>My sign was more than I expected. I was not even expecting a remote! It looks amazing, has different light settings and modes! I have already recommended to friends!</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_zG87tW": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2.png",
-            "title": "Karen",
-            "text": "<p>This sign is so amazing. It’s<br/>better than I could have imagined it. And I received it in time for Christmas<br/>for my grandson. He loved it!</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3LAahf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/3.png",
-            "title": "Fred",
-            "text": "<p>Super easy process to design sign<br/>and SEE the product before buying. Seller was a pleasure to work with and<br/>delivers on promises! Comes perfectly packaged in a sturdy box, ready to use<br/>upon unboxing.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_CzXkNf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/4.png",
-            "title": "Tom",
-            "text": "<p>Great work, and a great seller to<br/>deal with. Very satisfied with my purchase.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_tND3Yq",
-        "column_zG87tW",
-        "column_3LAahf",
-        "column_CzXkNf"
-      ],
-      "settings": {
-        "title": "Reviews",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_brcDCp": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_EHNrii": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "General",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_FgnVBY": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Product Options",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_gUBHH3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Shipping and Returns",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_weVthq": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Installation",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_YQ4tWQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Technical Specs",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_EHNrii",
-        "collapsible_row_FgnVBY",
-        "collapsible_row_gUBHH3",
-        "collapsible_row_weVthq",
-        "collapsible_row_YQ4tWQ"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "FAQ",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "170636199475d863b7": {
+    "17119705317e18ca9a": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_bK9B4E": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+        "judge_me_reviews_featured_carousel_9ih3Pk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
         }
       },
-      "block_order": ["judge_me_reviews_review_widget_bK9B4E"],
+      "block_order": ["judge_me_reviews_featured_carousel_9ih3Pk"],
       "settings": {
         "include_margins": true
       }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
     }
   },
   "order": [
@@ -366,9 +175,8 @@
     "170497290749eb8e9d",
     "whats_in_tabs",
     "related-products",
-    "multicolumn_kzG6XD",
-    "multicolumn_iGfCt3",
-    "collapsible_content_brcDCp",
-    "170636199475d863b7"
+    "why_choose_us",
+    "17119705317e18ca9a",
+    "faq"
   ]
 }

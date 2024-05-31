@@ -12,18 +12,15 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "product-rating": {
           "type": "rating",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -33,8 +30,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -45,8 +41,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -95,8 +90,7 @@
     },
     "whats_in_tabs": {
       "type": "whats-in-tabs",
-      "settings": {
-      }
+      "settings": {}
     },
     "custom_marquee_installation": {
       "type": "custom-marquee",
@@ -106,26 +100,27 @@
     },
     "product_installation": {
       "type": "product-installation",
-      "settings": {
-      }
+      "settings": {}
     },
     "faq_product": {
       "type": "faq",
-      "settings": {
-      }
+      "settings": {}
     },
-    "17063619172267ceec": {
+    "why_choose_us": {
+      "type": "why-choose-us",
+      "settings": {}
+    },
+    "17119705317e18ca9a": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_r3nTjp": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "judge_me_reviews_featured_carousel_9ih3Pk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
+            "maxwidth": 1080
           }
         }
       },
-      "block_order": [
-        "judge_me_reviews_review_widget_r3nTjp"
-      ],
+      "block_order": ["judge_me_reviews_featured_carousel_9ih3Pk"],
       "settings": {
         "include_margins": true
       }
@@ -136,8 +131,9 @@
     "whats_in_tabs",
     "custom_marquee_installation",
     "product_installation",
-    "faq_product",
-    "17063619172267ceec",
-    "related-products"
+    "why_choose_us",
+    "related-products",
+    "17119705317e18ca9a",
+    "faq_product"
   ]
 }
