@@ -22,6 +22,21 @@
     <a href="/pages/custom-designed-led-neon-sign" class="neon-button">Upload Your Design/Logo</a>
   </custom-banner-container>
 </section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var video = document.querySelector('.background-video');
+    if (video) {
+      var playVideo = function () {
+        video.play().catch(function (error) {
+          console.log('Autoplay was prevented.');
+        });
+      };
+      window.addEventListener('scroll', playVideo, { once: true });
+      window.addEventListener('touchstart', playVideo, { once: true });
+      window.addEventListener('click', playVideo, { once: true });
+    }
+  });
+</script>
 
 <style>
   {% comment %} custom-banner-container {
