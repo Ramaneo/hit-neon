@@ -2,7 +2,8 @@
   "sections": {
     "custom-banner-one": {
       "type": "custom-banner-one",
-      "settings": {}
+      "settings": {
+      }
     },
     "multicolumn_hgL4KE": {
       "type": "multicolumn",
@@ -10,7 +11,7 @@
         "column_9za3HP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/green-sofa-white-living-room-with-free-space_1.png",
+            "image": "shopify:\/\/shop_images\/green-sofa-white-living-room-with-free-space_1.png",
             "title": "Easy Customization: Design Your Neon Sign!",
             "text": "",
             "link_label": "Create and Checkout",
@@ -20,7 +21,7 @@
         "column_UVEwKJ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Asset_1_4x-100_1.png",
+            "image": "shopify:\/\/shop_images\/Asset_1_4x-100_1.png",
             "title": "Bring Your Vision to Life: Custom Neon Design!",
             "text": "",
             "link_label": "Get a Free Quote",
@@ -30,8 +31,8 @@
         "column_KpUeVh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/open-hours_1.png",
-            "title": "Design Your Illuminated Sign: Upload Image/Logo.",
+            "image": "shopify:\/\/shop_images\/open-hours_1.png",
+            "title": "Design Your Illuminated Sign: Upload Image\/Logo.",
             "text": "",
             "link_label": "Get Started",
             "link": ""
@@ -40,10 +41,10 @@
         "column_DVYq4J": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Make-Thing-Happen_1.png",
+            "image": "shopify:\/\/shop_images\/Make-Thing-Happen_1.png",
             "title": "Customize Multilayered 3D Acrylic Signs!",
             "text": "",
-            "link_label": "Send Logo/Artwork",
+            "link_label": "Send Logo\/Artwork",
             "link": ""
           }
         }
@@ -55,7 +56,7 @@
         "column_DVYq4J"
       ],
       "settings": {
-        "title": "<strong>Let's Create</strong>",
+        "title": "<strong>Let's Create<\/strong>",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "portrait",
@@ -67,18 +68,19 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 24,
+        "padding_top": 84,
         "padding_bottom": 0
       }
     },
     "neon_marquee_BcDkck": {
       "type": "neon-marquee",
-      "settings": {}
+      "settings": {
+      }
     },
-
     "collection_products_carousel_TCRbyM": {
       "type": "collection-products-carousel",
-      "settings": {}
+      "settings": {
+      }
     },
     "custom_marquee_why_choose_us": {
       "type": "custom-marquee",
@@ -88,7 +90,8 @@
     },
     "why_choose_us_KBzaJ3": {
       "type": "why-choose-us",
-      "settings": {}
+      "settings": {
+      }
     },
     "custom_marquee_satisfied_customers": {
       "type": "custom-marquee",
@@ -100,24 +103,28 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_9ih3Pk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
         }
       },
-      "block_order": ["judge_me_reviews_featured_carousel_9ih3Pk"],
+      "block_order": [
+        "judge_me_reviews_featured_carousel_9ih3Pk"
+      ],
       "settings": {
         "include_margins": true
       }
     },
     "faq_iUizgD": {
       "type": "faq",
-      "settings": {}
+      "settings": {
+      }
     },
     "about_hit_neon_4FNBDE": {
       "type": "about-hit-neon",
-      "settings": {}
+      "settings": {
+      }
     },
     "newsletter_kgiXCR": {
       "type": "newsletter",
@@ -132,12 +139,13 @@
         "paragraph_cVNLDe": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first one to hear about our new arrivals and special offers.</p>"
+            "text": "<p>Be the first one to hear about our new arrivals and special offers.<\/p>"
           }
         },
         "email_form_pfrcKg": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
