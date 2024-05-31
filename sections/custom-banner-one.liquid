@@ -214,22 +214,6 @@
   {% comment %} background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244"); {% endcomment %}
   background-size: cover;
 
-  /* Blur overlay */
-  &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 150%;
-      height: 150%;
-      background-image: inherit;
-      background-size: cover;
-      filter: blur(50px) grayscale(1);
-      z-index: -1;
-      left: -90px;
-      top: -90px
-
-  }
         }
 
     .neon-button {
