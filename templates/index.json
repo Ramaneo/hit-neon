@@ -44,6 +44,9 @@
         "column_UVEwKJ",
         "column_KpUeVh"
       ],
+      "custom_css": [
+        ".multicolumn-list {justify-content: center;}"
+      ],
       "settings": {
         "title": "<strong>Let's Create<\/strong>",
         "heading_size": "h2",
