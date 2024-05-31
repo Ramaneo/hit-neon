@@ -12,48 +12,40 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/green-sofa-white-living-room-with-free-space_1.png",
-            "title": "Easy Customization: Design Your Neon Sign!",
+            "title": "Create Your Neon Sign: Effortless Customization!",
             "text": "",
             "link_label": "Create and Checkout",
-            "link": ""
+            "link": "\/products\/create-your-own-custom-neon-sign"
           }
         },
         "column_UVEwKJ": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Asset_1_4x-100_1.png",
-            "title": "Bring Your Vision to Life: Custom Neon Design!",
+            "title": "Turn Your Vision into Reality: Upload Your Design!",
             "text": "",
             "link_label": "Get a Free Quote",
-            "link": ""
+            "link": "\/pages\/custom-designed-led-neon-sign"
           }
         },
         "column_KpUeVh": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/open-hours_1.png",
-            "title": "Design Your Illuminated Sign: Upload Image\/Logo.",
+            "title": "Explore Stunning Creations: We've Got You Covered",
             "text": "",
             "link_label": "Get Started",
-            "link": ""
-          }
-        },
-        "column_DVYq4J": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Make-Thing-Happen_1.png",
-            "title": "Customize Multilayered 3D Acrylic Signs!",
-            "text": "",
-            "link_label": "Send Logo\/Artwork",
-            "link": ""
+            "link": "\/collections\/gift-neon-signs"
           }
         }
       },
       "block_order": [
         "column_9za3HP",
         "column_UVEwKJ",
-        "column_KpUeVh",
-        "column_DVYq4J"
+        "column_KpUeVh"
+      ],
+      "custom_css": [
+        ".multicolumn-list {justify-content: center;}"
       ],
       "settings": {
         "title": "<strong>Let's Create<\/strong>",
