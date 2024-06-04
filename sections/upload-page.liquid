@@ -14,17 +14,27 @@
 
     .upload-design-container {
       display: flex;
+      justify-content: center;
     }
   }
 {%- endstyle -%}
 
 <div class="page-width  section-{{ section.id }}-padding">
   <div class="upload-design-container">
-    <div style="flex: 1; background-color: #FFCB47; border-radius: 25px; margin: 30px; height: 700px">
-      <span></span>
+    {% comment %}
+      <div style="flex: 1; background-color: #FFCB47; border-radius: 25px; margin: 30px; height: 700px">
+        <span></span>
+      </div>
+    {% endcomment %}
+    <div style=" margin: 30px; height: 720px;">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hitneon-Info-sign.jpg?v=1717523465"
+        height="100%"
+        style="border-radius: 25px;"
+      >
     </div>
     <div
-      style="flex: 1;"
+      style="flex: 0.5;"
       class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     >
       {{ page.content }}
