@@ -30,7 +30,7 @@
           "type": "text",
           "settings": {
             "heading": "<strong>Support<\/strong>",
-            "subtext": "<p><strong>For Order Related<\/strong><\/p><p>📞 (347) 297-0667<\/p><p>✉️ hello@hitneon.com<\/p><p><strong> For General Queries<\/strong><\/p><p>📞 (347) 297-0667<\/p><p>✉️ hello@hitneon.com<\/p>"
+            "subtext": "<p><strong>Phone: <\/strong><a href=\"tel:0013472970667\" title=\"tel:0013472970667\">+1 (347) 297-0667<\/a><\/p><p><strong>Email:<\/strong> <a href=\"mailto:hello@hitneon.com\" title=\"mailto:hello@hitneon.com\">hello@hitneon.com<\/a><\/p>"
           }
         }
       },
