@@ -1,156 +1,138 @@
 <style>
-    .tabs {
-      margin: 0;
-      list-style: none;
-      display: flex;
-      margin: auto;
-      padding: 0px;
+  .tabs {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tabs li {
+    padding: 0;
+    text-align: center;
+  }
+
+  .tabs a {
+    display: block;
+    text-decoration: none;
+    color: #6d6d6d;
+    padding: 18px 26px;
+    border-radius: 20px;
+    line-height: 3.13px;
+    width: max-content;
+  }
+
+  .collection-button {
+    cursor: pointer !important;
+  }
+
+  .tabs a.active-content {
+    background-color: #8ecae6;
+    color: #fff;
+  }
+
+  .products-container {
+    display: none;
+  }
+
+  .owl-carousel .owl-dots.disabled,
+  .owl-carousel .owl-nav.disabled {
+    display: flex;
+  }
+
+  a.full-unstyled-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .products-container .owl-nav button.owl-prev {
+    color: #8ecae6;
+    border-radius: 50%;
+    border: 1px solid #8ecae6;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 40px;
+    line-height: normal;
+    display: flex;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 6px !important;
+    position: absolute;
+    top: 33%;
+    left: -5%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .products-container .owl-nav button.owl-next {
+    color: #8ecae6;
+    border-radius: 50%;
+    border: 1px solid #8ecae6;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 40px;
+    line-height: normal;
+    display: flex;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 6px !important;
+    position: absolute;
+    top: 33%;
+    right: -5%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card .media.media--hover-effect > img:only-child,
+  .card-wrapper .media.media--hover-effect > img:only-child {
+    border-radius: 15px;
+  }
+
+  @media (max-width: 767px) {
+    ul.tabs {
+      overflow-x: scroll;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
 
-    .tabs li {
-      padding: 0;
-      text-align: center;
-      {% comment %} margin-bottom: 20px; {% endcomment %}
+    ul.tabs::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, and Opera */
     }
 
-    .tabs a {
-      {% comment %} text-decoration: none;
-      color: #6d6d6d;
-      padding: 18px 26px;
-      border-radius: 35px;
-      line-height: 3.13px;
-      width: max-content;
-      font-size: 14px; {% endcomment %}
-      display: block;
-      text-decoration: none;
-      color: #6d6d6d;
-      padding: 18px 26px;
-      border-radius: 20px;
-      line-height: 3.13px;
-      width: max-content;
-    }
-
-    .collection-button {
-      cursor: pointer !important;
-    }
-
-    .tabs a.active-content {
-      background-color: #8ecae6;
-      color: #fff;
-    }
-
-    .products-container {
+    .products-container .owl-nav {
       display: none;
     }
 
-    .owl-carousel .owl-dots.disabled,
-    .owl-carousel .owl-nav.disabled {
-      display: flex;
-    }
-
-    a.full-unstyled-link {
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: left;
-      color: #333;
-      font-weight: 600;
-    }
-    @media (min-width: 767px) {
-    .products-container .owl-nav button.owl-prev {
-      color: #8ecae6;
-      border-radius: 50%;
-      border: 1px solid #8ecae6;
-      height: 40px;
-      margin: 0 5px;
-      font-size: 40px;
-      line-height: normal;
-      display: flex;
-      width: 40px;
-      align-items: center;
-      justify-content: center;
-      align-content: center;
-      padding-bottom: 6px !important;
-      left: -5%;
-    }
+    .products-container .owl-nav button.owl-prev,
     .products-container .owl-nav button.owl-next {
-      color: #8ecae6;
-      border-radius: 50%;
-      border: 1px solid #8ecae6;
-      height: 40px;
-      margin: 0 5px;
-      font-size: 40px;
-      line-height: normal;
-      display: flex;
-      width: 40px;
-      align-items: center;
-      justify-content: center;
-      align-content: center;
-      padding-bottom: 6px !important;
-      right: -5%;
-    }
-    .products-container .owl-nav button {
-      position: absolute;
-      top: 33%;
-      background-color: #000;
-      color: #fff;
-      margin: 0;
-      transition: all 0.3s ease-in-out;
-    }
-  }
-
-    .card .media.media--hover-effect > img:only-child,
-    .card-wrapper .media.media--hover-effect > img:only-child {
-      border-radius: 15px;
-    }
-    @media (max-width: 767px) {
-      ul.tabs {
-        display: flex;
-        overflow-y: scroll;
-        align-items: center;
-        align-content: center;
-      }
-      ul.tabs {
-        display: flex;
-        {% comment %} overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: none;
-        scrollbar-width: none; {% endcomment %}
-        flex-flow: wrap;
-      }
-
-      ul.tabs::-webkit-scrollbar {
-        display: none;
-      }
-      .products-container .owl-nav {
-        display: none;
-        justify-content: center;
-      }
-      .products-container .owl-nav button.owl-prev {
-        color: rgba(var(--color-foreground), 0.75);
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .products-container .owl-nav button.owl-next{
-      color: rgba(var(--color-foreground), 0.75);
-      background: transparent;
-      border: none;
-      cursor: pointer;
       width: 44px;
       height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
-      }
+      background: transparent;
+      border: none;
+      color: rgba(var(--color-foreground), 0.75);
+      cursor: pointer;
     }
+  }
 </style>
 
 <section style="margin-top: 100px; max-width: 120rem; padding: 0 10px; margin-left: auto; margin-right: auto;">
@@ -196,7 +178,7 @@
                             "
                             src="{{ product.featured_media | image_url: width: 533 }}"
                             sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                            alt="Always And Forever Neon Sign | CNUS000167 - Red"
+                            alt="{{ product.title }}"
                             class="motion-reduce"
                             loading="lazy"
                             width="1080"
@@ -204,20 +186,6 @@
                           >
                         </div>
                       </div>
-                      {% comment %}
-                        <div class="card__content">
-                          <div class="card__information">
-                            <h3 class="card__heading">
-                              <a href="{{ product.url }}" class="full-unstyled-link">{{ product.title }}</a>
-                            </h3>
-                          </div>
-                          <div class="card__badge bottom left">
-                            {% if product.compare_at_price %}
-                              <span class="badge badge--bottom-left color-accent-2">Sale</span>
-                            {% endif %}
-                          </div>
-                        </div>
-                      {% endcomment %}
                     </div>
                     <div class="card__content">
                       <div class="card__information">
@@ -229,13 +197,6 @@
                           {% render 'price', product: product, show_compare_at_price: true %}
                         </div>
                       </div>
-                      {% comment %}
-                        <div class="card__badge bottom left">
-                          {% if product.compare_at_price %}
-                            <span class="badge badge--bottom-left color-accent-2">Sale</span>
-                          {% endif %}
-                        </div>
-                      {% endcomment %}
                     </div>
                   </div>
                 </div>
@@ -296,3 +257,296 @@
   ]
 }
 {% endschema %}
+
+{% comment %}
+  WITH ARROWS FOR THE COLLECTION TABS:
+
+
+  <style>
+      .tabs-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .tabs {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        margin: auto;
+        padding: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tabs li {
+        padding: 0;
+        text-align: center;
+      }
+
+      .tabs a {
+        display: block;
+        text-decoration: none;
+        color: #6d6d6d;
+        padding: 18px 26px;
+        border-radius: 20px;
+        line-height: 3.13px;
+        width: max-content;
+      }
+
+      .collection-button {
+        cursor: pointer !important;
+      }
+
+      .tabs a.active-content {
+        background-color: #8ecae6;
+        color: #fff;
+      }
+
+      .products-container {
+        display: none;
+      }
+
+      .owl-carousel .owl-dots.disabled,
+      .owl-carousel .owl-nav.disabled {
+        display: flex;
+      }
+
+      a.full-unstyled-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333;
+        font-weight: 600;
+      }
+
+      .arrow-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      .arrow-button.left {
+        left: 0;
+      }
+
+      .arrow-button.right {
+        right: 0;
+      }
+
+      .arrow-button svg {
+        width: 24px;
+        height: 24px;
+        fill: #6d6d6d;
+      }
+
+      .arrow-button:disabled svg {
+        fill: #ccc;
+      }
+
+      .products-container .owl-nav button.owl-prev,
+      .products-container .owl-nav button.owl-next {
+        color: #8ecae6;
+        border-radius: 50%;
+        border: 1px solid #8ecae6;
+        height: 40px;
+        margin: 0 5px;
+        font-size: 40px;
+        line-height: normal;
+        display: flex;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 6px !important;
+        position: absolute;
+        top: 33%;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card .media.media--hover-effect > img:only-child,
+      .card-wrapper .media.media--hover-effect > img:only-child {
+        border-radius: 15px;
+      }
+
+      @media (max-width: 767px) {
+        .products-container .owl-nav {
+          display: none;
+        }
+
+        .products-container .owl-nav button.owl-prev,
+        .products-container .owl-nav button.owl-next {
+          width: 44px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+          border: none;
+          color: rgba(var(--color-foreground), 0.75);
+          cursor: pointer;
+        }
+      }
+  </style>
+
+  <section style="margin-top: 100px; max-width: 120rem; padding: 0 10px; margin-left: auto; margin-right: auto;">
+    <div
+      class="collapsible-content__header scroll-trigger animate--slide-in"
+      style="margin-bottom: 25px; text-align: center;"
+    >
+      <h2
+        class="collapsible-content__heading inline-richtext h1"
+        style="font-size: calc(var(--font-heading-scale)* 2.4rem) !important;"
+      >
+        Collections
+      </h2>
+    </div>
+    <div class="tabs-wrapper">
+      <button class="arrow-button left" id="left-arrow" aria-label="Scroll left">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+      <ul class="tabs">
+        {% for collection in collections %}
+          <li>
+            <a class="collection-button" data-collection-id="{{ collection.handle }}">{{ collection.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <button class="arrow-button right" id="right-arrow" aria-label="Scroll right">
+        <svg viewBox="0 0 24 24">
+          <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+        </svg>
+      </button>
+    </div>
+    {% for collection in collections %}
+      <slider-component class="slider-mobile-gutter">
+        <div class="products-container" id="products-container-{{ collection.handle }}">
+          <ul class="grid product-grid contains-card owl-carousel contains-card--product contains-card--standard grid---col-desktop grid--1-col-tablet-down owl-loaded owl-drag">
+            {% for product in collection.products %}
+              <li class="item grid__item" style="width: 100%; max-width: 100%;">
+                <a href="{{ product.url }}">
+                  <div class="card-wrapper product-card-wrapper underline-links-hover">
+                    <div class="card card--standard card--media" style="--ratio-percent: 100%;">
+                      <div class="card__inner ratio" style="--ratio-percent: 100%;">
+                        <div class="card__media">
+                          <div class="media media--transparent media--hover-effect" style="display: contents">
+                            <img
+                              srcset="
+                                {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                                {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
+                                {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
+                                {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
+                                {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
+                                {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
+                                {{ product.featured_media | image_url }} {{ product.featured_media.width }}w
+                              "
+                              src="{{ product.featured_media | image_url: width: 533 }}"
+                              sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                              alt="{{ product.title }}"
+                              class="motion-reduce"
+                              loading="lazy"
+                              width="1080"
+                              height="1080"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__content">
+                        <div class="card__information">
+                          <h3 class="card__heading h5">
+                            <a href="{{ product.url }}" class="full-unstyled-link">{{ product.title }}</a>
+                          </h3>
+                          <div class="card-information">
+                            <span class="caption-large light"></span>
+                            {% render 'price', product: product, show_compare_at_price: true %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </slider-component>
+    {% endfor %}
+  </section>
+
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoHeight: true,
+        responsive: {
+          0: {
+            items: 1.2,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+
+      const collectionButtons = document.querySelectorAll('.collection-button');
+
+      $('.collection-button').on('click', function () {
+        collectionButtons.forEach((btn) => {
+          btn.classList.remove('active-content');
+        });
+        this.classList.add('active-content');
+
+        var collectionId = $(this).data('collection-id');
+        $('.products-container').hide();
+        $('#products-container-' + collectionId).show();
+      });
+
+      $('.collection-button:first').trigger('click');
+
+      const tabs = document.querySelector('.tabs');
+      const leftArrow = document.getElementById('left-arrow');
+      const rightArrow = document.getElementById('right-arrow');
+
+      leftArrow.addEventListener('click', () => {
+        tabs.scrollBy({ left: -200, behavior: 'smooth' });
+      });
+
+      rightArrow.addEventListener('click', () => {
+        tabs.scrollBy({ left: 200, behavior: 'smooth' });
+      });
+    });
+  </script>
+
+  {% schema %}
+  {
+    "presets": [
+      {
+        "name": "Collections Carousel",
+        "category": "Reference"
+      }
+    ]
+  }
+  {% endschema %}
+{% endcomment %}
