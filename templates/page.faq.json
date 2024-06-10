@@ -11,7 +11,7 @@
       "type": "faq",
       "custom_css": [
         ".faq-section {background-color: transparent !important; margin-bottom: 50px;}",
-        ".caption-with-letter-spacing {font-weight: bold;}",
+        ".caption-with-letter-spacing {font-weight: bold; font-size: 17px;}",
         ".collapsible-content__heading {display: none;}"
       ],
       "settings": {
