@@ -10,7 +10,7 @@
     "faq": {
       "type": "faq",
       "custom_css": [
-        ".faq-section {background-color: transparent !important;}"
+        ".faq-section {background-color: transparent !important; margin-bottom: 50px;}"
       ],
       "settings": {
       }
