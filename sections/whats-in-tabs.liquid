@@ -44,6 +44,9 @@
   .tab-content.is-active {
     display: block;
   }
+  .hidden {
+    display: none;
+  }
 </style>
 
 <section>
@@ -52,11 +55,16 @@
       <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-content" id="tab1">
         Your Package Includes
       </button>
-      {% if settings.hide_product_description != true %}
-        <button class="tab" role="tab" aria-selected="false" aria-controls="tab2-content" id="tab2" tabindex="-1">
-          Product Description
-        </button>
-      {% endif %}
+      <button
+        class="tab {% if section.settings.hide_product_description %}hidden{% endif %}"
+        role="tab"
+        aria-selected="false"
+        aria-controls="tab2-content"
+        id="tab2"
+        tabindex="-1"
+      >
+        Product Description
+      </button>
       <button class="tab" role="tab" aria-selected="false" aria-controls="tab3-content" id="tab3" tabindex="-1">
         Warranty
       </button>
@@ -74,47 +82,45 @@
       </div>
     </div>
 
-    {% unless settings.hide_product_description %}
-      <div id="tab2-content" class="tab-content">
-        {% comment %} product description {% endcomment %}
+    <div id="tab2-content" class="tab-content {% if section.settings.hide_product_description %}hidden{% endif %}">
+      {% comment %} product description {% endcomment %}
+      <p>
+        <b>Light up your life with custom LED neon signs!</b>
         <p>
-          <b>Light up your life with custom LED neon signs!</b>
-          <p>
-            These signs are all the rage for a reason. They use super efficient LED lights to create vibrant, bright and
-            colorful displays that grab everyone's attention. Plus, you can get them custom made in any size, shape, or
-            color to perfectly match your style.
-          </p>
-          <p>
-            Here's why custom LED neon signs are awesome:
-            <ul>
-              <li>
-                <b>Save money and the planet:</b> Hit Neon signs are energy-efficient and use way less energy than
-                traditional lights, which keeps your wallet happy and helps the environment.
-              </li>
-              <li>
-                <b>Built to last:</b> No need to worry about these breaking easily. They're super durable and require
-                minimal maintenance.
-              </li>
-              <li>
-                <b>Make it yours:</b> This is where it gets fun! You can design your sign exactly how you want it, from
-                the shape and size to the colors and message. The possibilities are endless on customized Hit Neon neon
-                signs!
-              </li>
-              <li>
-                <b>Fits anywhere:</b> Stick them on walls, windows, or use them freestanding. No matter where you put
-                them, they'll add a pop of personality to any space!
-              </li>
-              <li>
-                <b>Safety first:</b> Unlike old-school neon signs, these guys don't have any toxic gasses and are way
-                less likely to cause fires. Peace of mind for everyone!
-              </li>
-            </ul>
-          </p>
-          So, whether you're decorating your home, promoting your business, or throwing a party, custom LED neon signs
-          are a unique and eye-catching way to add some serious style and energy to any space.
+          These signs are all the rage for a reason. They use super efficient LED lights to create vibrant, bright and
+          colorful displays that grab everyone's attention. Plus, you can get them custom made in any size, shape, or
+          color to perfectly match your style.
         </p>
-      </div>
-    {% endunless %}
+        <p>
+          Here's why custom LED neon signs are awesome:
+          <ul>
+            <li>
+              <b>Save money and the planet:</b> Hit Neon signs are energy-efficient and use way less energy than
+              traditional lights, which keeps your wallet happy and helps the environment.
+            </li>
+            <li>
+              <b>Built to last:</b> No need to worry about these breaking easily. They're super durable and require
+              minimal maintenance.
+            </li>
+            <li>
+              <b>Make it yours:</b> This is where it gets fun! You can design your sign exactly how you want it, from
+              the shape and size to the colors and message. The possibilities are endless on customized Hit Neon neon
+              signs!
+            </li>
+            <li>
+              <b>Fits anywhere:</b> Stick them on walls, windows, or use them freestanding. No matter where you put
+              them, they'll add a pop of personality to any space!
+            </li>
+            <li>
+              <b>Safety first:</b> Unlike old-school neon signs, these guys don't have any toxic gasses and are way less
+              likely to cause fires. Peace of mind for everyone!
+            </li>
+          </ul>
+        </p>
+        So, whether you're decorating your home, promoting your business, or throwing a party, custom LED neon signs are
+        a unique and eye-catching way to add some serious style and energy to any space.
+      </p>
+    </div>
     <div id="tab3-content" class="tab-content">
       {% comment %} warranty {% endcomment %}
       <p>
@@ -339,6 +345,11 @@
   document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.ootb-tabcordion--tabs .tab');
     const tabContents = document.querySelectorAll('.tab-content');
+
+    var hideProductDescription = {{ settings.hide_product_description | json }};
+
+    // Log the value to the console
+    console.log('hide_product_description:', hideProductDescription);
 
     tabs.forEach((tab) => {
       tab.addEventListener('click', function () {
