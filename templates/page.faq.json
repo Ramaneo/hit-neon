@@ -9,6 +9,9 @@
     },
     "faq": {
       "type": "faq",
+      "custom_css": [
+        ".faq-section {background-color: transparent !important;}"
+      ],
       "settings": {
       }
     }
