@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "about_hit_neon": {
+      "type": "about-hit-neon",
+      "settings": {}
+    }
+  },
+  "order": ["main", "about_hit_neon"]
+}
