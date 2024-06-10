@@ -12,7 +12,7 @@
       "custom_css": [
         ".faq-section {background-color: transparent !important; margin-bottom: 50px;}",
         ".caption-with-letter-spacing {font-weight: bold;}",
-        ".collapsible-content__heading{display: hidden;}"
+        ".collapsible-content__heading {display: none;}"
       ],
       "settings": {
       }
