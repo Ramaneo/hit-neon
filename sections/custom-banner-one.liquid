@@ -156,6 +156,50 @@
     .section-banner-one {
       height: 640px; display: flex; justify-content: center;
     }
+    .neon-button::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--orange),
+        var(--yellow),
+        var(--green),
+        var(--blue),
+        var(--purple),
+        var(--pink),
+        var(--red)
+      );
+      height: 30%;
+      width: 60%;
+      position: absolute;
+      bottom: -20%;
+      z-index: -1;
+      background-size: 200%;
+      animation: animate 2s infinite linear;
+      filter: blur(calc(0.8 * var(--m)));
+
+    }
+    .neon-button2::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--orange),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--orange)
+      );
+      height: 30%;
+      width: 60%;
+      position: absolute;
+      bottom: -20%;
+      z-index: -1;
+      background-size: 200%;
+      animation: animate 2s infinite linear;
+      filter: blur(calc(0.8 * var(--m)));
+
+    }
   }
 
 
@@ -188,6 +232,7 @@
           flex-direction: column !important;
           padding: 20px;
           width: 100% !important;
+
         }
         .neon-button {
           width: 100% !important;
@@ -228,7 +273,6 @@
   /* Background image */
   {% comment %} background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244"); {% endcomment %}
   background-size: cover;
-
         }
 
     .neon-button {
@@ -300,50 +344,7 @@
       animation: animate 2s infinite linear;
     }
 
-    .neon-button::before {
-      content: "";
-      background: linear-gradient(
-        90deg,
-        var(--orange),
-        var(--yellow),
-        var(--green),
-        var(--blue),
-        var(--purple),
-        var(--pink),
-        var(--red)
-      );
-      height: 30%;
-      width: 60%;
-      position: absolute;
-      bottom: -20%;
-      z-index: -1;
-      background-size: 200%;
-      animation: animate 2s infinite linear;
-      filter: blur(calc(0.8 * var(--m)));
 
-    }
-    .neon-button2::before {
-      content: "";
-      background: linear-gradient(
-        90deg,
-        var(--orange),
-        var(--yellow),
-        var(--yellowish),
-        var(--yellow),
-        var(--yellowish),
-        var(--yellow),
-        var(--orange)
-      );
-      height: 30%;
-      width: 60%;
-      position: absolute;
-      bottom: -20%;
-      z-index: -1;
-      background-size: 200%;
-      animation: animate 2s infinite linear;
-      filter: blur(calc(0.8 * var(--m)));
-
-    }
 
     .neon-button:hover,
     .neon-button:hover::before {
