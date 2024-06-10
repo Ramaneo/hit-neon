@@ -9,8 +9,12 @@
     },
     "about_hit_neon": {
       "type": "about-hit-neon",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["main", "about_hit_neon"]
+  "order": [
+    "main",
+    "about_hit_neon"
+  ]
 }
