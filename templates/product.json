@@ -12,15 +12,18 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-rating": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -30,7 +33,8 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -41,7 +45,8 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -62,7 +67,7 @@
         "media_fit": "contain",
         "gallery_layout": "thumbnail",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "none",
         "mobile_thumbnails": "hide",
         "hide_variants": false,
         "enable_video_looping": false,
@@ -78,7 +83,8 @@
     },
     "why_choose_us": {
       "type": "why-choose-us",
-      "settings": {}
+      "settings": {
+      }
     },
     "related-products": {
       "type": "related-products",
@@ -102,20 +108,23 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_9ih3Pk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
         }
       },
-      "block_order": ["judge_me_reviews_featured_carousel_9ih3Pk"],
+      "block_order": [
+        "judge_me_reviews_featured_carousel_9ih3Pk"
+      ],
       "settings": {
         "include_margins": true
       }
     },
     "faq_product": {
       "type": "faq",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
