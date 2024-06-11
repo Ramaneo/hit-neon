@@ -13,10 +13,20 @@
     </button-wrapper-cbc-mobile>
   {% endcomment %}
 
-  <video autoplay loop muted playsinline class="background-video">
-    <source src="https://cdn.shopify.com/videos/c/o/v/0e1a2ddd85844907824fedb0693d7388.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  {% comment %}
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="https://cdn.shopify.com/videos/c/o/v/0e1a2ddd85844907824fedb0693d7388.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  {% endcomment %}
+  {% comment %}
+    <img
+      src="https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240"
+      class="background-image"
+      alt="Background Image"
+    >
+  {% endcomment %}
+
   <custom-banner-container>
     <a href="/products/create-your-own-custom-neon-sign" class="neon-button2">Create Your Design</a>
     <a href="/pages/custom-designed-led-neon-sign" class="neon-button">Upload Your Design/Logo</a>
@@ -50,7 +60,8 @@
     background-repeat: no-repeat;
     margin-bottom: 40px;
 
-  }
+  } {% endcomment %}
+  {% comment %}
 
   button-wrapper-cbc,button-wrapper-cbc-mobile {
      display: flex;
@@ -154,7 +165,8 @@
       height: 640px;
     }
     .section-banner-one {
-      height: 640px; display: flex; justify-content: center;
+      {% comment %} height: 640px; {% endcomment %}
+       display: flex; justify-content: center;
     }
     .neon-button::before {
       content: "";
@@ -284,9 +296,15 @@
         gap: 20px;
         {% comment %} overflow: hidden; {% endcomment %}
 
+        width: 100vw;
+    {% comment %} height: 720px; {% endcomment %}
+
   /* Background image */
-  {% comment %} background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244"); {% endcomment %}
+  background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  padding-bottom: 50px;
         }
 
     .neon-button {
@@ -305,6 +323,8 @@
       cursor: pointer;
       {% comment %} flex: 1; {% endcomment %}
       width: 500.633px;
+      margin-top: auto;
+
 
       background: linear-gradient(#121213, #121213),
         linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
@@ -324,6 +344,8 @@
       animation: animate 2s infinite linear;
     }
     .neon-button2 {
+      margin-top: auto;
+
       text-decoration: none;
       border: calc(0.08 * var(--m)) solid transparent;
       position: relative;
