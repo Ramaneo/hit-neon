@@ -48,10 +48,27 @@
   .hidden {
     display: none;
   }
+
+  @media (min-width: 768px) {
+    .whats-in_content-top {
+      display: block;
+    }
+    .whats-in_content-mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .whats-in_content-top {
+      display: none;
+    }
+    .whats-in_content-mobile {
+      display: block;
+    }
+  }
 </style>
 
 <section>
-  <div class="page-width" style="margin-top: 80px; margin-bottom: 80px;">
+  <div class="page-width whats-in_content-top" style="margin-top: 80px; margin-bottom: 80px;">
     <div class="ootb-tabcordion--tabs" role="tablist" aria-label="TabCordion">
       <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-content" id="tab1">
         Your Package Includes
@@ -338,6 +355,295 @@
         <b>If your package is missing or damaged, we'll replace it for free!</b> However, any design changes or address
         modifications after replacement may incur additional charges.
       </p>
+    </div>
+  </div>
+  <div class="page-width whats-in_content-mobile" style="margin-bottom: 80px;">
+    <div style="max-width: 120rem; justify-content: center; margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem;">
+      <div class="mobile-expertise-faq">
+        <div>
+          <p class="faq-accordion">Your Package Includes</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <p>Every sign comes with a basic mounting kit for Trouble-Free installation.</p>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Info.jpg?v=1717489043"
+                width="100%"
+              >
+            </div>
+          </div>
+        </div>
+        <div class="{% if section.settings.hide_product_description %}hidden{% endif %}">
+          <p class="faq-accordion">Product Description</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <p>
+              <b>Light up your life with custom LED neon signs!</b>
+              <p>
+                These signs are all the rage for a reason. They use super efficient LED lights to create vibrant, bright
+                and colorful displays that grab everyone's attention. Plus, you can get them custom made in any size,
+                shape, or color to perfectly match your style.
+              </p>
+              <p>
+                Here's why custom LED neon signs are awesome:
+                <ul>
+                  <li>
+                    <b>Save money and the planet:</b> Hit Neon signs are energy-efficient and use way less energy than
+                    traditional lights, which keeps your wallet happy and helps the environment.
+                  </li>
+                  <li>
+                    <b>Built to last:</b> No need to worry about these breaking easily. They're super durable and
+                    require minimal maintenance.
+                  </li>
+                  <li>
+                    <b>Make it yours:</b> This is where it gets fun! You can design your sign exactly how you want it,
+                    from the shape and size to the colors and message. The possibilities are endless on customized Hit
+                    Neon neon signs!
+                  </li>
+                  <li>
+                    <b>Fits anywhere:</b> Stick them on walls, windows, or use them freestanding. No matter where you
+                    put them, they'll add a pop of personality to any space!
+                  </li>
+                  <li>
+                    <b>Safety first:</b> Unlike old-school neon signs, these guys don't have any toxic gasses and are
+                    way less likely to cause fires. Peace of mind for everyone!
+                  </li>
+                </ul>
+              </p>
+              So, whether you're decorating your home, promoting your business, or throwing a party, custom LED neon
+              signs are a unique and eye-catching way to add some serious style and energy to any space.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="faq-accordion">Warranty</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <p>
+              <h2><b>Hit Neon Warranty: Peace of Mind for Your Custom Sign</b></h2>
+
+              We stand behind the quality of our custom neon signs! Here's a breakdown of our warranty coverage:
+              <ul>
+                <li>
+                  <b>Warranty Length:</b>
+                  <ul>
+                    <li>Indoor signs: 2 years</li>
+                    <li>Outdoor signs: 1 year</li>
+                    <li>Power supplies and dimmers: 1 year (when purchased directly from Hit Neon)</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>What's Not Covered:</b>
+                  <ul>
+                    <li>
+                      We can't take responsibility for issues caused by improper installation (like faulty wiring).
+                    </li>
+                    <li>
+                      If you hire an electrician to modify your sign and it breaks, warranty coverage may be determined
+                      on a case-by-case basis.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Hassle-Free Replacements:</b>
+                  <ul>
+                    <li>
+                      We're confident your sign will be free of manufacturing defects. But if you experience an issue,
+                      we'll help!
+                    </li>
+                    <li>
+                      <b>Note:</b> Replacements are only offered for faulty products, not for signs you've changed your
+                      mind about.
+                    </li>
+                    <li>We'll determine the best course of action (repair, replace or refund) based on the problem.</li>
+                    <li>
+                      To start a replacement request, simply contact us at
+                      <a href="mailto:hello@hitneon.com">hello@hitneon.com</a>.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <b>Getting Help with Faulty Signs:</b>
+              <ul>
+                <li>
+                  Send us a short video and clear photos of the problem with your sign. This helps us diagnose the issue
+                  quickly.
+                </li>
+                <li>If we can't fix it remotely, we'll send you a free replacement.</li>
+                <li>
+                  In rare cases, we may offer a refund if other solutions aren't possible.
+                  <ul>
+                    <li><b>Important:</b> Don't discard anything! We might need to take a closer look at the sign.</li>
+                  </ul>
+                </li>
+              </ul>
+              <b>About Custom Signs:</b>
+              <ul>
+                <li>
+                  Since they're handmade, there might be slight variations in size, color or font compared to the
+                  digital mockup.
+                </li>
+                <li>
+                  A little bit of glue showing is normal, and some quiet humming or buzzing from the sign is expected.
+                </li>
+                <li>Direct sunlight can cause slight fading over time, just like with anything else.</li>
+              </ul>
+              <b>Damaged During Shipping? </b>
+              <ul>
+                <li>We recommend filming yourself opening the box for your records.</li>
+                <li>If the box looks damaged upon arrival (torn, smashed, etc.), take pictures before opening it.</li>
+                <li>
+                  You have 7 days from delivery to report shipping damage. After that, our regular return policy
+                  applies.
+                </li>
+                <li>
+                  If your sign is damaged in transit within those 7 days, email
+                  <a href="mailto:hello@hitneon.com">hello@hitneon.com</a>. with:
+                  <ul>
+                    <li>Clear photos of the damage to the sign</li>
+                    <li>A video of you opening the box (unboxing video)</li>
+                    <li>Clear pictures of the damaged box (from all sides)</li>
+                    <li>A clear photo of the shipping label</li>
+                  </ul>
+                </li>
+                <li>Missing any of this information within 7 days may void your claim.</li>
+                <li>
+                  If your sign is messed up during shipping, we'll replace it for free. But if you want to change the
+                  design or shipping address after replacement, there might be additional charges.
+                </li>
+              </ul>
+              <p>
+                We hope this clarifies our warranty policy! If you have any questions, don't hesitate to contact us.
+              </p>
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="faq-accordion">Refund Policy</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <p>
+              <h2><b>Cancellations, Returns & Replacements: Get it Right or Get Help!</b></h2>
+              <p><b>Want to Change Your Mind? </b></p>
+              <p>We get it, plans change! Here's how cancellations work:</p>
+              <ul>
+                <li>
+                  Made-to-Order Signs: Since your sign is one-of-a-kind, we can't cancel orders once production starts
+                  (including pre-designed signs). But you have 24 hours from purchase to change your mind! Just send an
+                  email with "Cancel Order &lt;Order Number&gt;" in the subject line to
+                  <a href="mailto:hello@hitneon.com">hello@hitneon.com</a> within 24 hours.
+                </li>
+                <li>
+                  Custom Sign Designs: Can't decide on the perfect design? No worries! You can modify your custom design
+                  as much as you want before we start creating your masterpiece.
+                </li>
+              </ul>
+              <p><b>Got a Faulty Sign? We've Got You Covered!</b></p>
+              <p>
+                We're confident in the quality of our signs, but if something's wrong, we'll make it right! Here's how
+                to get a replacement:
+              </p>
+              <ul>
+                <li>
+                  <b>We Only Replace Faulty Products:</b> If your sign has a manufacturing defect, contact us right away
+                  at <a href="mailto:hello@hitneon.com">hello@hitneon.com</a>.
+                </li>
+                <li>
+                  <b>Proof is Key:</b> To speed things up, record a video and take pictures while unboxing your sign.
+                  This helps us verify the issue quickly.
+                </li>
+                <li>
+                  <b>Replacements, Not Refunds:</b> Unfortunately, we don't offer refunds for faulty products. However,
+                  we'll do our best to fix the problem or send you a brand new sign (free of charge!).
+                </li>
+              </ul>
+              <b>Damaged During Shipping? Let Us Know! </b>
+              <p>Accidents happen, but don't worry! If your sign gets damaged in transit:</p>
+              <ul>
+                <li>
+                  <b>Inspect It Right Away:</b>
+                  Check your sign upon arrival.
+                </li>
+                <li>
+                  <b>Pictures are Worth a Thousand Words:</b>
+                  If the box looks damaged, take pictures before opening it. This helps us file a claim with the
+                  shipping company.
+                </li>
+                <li>
+                  <b>We Need Proof:</b>
+                  We can only offer replacements if the damage is verified by our team.
+                </li>
+              </ul>
+              <b>For more details, check out our Warranty Section and Shipping Policy.</b>
+              <p>
+                We're here to help! If you have any questions about cancellations, returns, or replacements, feel free
+                to contact us.
+              </p>
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="faq-accordion">Shipping</p>
+          <div class="faq-panel" style="display: flex; flex-direction: column;">
+            <p>
+              <h2><b>Shipping Info: Get Your Neon Sign Fast and Safe!</b></h2>
+            </p>
+            <p><b>How Long Does Shipping Take?</b></p>
+            <p>
+              Most orders are crafted and shipped within 2-4 business days (Monday-Friday). We use express shipping, so
+              you can expect your sign in 2-3 business days from the ship date. Over 95% of our orders arrive within 5
+              business days.
+            </p>
+            <p><b>A Few Things to Keep in Mind:</b></p>
+            <ul>
+              <li>
+                Once your order is shipped, we can't control any delays caused by the shipping company. We'll do our
+                best to help you track it down though!
+              </li>
+              <li>
+                Shipping Exceptions:
+                <ul>
+                  <li>Signs over 45 inches may take longer to ship.</li>
+                  <li>Bulk orders (more than 2 signs) take extra production time.</li>
+                  <li>The holiday season, unforeseen events or bad weather can cause delays.</li>
+                  <li>Lost or stolen packages may take longer to replace.</li>
+                </ul>
+              </li>
+            </ul>
+            <p><b>Can I Change My Address?</b></p>
+            <p>
+              Sure! You can request a change to your shipping address as long as your neon sign hasn't shipped yet.
+              <b>Double-check your address before submitting your order to avoid any delivery issues</b>. A new address
+              may incur additional shipping fees.
+            </p>
+            <p>
+              <b>Important:</b> Once your order is shipped, we can't change the address or delivery date. You'll be
+              responsible for any consequences of a requested change.
+            </p>
+            <p><b>Damaged During Shipping? </b></p>
+            <ul>
+              <li>Open your package right away and record an unboxing video for damage claims.</li>
+              <li>
+                If your sign is damaged in transit, contact us within 7 days of delivery for a replacement. We can't
+                accept claims after 7 days.
+              </li>
+              <li>Send an email to [email address removed] with:</li>
+              <ul>
+                <li>A clear photo of the damage to the sign</li>
+                <li>An unboxing video</li>
+                <li>Clear photos of the damaged box (from all sides)</li>
+                <li>A clear photo of the shipping label</li>
+              </ul>
+            </ul>
+            <p><b>Lost, Stolen, or Missing Packages? </b></p>
+            <p>
+              We use UPS, Fedex or DHL Express, which require a signature upon delivery. If you waive the signature
+              requirement, Hit Neon is not responsible for lost, missing or stolen packages marked as "delivered" by the
+              shipping company. Always follow proper delivery procedures and provide a signature.
+            </p>
+            <p>
+              <b>If your package is missing or damaged, we'll replace it for free!</b> However, any design changes or
+              address modifications after replacement may incur additional charges.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
