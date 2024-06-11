@@ -6,7 +6,6 @@
   - option: {Object} current product_option object.
   - block: {Object} block object.
 
-
   Usage:
   {% render 'product-variant-options',
     product: product,
@@ -21,6 +20,17 @@
   assign variants_option3_arr = product.variants | map: 'option3'
 
   assign product_form_id = 'product-form-' | append: section.id
+
+  assign color_white = '#FFF'
+  assign color_warm_white = '#FDFCDD'
+  assign color_yellow = '#FEF100'
+  assign color_orange = '#FFA500'
+  assign color_red = '#F00'
+  assign color_pink = '#F98DD6'
+  assign color_purple = '#986CFA'
+  assign color_blue = '#4242FF'
+  assign color_green = '#02B302'
+  assign color_light_ice_blue = '#89F8FD'
 -%}
 
 {%- for value in option.values -%}
@@ -43,6 +53,31 @@
           endif
       endcase
     endfor
+
+    case value
+      when 'White'
+        assign color_hex = color_white
+      when 'Warm White' then
+        assign color_hex = color_warm_white
+      when 'Yellow' then
+        assign color_hex = color_yellow
+      when 'Orange' then
+        assign color_hex = color_orange
+      when 'Red' then
+        assign color_hex = color_red
+      when 'Pink' then
+        assign color_hex = color_pink
+      when 'Purple' then
+        assign color_hex = color_purple
+      when 'Blue' then
+        assign color_hex = color_blue
+      when 'Green' then
+        assign color_hex = color_green
+      when 'Light/Ice Blue' then
+        assign color_hex = color_light_ice_blue
+      else
+
+    endcase
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
@@ -59,10 +94,29 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+    {% if color_hex %}
+      <label
+        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        style="background-color: {{ color_hex }}; width: 60px; height: 60px; border-radius: 10px; border: 1px solid #ECECEC; display: inline-block; cursor: pointer;"
+      >
+        <span class="visually-hidden">{{ value }}</span>
+      </label>
+    {%- else -%}
+      <label
+        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        style="background-color: {{ color_hex }};"
+      >
+        {{- value -}}
+      </label>
+    {%- endif %}
+    {% comment %}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{ color_hex }};">
+        <span class="visually-hidden">{{ value }}</span>
+        {% unless color_hex %}
+          {{ value }}
+        {% endunless %}
+      </label>
+    {% endcomment %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
@@ -78,3 +132,9 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
+
+<style>
+  input[type='radio']:checked + label {
+    border-color: black !important;
+  }
+</style>
