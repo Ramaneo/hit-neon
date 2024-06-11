@@ -16,6 +16,19 @@
       display: flex;
       justify-content: center;
     }
+    .upload-banner-container {
+      margin: 30px;
+      height: 720px;
+
+    }
+  }
+  @media screen and (max-width: 750px){
+    .upload-banner-container {
+      display: flex;
+      height: 720px;
+      width: 100%;
+      justify-content: center;
+    }
   }
 {%- endstyle -%}
 
@@ -26,7 +39,7 @@
         <span></span>
       </div>
     {% endcomment %}
-    <div style=" margin: 30px; height: 720px;">
+    <div class="upload-banner-container">
       <img
         src="https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hitneon-Info-sign.jpg?v=1717523465"
         height="100%"
