@@ -1,37 +1,10 @@
 <section id="section-{{ section.id }}" class="section-banner-one">
-  {% comment %}
-    <custom-banner-container>
-      <button-wrapper-cbc>
-        <button class="one">Create Your Design</button>
-        <button class="two">Upload Your Design/Logo</button>
-      </button-wrapper-cbc>
-    </custom-banner-container>
-
-    <button-wrapper-cbc-mobile>
-      <button class="one">Create Your Design</button>
-      <button class="two">Upload Your Design/Logo</button>
-    </button-wrapper-cbc-mobile>
-  {% endcomment %}
-
-  {% comment %}
-    <video autoplay loop muted playsinline class="background-video">
-      <source src="https://cdn.shopify.com/videos/c/o/v/0e1a2ddd85844907824fedb0693d7388.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  {% endcomment %}
-  {% comment %}
-    <img
-      src="https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240"
-      class="background-image"
-      alt="Background Image"
-    >
-  {% endcomment %}
-
-  <custom-banner-container>
+  <div class="custom-banner-container">
     <a href="/products/create-your-own-custom-neon-sign" class="neon-button2">Create Your Design</a>
     <a href="/pages/custom-designed-led-neon-sign" class="neon-button">Upload Your Design/Logo</a>
-  </custom-banner-container>
+  </div>
 </section>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var video = document.querySelector('.background-video');
@@ -49,125 +22,19 @@
 </script>
 
 <style>
-  {% comment %} custom-banner-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 720px;
-    background-image: url("https://cdn.shopify.com/s/files/1/0484/1429/4167/files/NeonSummerSP-01_1.png?v=1710921244");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
-
-  } {% endcomment %}
-  {% comment %}
-
-  button-wrapper-cbc,button-wrapper-cbc-mobile {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-  }
-
-  button-wrapper-cbc button,button-wrapper-cbc-mobile button{
-     width: 590.633px;
-     height: 73.489px;
-     cursor: pointer;
-     font-family: "montserrat-bold";
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     cursor: pointer;
-     background-color: #fff;
-     outline: none;
-       border: none;
-      /* Typography */
-
-      color: #333;
-      text-align: center;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 20px;
-
-  }
-  button-wrapper-cbc button:hover,button-wrapper-cbc-mobile button:hover {
-      background-color: palevioletred;
-      color: #fff;
-  }
-
-  button-wrapper-cbc .one {
-     margin-right: 40px;
-
-  }
-
-
-  @media (max-width: 1300px) {
-
-      button-wrapper-cbc  {
-          flex-direction: column;
-      }
-      button-wrapper-cbc-mobile {
-          flex-direction: column;
-      }
-
-      button-wrapper-cbc .one,button-wrapper-cbc-mobile .one {
-          margin-right: 0px;
-          margin-bottom: 20px;
-      }
-  }
-
-  @media (max-width: 641px) {
-
-      button-wrapper-cbc {
-          display: none;
-      }
-
-      button-wrapper-cbc-mobile {
-          flex-direction: column;
-          margin: auto;
-          margin-bottom: 20px;
-      }
-
-      button-wrapper-cbc-mobile .one {
-          margin-right: 0px;
-          margin-bottom: 20px;
-      }
-      button-wrapper-cbc-mobile button {
-          font-size: 14px;
-          width: 80%;
-          height: 40px;
-          font-family: "montserrat-regular";
-          background-color: #fff;
-          border: 1px solid #333;
-      }
-      button-wrapper-cbc-mobile button:hover {
-          border: none;
-      }
-  }
-
   @media (min-width: 641px) {
-
-    button-wrapper-cbc-mobile {
-      display: none;
+    .custom-banner-container {
+      background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
+      background-size: cover;
+      aspect-ratio: 3;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+      gap: 20px;
+      position: sticky;
     }
 
 
-  }   {% endcomment %}
-
-  @media (min-width: 641px) {
-    .background-video {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      object-fit: cover;
-      z-index: -1;
-      height: 640px;
-    }
-    .section-banner-one {
-      {% comment %} height: 640px; {% endcomment %}
-       display: flex; justify-content: center;
-    }
     .neon-button::before {
       content: "";
       background: linear-gradient(
@@ -215,23 +82,12 @@
   }
 
   @media (min-width: 2500px) {
-    .background-video {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      object-fit: cover;
-      z-index: -1;
-      height: 1000px;
-    }
-    .section-banner-one {
-      height: 1000px; display: flex; justify-content: center;
-    }
+
   }
 
 
 
   :root {
-      /*  change this for scaling  */
       --m: 4rem;
 
       --red: #ff6565;
@@ -243,69 +99,28 @@
       --orange: #ff6d1b;
       --yellowish: #E8D5AB;
     }
-    /* body {
-        background-color: #141516;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      } */
+
 
       @media (max-width: 641px) {
-        custom-banner-container {
-          flex-direction: column !important;
-          padding: 20px;
-          width: 100% !important;
-
-        }
         .neon-button {
           width: 100% !important;
         }
         .neon-button2 {
           width: 100% !important;
         }
-        .background-video {
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          z-index: -1;
-          height: 640px;
-        }
-        .section-banner-one {
-          height: 640px; display: flex; justify-content: center;
+
+        .custom-banner-container {
+          background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner-02.jpg?v=1718174034");
+          background-size: cover;
+          aspect-ratio: 3;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 30px;
+          gap: 20px;
+          position: sticky;
         }
       }
 
-
-      custom-banner-container {
-        {% comment %} background-color: #141516; {% endcomment %}
-          {% comment %} width: 100vw; {% endcomment %}
-          display: flex;
-          justify-content: center;
-          flex-direction: row;
-          align-items: center;
-          {% comment %} height: 720px; {% endcomment %}
-          margin-bottom: 40px;
-          margin-top: auto;
-          position: sticky;
-          {% comment %} padding: 0px 50px; {% endcomment %}
-        gap: 20px;
-        {% comment %} overflow: hidden; {% endcomment %}
-
-        width: 100vw;
-    {% comment %} height: 720px; {% endcomment %}
-
-  /* Background image */
-  background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 650px;
-  padding-bottom: 50px;
-        }
 
     .neon-button {
       text-decoration: none;
