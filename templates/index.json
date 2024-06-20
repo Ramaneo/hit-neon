@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "custom-banner-one": {
@@ -45,7 +54,9 @@
         "column_KpUeVh"
       ],
       "custom_css": [
-        "@media (min-width: 641px) {.multicolumn-list {justify-content: center; }}"
+        "@media (min-width: 641px) {.multicolumn-list {justify-content: center; }}",
+        ".filled-button {border: 1px solid #8ECAE6; transition: 150ms all;}",
+        ".filled-button:hover {background-color: white; border: 1px solid #8ECAE6; color: #8ECAE6;}"
       ],
       "settings": {
         "title": "<strong>Let's Create<\/strong>",
