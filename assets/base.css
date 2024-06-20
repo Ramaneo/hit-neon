@@ -3601,6 +3601,48 @@ details-disclosure > details {
   overflow: hidden;
 }
 
-/* Neo's Button VVVV */
+.jdgm-carousel-item__inner-wrapper {
+  box-shadow: none !important;
+  background-color: #fafafb !important;
+}
 
-/* Neo's Button ^^^^ */
+.jdgm-rev__buyer-badge {
+  content: url("https://cdn.shopify.com/s/files/1/0732/4434/4619/files/verified-check-blue.svg?v=1705402957");
+  width: 18px;
+  background-color: transparent !important;
+  padding: 0 !important;
+  filter: hue-rotate(204deg);
+}
+
+.jdgm-carousel-title-and-link {
+  margin-bottom: 20px !important;
+}
+
+.jdgm-carousel__item-wrapper {
+  height: 100% !important;
+}
+
+.jdgm-carousel-item {
+  background-color: #fafafb !important;
+  margin: 10px !important;
+  /* padding: 35px !important; */
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  border-radius: 20px !important;
+}
+
+.jdgm-carousel-item__review-content {
+  margin-top: 20px !important;
+}
+
+.jdgm-carousel-item__review-body.jdgm-line-clamp {
+  margin-top: 10px !important;
+}
+
+span.jdgm-star.jdgm--on {
+  color: #04062a !important;
+}
+
+h2.jdgm-carousel-title {
+  font-weight: bold !important;
+}
