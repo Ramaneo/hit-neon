@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -25,7 +34,7 @@
         "announcement_NWgkcr"
       ],
       "settings": {
-        "color_scheme": "scheme-d0ae5861-4a00-46fa-8278-5d475304c1d8",
+        "color_scheme": "accent-2",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
