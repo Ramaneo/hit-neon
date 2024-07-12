@@ -55,8 +55,8 @@
       ],
       "custom_css": [
         "@media (min-width: 641px) {.multicolumn-list {justify-content: center; }}",
-        ".filled-button {border: 1px solid #8ECAE6; transition: 150ms all;}",
-        ".filled-button:hover {background-color: white; border: 1px solid #8ECAE6; color: #8ECAE6;}"
+        ".filled-button {border: 1px solid #8ecae6; transition: 150ms all;}",
+        ".filled-button:hover {background-color: white; border: 1px solid #8ecae6; color: #8ecae6;}"
       ],
       "settings": {
         "title": "<strong>Let's Create<\/strong>",
@@ -165,6 +165,7 @@
     },
     "custom_marquee_good_company": {
       "type": "custom-marquee",
+      "disabled": true,
       "settings": {
         "content": "You're in Good Company"
       }
