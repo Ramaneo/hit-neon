@@ -1,3 +1,10 @@
+/** Neon Customizer Form Submission Google Tracking */
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("ramans here");
+});
+
+/** end of customizer */
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
