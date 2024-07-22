@@ -1,6 +1,13 @@
 /** Neon Customizer Form Submission Google Tracking */
 window.addEventListener("DOMContentLoaded", () => {
   console.log("ramans here");
+  document.addEventListener(
+    "signCustomiserFormSubmitted",
+    (e) => {
+      console.log("Ramans form submitted", e.detail);
+    },
+    false
+  );
 });
 
 /** end of customizer */
