@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.addEventListener(
     "signCustomiserFormSubmitted",
     (e) => {
+      e.preventDefault();
       console.log("Ramans form submitted", e.detail);
     },
     false
