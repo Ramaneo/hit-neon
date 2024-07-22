@@ -1,8 +1,10 @@
 /** Neon Customizer Form Submission Google Tracking */
 window.addEventListener("DOMContentLoaded", () => {
+  console.log("ramans here");
   document.addEventListener(
     "signCustomiserFormSubmitted",
     (e) => {
+      alert("submitted");
       console.log("Ramans form submitted", e.detail);
     },
     false
