@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "page-custom-design-request-received": {
+      "type": "page-custom-design-request-received",
+      "settings": {}
+    }
+  },
+  "order": ["page-custom-design-request-received"]
+}
