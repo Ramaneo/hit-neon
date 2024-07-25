@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,11 +10,13 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16588561317"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       gtag('config', 'AW-16588561317');
     </script>
-    
+
     <link rel="canonical" href="{{ canonical_url }}">
 
     <link
@@ -290,6 +291,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'output.css' | asset_url }}">
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -327,8 +329,8 @@
         }
       </style>
     {% endif %}
-    
-    <meta name="google-site-verification" content="t4R9DPumfxToymL6mkdi0Ivu_E6Z9duuyIp8N33zWHc" />
+
+    <meta name="google-site-verification" content="t4R9DPumfxToymL6mkdi0Ivu_E6Z9duuyIp8N33zWHc">
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
