@@ -25,7 +25,7 @@
       margin-right: auto;
     }
 
-   p.mobile-faq-menu {
+   h3.mobile-faq-menu {
      margin: auto;
      padding: 20px;
      padding-left: 0;
@@ -68,7 +68,7 @@
   } {% endcomment %}
 
 
-   p.faq-accordion {
+   h3.faq-accordion {
     color: #444;
     cursor: pointer;
     width: 100%;
@@ -79,12 +79,10 @@
     font-weight: 600;
    }
 
-   /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
    p.faq-accordion.active, p.accordion:hover {
    }
 
-   /* Unicode character for "plus" sign (+) */
-   p.faq-accordion:after {
+   h3.faq-accordion:after {
     content: '\2795';
     font-size: 13px;
     color: #777;
@@ -92,7 +90,7 @@
     margin-left: 5px;
    }
 
-   p.mobile-faq-menu:after {
+   h3.mobile-faq-menu:after {
     content: '\2795';
     font-size: 13px;
     color: #777;
@@ -100,19 +98,15 @@
     margin-left: 5px;
    }
 
-
-   /* Unicode character for "minus" sign (-) */
-   p.faq-accordion.active:after {
+   h3.faq-accordion.active:after {
     content: "\2796";
    }
 
-   p.mobile-faq-menu.active:after {
+   h3.mobile-faq-menu.active:after {
       content: "\2796";
    }
 
-   /* Style the element that is used for the panel class */
    div.faq-panel {
-    // padding: 5px 18px;
     {% comment %} background-color: white; {% endcomment %}
     max-height: 0;
     overflow: hidden;
@@ -120,21 +114,19 @@
     opacity: 0;
     text-align: left;
     max-width: 580px;
-    // margin: 5px 0px;
    }
 
-   p.faq-panel {
+   h3.faq-panel {
     font-size: 14px;
     line-height: 1.42857143;
   }
 
    div.faq-panel.show {
     opacity: 1;
-    max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+    max-height: 750px;
    }
 
    div.mobile-faq-panel {
-      // padding: 5px 18px;
     {% comment %} background-color: white; {% endcomment %}
     max-height: 0;
     overflow: hidden;
@@ -142,13 +134,11 @@
     opacity: 0;
     text-align: left;
     padding-left: 18px;
-    // max-width: 580px;
-    // margin: 5px 0px;
    }
 
    div.mobile-faq-panel.show {
       opacity: 1;
-    max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+    max-height: 750px;
    }
 
    .caption-with-letter-spacing {
@@ -173,11 +163,11 @@
   <div style="max-width: 120rem; justify-content: center; margin-left: auto; margin-right: auto;">
     <div class="mobile-expertise-faq">
       <div>
-        <p class="mobile-faq-menu">General</p>
+        <h3 class="mobile-faq-menu">General</h3>
         <div class="mobile-faq-panel">
           <div class="expertise-faq">
             <div>
-              <p class="faq-accordion">Is HitNeon legitimate?</p>
+              <h3 class="faq-accordion">Is HitNeon legitimate?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Yes, HitNeon is a 100% legitimate business, specializing in high-quality Neon LED signs that can be
@@ -189,7 +179,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">Why choose HitNeon for neon signs?</p>
+              <h3 class="faq-accordion">Why choose HitNeon for neon signs?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   We specialize in crafting high-quality neon signs that are not only vibrant and eye-catching but also
@@ -202,7 +192,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What is the difference between LED neon and glass neon?</p>
+              <h3 class="faq-accordion">What is the difference between LED neon and glass neon?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Certainly! LED neon signs differ from traditional glass neon in several key ways. They are more
@@ -215,7 +205,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">Do you have a warranty? What does the warranty include?</p>
+              <h3 class="faq-accordion">Do you have a warranty? What does the warranty include?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Yes, we offer 2-year warranty on our products. This warranty covers any defects in materials and
@@ -229,11 +219,11 @@
         </div>
       </div>
       <div>
-        <p class="mobile-faq-menu">Shipping and Returns</p>
+        <h3 class="mobile-faq-menu">Shipping and Returns</h3>
         <div class="mobile-faq-panel">
           <div class="expertise-faq">
             <div>
-              <p class="faq-accordion">What is the lead time for custom neon signs?</p>
+              <h3 class="faq-accordion">What is the lead time for custom neon signs?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   We need 2-3 business days to manufacture your custom neon sign and shipment usually takes another
@@ -242,7 +232,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What to do if there is a missing item in my package?</p>
+              <h3 class="faq-accordion">What to do if there is a missing item in my package?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   In case there is a missing item or a problem with your package, please contact us immediately and
@@ -251,7 +241,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">How do returns and exchanges work?</p>
+              <h3 class="faq-accordion">How do returns and exchanges work?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   We have a very easy and convenient return and exchange process. Please visit our Returns & Exchanges
@@ -261,7 +251,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What does the packaging include?</p>
+              <h3 class="faq-accordion">What does the packaging include?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   The packaging includes your made-to-order neon sign, power supply/adapter, complimentary dimmer,
@@ -271,7 +261,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">Can neon signs be shipped outside the US and Canada?</p>
+              <h3 class="faq-accordion">Can neon signs be shipped outside the US and Canada?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Yes, we ship worldwide with free express shipping. The shipping takes 2-3 business days for UK and
@@ -285,11 +275,11 @@
         </div>
       </div>
       <div>
-        <p class="mobile-faq-menu">Installation</p>
+        <h3 class="mobile-faq-menu">Installation</h3>
         <div class="mobile-faq-panel">
           <div class="expertise-faq">
             <div>
-              <p class="faq-accordion">How long is the cord for the neon signs?</p>
+              <h3 class="faq-accordion">How long is the cord for the neon signs?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   The cord for our neon signs is 6 feet long. This length is designed to provide flexibility for
@@ -299,7 +289,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">How can I clean my neon sign?</p>
+              <h3 class="faq-accordion">How can I clean my neon sign?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   We include a cleaning guide in every package we ship but in case you lost it here is the cleaning
@@ -316,7 +306,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What maintenance does neon signs require?</p>
+              <h3 class="faq-accordion">What maintenance does neon signs require?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Neon signs from HitNeon are designed for ease of maintenance. Regular dusting with a soft, dry cloth
@@ -333,11 +323,11 @@
         </div>
       </div>
       <div>
-        <p class="mobile-faq-menu">Technical</p>
+        <h3 class="mobile-faq-menu">Technical</h3>
         <div class="mobile-faq-panel">
           <div class="expertise-faq">
             <div>
-              <p class="faq-accordion">What are the backboard options for neon signs?</p>
+              <h3 class="faq-accordion">What are the backboard options for neon signs?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   At HitNeon, we offer 4 different backboard options. Cut to Shape and Cut to Letter are the most
@@ -348,7 +338,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What are the available color options for neon signs?</p>
+              <h3 class="faq-accordion">What are the available color options for neon signs?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   HitNeon offers 10 different colors for neon signs: white, warm white, yellow, orange, red, pink,
@@ -358,7 +348,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What are neon signs made of?</p>
+              <h3 class="faq-accordion">What are neon signs made of?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Neon signs from HitNeon are primarily made using LED technology. The "neon" part of the sign is
@@ -371,7 +361,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">How are neon signs powered?</p>
+              <h3 class="faq-accordion">How are neon signs powered?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Neon signs are mainly powered by electricity. They are designed to be plugged into a standard
@@ -382,7 +372,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">Can neon signs be used outdoors?</p>
+              <h3 class="faq-accordion">Can neon signs be used outdoors?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Our neon signs are made with our customer’s preference in mind. Our indoor neon signs are meant to be
@@ -397,11 +387,11 @@
         </div>
       </div>
       <div>
-        <p class="mobile-faq-menu">Custom Orders</p>
+        <h3 class="mobile-faq-menu">Custom Orders</h3>
         <div class="mobile-faq-panel">
           <div class="expertise-faq">
             <div>
-              <p class="faq-accordion">How do custom neon signs work?</p>
+              <h3 class="faq-accordion">How do custom neon signs work?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   It’s extremely easy! We have three different options for you:
@@ -419,7 +409,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">How can I design my own neon sign?</p>
+              <h3 class="faq-accordion">How can I design my own neon sign?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   We’ve got you covered on this. Our customizer will provide you everything you need to come up with
@@ -437,7 +427,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">What fonts are available for custom neon signs?</p>
+              <h3 class="faq-accordion">What fonts are available for custom neon signs?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   We have 20+ fonts for you to choose from. If you have a particular font in mind feel free to email us
@@ -446,7 +436,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">Can I use my logo for a custom neon sign?</p>
+              <h3 class="faq-accordion">Can I use my logo for a custom neon sign?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Sure thing. Visit our custom artwork neon sign page. Submit your logo or artwork along with other
@@ -456,7 +446,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">How much does a custom neon sign cost?</p>
+              <h3 class="faq-accordion">How much does a custom neon sign cost?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   HitNeon offers the most competitive pricing on neon signs. We are a direct manufacturer, meaning we
@@ -466,7 +456,7 @@
               </div>
             </div>
             <div>
-              <p class="faq-accordion">How can I get a quote for a custom neon sign with a logo?</p>
+              <h3 class="faq-accordion">How can I get a quote for a custom neon sign with a logo?</h3>
               <div class="faq-panel">
                 <p class="faq-panel" style="margin-top: 1.25em; margin-bottom: 2.5em">
                   Visit our custom artwork neon sign page. Submit your logo or artwork along with other requested

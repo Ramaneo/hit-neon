@@ -99,7 +99,9 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <p style="color: black;" class="footer-block__heading inline-richtext">
+                    {{- block.settings.heading -}}
+                  </p>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -118,7 +120,7 @@
                               href="{{ link.url }}"
                               class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
                             >
-                              {{ link.title }}
+                              <p style="margin: 0;">{{ link.title }}</p>
                             </a>
                           </li>
                         {%- endfor -%}
@@ -451,6 +453,9 @@
         </div>
       </div>
     {% endcomment %}
+    {% if request.path == routes.root_url %}
+      <h1 class="" style="text-align: center;margin-top: 20px;">Hit Neon - Custom LED Neon Signs</h1>
+    {% endif %}
   </div>
 </footer>
 

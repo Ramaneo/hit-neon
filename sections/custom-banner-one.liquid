@@ -1,7 +1,7 @@
 <section id="section-{{ section.id }}" class="section-banner-one">
   <div class="custom-banner-container">
-    <a href="/products/create-your-own-custom-neon-sign" class="neon-button2">Create Your Design</a>
-    <a href="/pages/custom-designed-led-neon-sign" class="neon-button">Upload Your Design/Logo</a>
+    <a href="/products/create-your-own-custom-neon-sign" class="neon-button2"><h2>Create Your Design</h2></a>
+    <a href="/pages/custom-designed-led-neon-sign" class="neon-button"><h2>Upload Your Design/Logo</h2></a>
   </div>
 </section>
 
@@ -22,6 +22,13 @@
 </script>
 
 <style>
+  .neon-button h2, .neon-button2 h2{
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+
   @media (min-width: 641px) {
     .custom-banner-container {
       background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
@@ -55,7 +62,6 @@
       background-size: 200%;
       animation: animate 2s infinite linear;
       filter: blur(calc(0.8 * var(--m)));
-
     }
     .neon-button2::before {
       content: "";
