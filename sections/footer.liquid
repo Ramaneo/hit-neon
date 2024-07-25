@@ -284,18 +284,6 @@
           </div>
         </div>
         <div>
-          <p class="faq-accordion">Custom Neon Signs</p>
-          <div class="faq-panel" style="display: flex; flex-direction: column;">
-            <a href="/products/create-your-own-custom-neon-sign" class="footer-item">Design Your Custom Neon Sign</a>
-            <a href="/pages/custom-designed-led-neon-sign" class="footer-item">Custom Image / Logo / Artwork Sign</a>
-            <a href="/products/wedding-neon-sign" class="footer-item">Wedding Neon Sign</a>
-            <a href="/products/personalized-neon-sign" class="footer-item">Personalized Neon Sign</a>
-            <a href="/products/neon-sign-customizer" class="footer-item">Neon Sign Customize Now</a>
-            <a href="/products/custom-name-letter-neon-sign" class="footer-item">Custom Name Letter Neon Sign</a>
-            <a href="/products/custom-led-neon-sign" class="footer-item">Custom LED Neon Sign</a>
-          </div>
-        </div>
-        <div>
           <p class="faq-accordion">Favorites</p>
           <div class="faq-panel" style="display: flex; flex-direction: column;">
             <a class="footer-item">Create Your Design</a>
@@ -440,27 +428,29 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-      <div class="footer__copyright caption">
-        <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-        </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
-        {%- if section.settings.show_policy -%}
-          <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
-              {%- if policy != blank -%}
-                <li>
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+    {% comment %}
+      <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+        <div class="footer__copyright caption">
+          <small class="copyright__content"
+            >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          </small>
+          <small class="copyright__content">{{ powered_by_link }}</small>
+          {%- if section.settings.show_policy -%}
+            <ul class="policies list-unstyled">
+              {%- for policy in shop.policies -%}
+                {%- if policy != blank -%}
+                  <li>
+                    <small class="copyright__content"
+                      ><a href="{{ policy.url }}">{{ policy.title }}</a></small
+                    >
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </div>
       </div>
-    </div>
+    {% endcomment %}
   </div>
 </footer>
 
