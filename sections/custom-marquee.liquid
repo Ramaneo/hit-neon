@@ -67,6 +67,11 @@
     font-size: 30px !important;
   }
 
+  .text-details p {
+    display: inline;
+    margin: 0;
+  }
+
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -81,25 +86,25 @@
   <div class="marquee text-container enable-animation">
     <ul class="marquee__content">
       <li class="text-details" style="color: #C5FC2A">
-        <span>{{ section.settings.content }}</span>
+        <p>{{ section.settings.content }}</p>
       </li>
       <li class="text-details" style="color: #C5FC2A">
-        <span>{{ section.settings.content }}</span>
+        <p>{{ section.settings.content }}</p>
       </li>
       <li class="text-details" style="color: #C5FC2A">
-        <span>{{ section.settings.content }}</span>
+        <p>{{ section.settings.content }}</p>
       </li>
     </ul>
 
     <ul aria-hidden="true" class="marquee__content">
       <li class="text-details" style="color: #C5FC2A">
-        <span>{{ section.settings.content }}</span>
+        <p>{{ section.settings.content }}</p>
       </li>
       <li class="text-details" style="color: #C5FC2A">
-        <span>{{ section.settings.content }}</span>
+        <p>{{ section.settings.content }}</p>
       </li>
       <li class="text-details" style="color: #C5FC2A">
-        <span>{{ section.settings.content }}</span>
+        <p>{{ section.settings.content }}</p>
       </li>
     </ul>
   </div>
