@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "rich_text_YcNMfy": {
@@ -11,9 +20,13 @@
           }
         }
       },
-      "block_order": ["heading_tABTyy"],
+      "block_order": [
+        "heading_tABTyy"
+      ],
       "disabled": true,
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -35,15 +48,18 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "product-rating": {
           "type": "rating",
-          "settings": {}
+          "settings": {
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -53,7 +69,8 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -70,7 +87,8 @@
         },
         "description_zRfBeh": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -105,7 +123,7 @@
       "type": "apps",
       "blocks": {
         "neon_sign_customiser_neon_customiser_eecRDW": {
-          "type": "shopify://apps/neon-sign-customiser/blocks/neon-customiser/29c3b558-f454-440f-b53e-26c5e867a515",
+          "type": "shopify:\/\/apps\/neon-sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515",
           "settings": {
             "customiser_id": "",
             "scroll_order": false,
@@ -117,14 +135,18 @@
           }
         }
       },
-      "block_order": ["neon_sign_customiser_neon_customiser_eecRDW"],
+      "block_order": [
+        "neon_sign_customiser_neon_customiser_eecRDW"
+      ],
       "settings": {
         "include_margins": true
       }
     },
     "whats_in_tabs": {
       "type": "whats-in-tabs",
-      "settings": {}
+      "settings": {
+        "hide_product_description": false
+      }
     },
     "related-products": {
       "type": "related-products",
@@ -147,26 +169,39 @@
     },
     "why_choose_us": {
       "type": "why-choose-us",
-      "settings": {}
+      "settings": {
+      }
     },
     "17119705317e18ca9a": {
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_9ih3Pk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
         }
       },
-      "block_order": ["judge_me_reviews_featured_carousel_9ih3Pk"],
+      "block_order": [
+        "judge_me_reviews_featured_carousel_9ih3Pk"
+      ],
       "settings": {
         "include_margins": true
       }
     },
     "faq": {
       "type": "faq",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "custom_liquid_wB7NJL": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h1 style=\"display: none;\">{{product.title}}<\/h1>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -177,6 +212,7 @@
     "related-products",
     "why_choose_us",
     "17119705317e18ca9a",
-    "faq"
+    "faq",
+    "custom_liquid_wB7NJL"
   ]
 }
