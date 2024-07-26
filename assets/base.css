@@ -3647,3 +3647,11 @@ span.jdgm-star.jdgm--on {
 h2.jdgm-carousel-title {
   font-weight: bold !important;
 }
+
+.shopify-policy__title h1 {
+  font-size: 4rem;
+}
+
+.shopify-policy__container {
+  margin-bottom: 100px;
+}
