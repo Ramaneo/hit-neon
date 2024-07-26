@@ -3630,6 +3630,7 @@ details-disclosure > details {
   padding-top: 35px !important;
   padding-bottom: 35px !important;
   border-radius: 20px !important;
+  height: 350px !important;
 }
 
 .jdgm-carousel-item__review-content {
