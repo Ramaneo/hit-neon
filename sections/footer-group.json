@@ -31,6 +31,7 @@
         },
         "link_list_KF3gqB": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "<strong>Favorites<\/strong>",
             "menu": "collections"
