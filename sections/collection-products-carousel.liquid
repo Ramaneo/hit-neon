@@ -17,7 +17,7 @@
     text-align: center;
   }
 
-  .tabs a {
+  .tabs button {
     display: block;
     text-decoration: none;
     color: #6d6d6d;
@@ -31,7 +31,7 @@
     cursor: pointer !important;
   }
 
-  .tabs a.active-content {
+  .tabs button.active-content {
     background-color: #8ecae6;
     color: #fff;
   }
@@ -150,7 +150,7 @@
   <ul class="tabs">
     {% for collection in collections %}
       <li>
-        <a class="collection-button" data-collection-id="{{ collection.handle }}">{{ collection.title }}</a>
+        <button class="collection-button" data-collection-id="{{ collection.handle }}">{{ collection.title }}</button>
       </li>
     {% endfor %}
   </ul>
