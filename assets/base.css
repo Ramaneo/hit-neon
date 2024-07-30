@@ -3642,7 +3642,7 @@ details-disclosure > details {
 }
 
 span.jdgm-star.jdgm--on {
-  color: #04062a !important;
+  color: var(--color-secondary) !important;
 }
 
 h2.jdgm-carousel-title {
@@ -3655,4 +3655,8 @@ h2.jdgm-carousel-title {
 
 .shopify-policy__container {
   margin-bottom: 100px;
+}
+
+.jdgm-all-reviews-rating-wrapper {
+  font-size: 17px;
 }

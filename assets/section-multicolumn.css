@@ -248,7 +248,7 @@
 }
 
 .filled-button {
-  background-color: #8ecae6;
+  background-color: var(--color-main);
   padding: 10px;
   color: black;
   border-radius: 30px;

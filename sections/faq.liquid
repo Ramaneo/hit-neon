@@ -1,169 +1,180 @@
 <style>
-   .our-expertise h3 {
-     font-size: 1.5em;
+     .our-expertise h3 {
+       font-size: 1.5em;
 
-     &.faq {
-     margin: 1em 0;
-     text-align: left;
+       &.faq {
+       margin: 1em 0;
+       text-align: left;
 
-       @include media(max-width $small-screen) {
-       margin-left: 20px;
-         }
+         @include media(max-width $small-screen) {
+         margin-left: 20px;
+           }
+       }
      }
-   }
 
-   .faq-container {
-     max-width: 1280px;
-       padding-bottom: 1.5em;
-       margin: 0 auto;
-       width: 90%;
-   }
+     .faq-container {
+       max-width: 1280px;
+         padding-bottom: 1.5em;
+         margin: 0 auto;
+         width: 90%;
+     }
 
-    .mobile-expertise-faq {
-      max-width: 73.4rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
+      .mobile-expertise-faq {
+        /* max-width: 73.4rem; */
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-   h3.mobile-faq-menu {
-     margin: auto;
-     padding: 20px;
-     padding-left: 0;
-     font-size: 15px;
-     font-weight: 700;     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-     {% comment %} font-weight: 700; {% endcomment %}
-   }
-   .mobile-faq-menu {
-     cursor: pointer;
-   }
+     h3.mobile-faq-menu {
+       margin: auto;
+       padding: 20px;
+       padding-left: 0;
+       font-size: 15px;
+       font-weight: 700;     border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+       {% comment %} font-weight: 700; {% endcomment %}
+     }
+     .mobile-faq-menu {
+       cursor: pointer;
+     }
 
-   .expertise-faq {
-     display: inline-block;
-   }
-
-   .contact-faq {
-      background: #f3f3f3;
-       height: 1000px;
-       width: 375px;
-       float: right;
+     .expertise-faq {
+      width: 95%;
        display: inline-block;
-
-       @include media(max-width $large-screen) {
-       float: none;
-       display: block;
      }
-   }
 
-   @media (max-width: 767px) {
-    .faq-section {
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
-   }
+     .contact-faq {
+        background: #f3f3f3;
+         height: 1000px;
+         width: 375px;
+         float: right;
+         display: inline-block;
 
-  {% comment %} .container {
-    max-width:960px;
-    margin:0 auto;
-    padding:1em 0 1em 0;
-  } {% endcomment %}
+         @include media(max-width $large-screen) {
+         float: none;
+         display: block;
+       }
+     }
+
+     .faq-panel {
+      font-size: 14px;
+     }
+
+     @media (max-width: 767px) {
+      .faq-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+     }
+
+    {% comment %} .container {
+      max-width:960px;
+      margin:0 auto;
+      padding:1em 0 1em 0;
+    } {% endcomment %}
 
 
-   h3.faq-accordion {
-    color: #444;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    font-size: 14px;
-    font-weight: 600;
-   }
+     h3.faq-accordion {
+      color: #444;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      transition: 0.4s;
+      font-size: 14px;
+      font-weight: 600;
+     }
 
-   p.faq-accordion.active, p.accordion:hover {
-   }
+     p.faq-accordion.active, p.accordion:hover {
+     }
 
-   h3.faq-accordion:after {
-    content: '\2795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-   }
+     h3.faq-accordion:after {
+      content: '\2795';
+      font-size: 13px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+     }
 
-   h3.mobile-faq-menu:after {
-    content: '\2795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-   }
+     h3.mobile-faq-menu:after {
+      content: '\2795';
+      font-size: 13px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+     }
 
-   h3.faq-accordion.active:after {
-    content: "\2796";
-   }
-
-   h3.mobile-faq-menu.active:after {
+     h3.faq-accordion.active:after {
       content: "\2796";
-   }
+     }
 
-   div.faq-panel {
-    {% comment %} background-color: white; {% endcomment %}
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;
-    text-align: left;
-    max-width: 580px;
-   }
+     h3.mobile-faq-menu.active:after {
+        content: "\2796";
+     }
 
-   h3.faq-panel {
-    font-size: 14px;
-    line-height: 1.42857143;
-  }
+     div.faq-panel {
+      {% comment %} background-color: white; {% endcomment %}
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.6s ease-in-out;
+      opacity: 0;
+      text-align: left;
+      /* max-width: 580px; */
+     }
 
-   div.faq-panel.show {
-    opacity: 1;
-    max-height: 750px;
-   }
+     h3.faq-panel {
+      font-size: 14px;
+      line-height: 1.42857143;
+    }
 
-   div.mobile-faq-panel {
-    {% comment %} background-color: white; {% endcomment %}
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;
-    text-align: left;
-    padding-left: 18px;
-   }
-
-   div.mobile-faq-panel.show {
+     div.faq-panel.show {
       opacity: 1;
-    max-height: 750px;
-   }
+      max-height: 750px;
+     }
 
-   .caption-with-letter-spacing {
-    font-size: 1.2rem;
-  }
-  .faq-panel a {
-    text-decoration: underline;
+     div.mobile-faq-panel {
+      {% comment %} background-color: white; {% endcomment %}
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.6s ease-in-out;
+      opacity: 0;
+      text-align: center;
+     }
+
+     div.mobile-faq-panel.show {
+        opacity: 1;
+      max-height: 750px;
+     }
+
+     .caption-with-letter-spacing {
+      font-size: 2.4rem;
+    }
+    .faq-panel a {
+      text-decoration: underline;
+    }
+    @media (min-width: 641px) {
+      h3.mobile-faq-menu {
+        font-size: 17px;
+      }
   }
 </style>
 
 <section
   class="faq-section"
-  style="background-color: #e8f4fa; margin-top: 30px; padding-top: 7rem; padding-bottom: 7rem;"
+  style="background-color: #e8f4fa; margin-top: 30px; padding-top: 7rem; padding-bottom: 7rem; display: flex; flex-direction: column;"
 >
   <div class="collapsible-content__header scroll-trigger animate--slide-in" style="text-align: center;">
     <p class="caption-with-letter-spacing">Frequently Asked Questions</p>
 
-    <h2
-      class="collapsible-content__heading inline-richtext h1"
-      style="font-size: calc(var(--font-heading-scale)* 2.4rem) !important; margin-top: 10px;"
-    >
-      FAQs
-    </h2>
+    {% comment %}
+      <h2
+        class="collapsible-content__heading inline-richtext h1"
+        style="font-size: calc(var(--font-heading-scale)* 2.4rem) !important; margin-top: 10px;"
+      >
+        FAQs
+      </h2>
+    {% endcomment %}
   </div>
-  <div style="max-width: 120rem; justify-content: center; margin-left: auto; margin-right: auto;">
+  <div style="max-width: 120rem; justify-content: center; margin: 20px auto; width: 100%;">
     <div class="mobile-expertise-faq">
       <div>
         <h3 class="mobile-faq-menu">General</h3>

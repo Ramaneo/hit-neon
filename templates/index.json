@@ -19,7 +19,7 @@
         "column_9za3HP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Easy_Customization_Design_Your_Neon_Sign.png",
+            "image": "shopify://shop_images/create-your-neon.jpg?v=1722351540",
             "title": "Create Your Neon Sign: Effortless Customization!",
             "text": "",
             "link_label": "Create and Checkout",
@@ -29,7 +29,7 @@
         "column_UVEwKJ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Bring_Your_Vision_to_Life_Custom_Neon_Design.png",
+            "image": "shopify://shop_images/upload-your-design.jpg?v=1722353567",
             "title": "Turn Your Vision into Reality: Upload Your Design!",
             "text": "",
             "link_label": "Get a Free Quote",
@@ -39,7 +39,7 @@
         "column_KpUeVh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Design_Your_Illuminated_Sign_Upload_ImageLogo..png",
+            "image": "shopify://shop_images/explore-designs.jpg?v=1722353613",
             "title": "Explore Stunning Creations: We've Got You Covered",
             "text": "",
             "link_label": "Get Started",
@@ -50,8 +50,8 @@
       "block_order": ["column_9za3HP", "column_UVEwKJ", "column_KpUeVh"],
       "custom_css": [
         "@media (min-width: 641px) {.multicolumn-list {justify-content: center; }}",
-        ".filled-button {border: 1px solid #8ecae6; transition: 150ms all;}",
-        ".filled-button:hover {background-color: white; border: 1px solid #8ecae6; color: #8ecae6;}"
+        ".filled-button {border: 1px solid var(--color-main); transition: 150ms all; color: white;}",
+        ".filled-button:hover {background-color: white; border: 1px solid var(--color-main); color: var(--color-main);}"
       ],
       "settings": {
         "title": "<strong>Let's Create</strong>",
@@ -72,6 +72,7 @@
     },
     "neon_marquee_BcDkck": {
       "type": "neon-marquee",
+      "disabled": true,
       "settings": {}
     },
     "collection_products_carousel_TCRbyM": {
@@ -80,6 +81,7 @@
     },
     "custom_marquee_why_choose_us": {
       "type": "custom-marquee",
+      "disabled": true,
       "settings": {
         "content": "Why Choose Us"
       }
@@ -90,6 +92,7 @@
     },
     "custom_marquee_satisfied_customers": {
       "type": "custom-marquee",
+      "disabled": true,
       "settings": {
         "content": "1000+ Satisfied Customers"
       }
@@ -100,7 +103,7 @@
         "judge_me_reviews_featured_carousel_9ih3Pk": {
           "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "maxwidth": 1080
+            "maxwidth": 1180
           }
         }
       },
@@ -109,12 +112,17 @@
         "include_margins": true
       }
     },
+    "see_our_best": {
+      "type": "see-our-best",
+      "settings": {}
+    },
     "faq_iUizgD": {
       "type": "faq",
       "settings": {}
     },
     "about_hit_neon_4FNBDE": {
       "type": "about-hit-neon",
+      "disabled": true,
       "settings": {}
     },
     "newsletter_kgiXCR": {
@@ -167,6 +175,7 @@
     "why_choose_us_KBzaJ3",
     "custom_marquee_satisfied_customers",
     "17119705317e18ca9a",
+    "see_our_best",
     "faq_iUizgD",
     "about_hit_neon_4FNBDE",
     "newsletter_kgiXCR",

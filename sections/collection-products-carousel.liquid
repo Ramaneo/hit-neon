@@ -32,7 +32,7 @@
   }
 
   .tabs button.active-content {
-    background-color: #8ecae6;
+    background-color: var(--color-main);
     color: #fff;
   }
 
@@ -148,7 +148,8 @@
     </h2>
   </div>
   <ul class="tabs">
-    {% for collection in collections %}
+    {% assign collection_titles = collections | sort: 'products_count' | reverse %}
+    {% for collection in collection_titles %}
       <li>
         <button class="collection-button" data-collection-id="{{ collection.handle }}">{{ collection.title }}</button>
       </li>

@@ -1,7 +1,7 @@
 <section id="section-{{ section.id }}" class="section-banner-one">
   <div class="custom-banner-container">
-    <a href="/products/create-your-own-custom-neon-sign" class="neon-button2"><h2>Create Your Design</h2></a>
-    <a href="/pages/custom-designed-led-neon-sign" class="neon-button"><h2>Upload Your Design/Logo</h2></a>
+    <a href="/products/create-your-own-custom-neon-sign" class="neon-button2">Create Your Design</a>
+    <a href="/pages/custom-designed-led-neon-sign" class="neon-button">Upload Your Design/Logo</a>
   </div>
 </section>
 
@@ -22,13 +22,6 @@
 </script>
 
 <style>
-  .neon-button h2, .neon-button2 h2{
-    color: inherit;
-    font-family: inherit;
-    line-height: inherit;
-    margin: 0;
-  }
-
   @media (min-width: 641px) {
     .custom-banner-container {
       background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
@@ -119,8 +112,7 @@
         .custom-banner-container {
           background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner-02.jpg?v=1718174034");
           background-size: cover;
-          /* aspect-ratio: 3339/4999; */
-          aspect-ratio: 3339/4500;
+          aspect-ratio: 3339/4999;
           justify-content: center;
           padding-bottom: 30px;
           gap: 20px;
@@ -132,7 +124,6 @@
 
 
     .neon-button {
-      text-align: center;
       text-decoration: none;
       border: calc(0.08 * var(--m)) solid transparent;
       position: relative;
@@ -151,8 +142,8 @@
       margin-top: auto;
 
 
-      background: linear-gradient(var(--color-secondary), var(--color-secondary)),
-        linear-gradient(var(--color-secondary) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+      background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
         linear-gradient(
           90deg,
           var(--orange),
@@ -187,17 +178,17 @@
       {% comment %} flex: 1; {% endcomment %}
       width: 500.633px;
 
-      background: linear-gradient(var(--color-main), var(--color-main)),
-        linear-gradient(var(--color-main) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+      background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
         linear-gradient(
           90deg,
           var(--orange),
-          var(--yellow),
-          var(--green),
-          var(--blue),
-          var(--purple),
-          var(--pink),
-          var(--red)
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--yellowish),
+        var(--yellow),
+        var(--orange)
         );
       background-origin: border-box;
       background-clip: padding-box, border-box, border-box;
