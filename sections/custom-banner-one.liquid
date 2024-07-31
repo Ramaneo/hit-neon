@@ -1,7 +1,9 @@
 <section id="section-{{ section.id }}" class="section-banner-one">
   <div class="custom-banner-container">
-    <a href="/products/create-your-own-custom-neon-sign" class="neon-button2"><h2>Create Your Design</h2></a>
-    <a href="/pages/custom-designed-led-neon-sign" class="neon-button"><h2>Upload Your Design/Logo</h2></a>
+    <div class="button-holders">
+      <a href="/products/create-your-own-custom-neon-sign" class="neon-button2"><h2>Create Your Design</h2></a>
+      <a href="/pages/custom-designed-led-neon-sign" class="neon-button"><h2>Upload Your Design/Logo</h2></a>
+    </div>
   </div>
 </section>
 
@@ -22,175 +24,37 @@
 </script>
 
 <style>
-    .neon-button h2, .neon-button2 h2{
-      color: inherit;
-      font-family: inherit;
-      line-height: inherit;
-      margin: 0;
-    }
-
-    @media (min-width: 641px) {
-      .custom-banner-container {
-        background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
-        background-size: cover;
-        aspect-ratio: 3;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 30px;
-        gap: 20px;
-        position: sticky;
+      .neon-button h2, .neon-button2 h2{
+        color: inherit;
+        font-family: inherit;
+        line-height: inherit;
+        margin: 0;
+      }
+      .button-holders {
+        margin-top: auto;
       }
 
-
-      .neon-button::before {
-        content: "";
-        background: linear-gradient(
-          90deg,
-          var(--orange),
-          var(--yellow),
-          var(--green),
-          var(--blue),
-          var(--purple),
-          var(--pink),
-          var(--red)
-        );
-        height: 30%;
-        width: 60%;
-        position: absolute;
-        bottom: -20%;
-        z-index: -1;
-        background-size: 200%;
-        animation: animate 2s infinite linear;
-        filter: blur(calc(0.8 * var(--m)));
-      }
-      .neon-button2::before {
-        content: "";
-        background: linear-gradient(
-          90deg,
-          var(--orange),
-          var(--yellow),
-          var(--yellowish),
-          var(--yellow),
-          var(--yellowish),
-          var(--yellow),
-          var(--orange)
-        );
-        height: 30%;
-        width: 60%;
-        position: absolute;
-        bottom: -20%;
-        z-index: -1;
-        background-size: 200%;
-        animation: animate 2s infinite linear;
-        filter: blur(calc(0.8 * var(--m)));
-
-      }
-    }
-
-    @media (min-width: 2500px) {
-
-    }
-
-
-
-    :root {
-        --m: 4rem;
-
-        --red: #ff6565;
-        --pink: #ff64f9;
-        --purple: #6b5fff;
-        --blue: #4d8aff;
-        --green: #5bff89;
-        --yellow: #ffee55;
-        --orange: #ff6d1b;
-        --yellowish: #E8D5AB;
-      }
-
-
-        @media (max-width: 641px) {
-          .neon-button {
-            width: 100% !important;
-          }
-          .neon-button2 {
-            width: 100% !important;
-            margin-bottom: 20px;
-          }
-
-          .custom-banner-container {
-            background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner-02.jpg?v=1718174034");
-            background-size: cover;
-            /* aspect-ratio: 3339/4999; */
-            aspect-ratio: 3339/4000;
-            background-position-y: center;
-            justify-content: center;
-            padding-bottom: 30px;
-            gap: 20px;
-            position: sticky;
-            align-content: end;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-          }
+      @media (min-width: 641px) {
+        .custom-banner-container {
+          background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
+          background-size: cover;
+          aspect-ratio: 3;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 30px;
+          gap: 20px;
+          position: sticky;
         }
-
-
-      .neon-button {
-        text-align: center;
-        text-decoration: none;
-        border: calc(0.08 * var(--m)) solid transparent;
-        position: relative;
-        color: #f3f3f3;
-        font-family: "montserrat-bold";
-        {% comment %} font-size: var(--m); {% endcomment %}
-        font-size: 20px;
-
-        border-radius: calc(0.7 * var(--m));
-        padding: calc(0.5 * var(--m)) calc(1 * var(--m));
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        {% comment %} flex: 1; {% endcomment %}
-        width: 500.633px;
-
-
-        background: linear-gradient(var(--color-secondary), var(--color-secondary)),
-          linear-gradient(var(--color-secondary) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
-          linear-gradient(
-            90deg,
-            var(--orange),
-            var(--yellow),
-            var(--green),
-            var(--blue),
-            var(--purple),
-            var(--pink),
-            var(--red)
-          );
-        background-origin: border-box;
-        background-clip: padding-box, border-box, border-box;
-        background-size: 200%;
-        animation: animate 2s infinite linear;
-      }
-      .neon-button2 {
+        .button-holders {
+          display: flex;
   margin-top: auto;
-        text-decoration: none;
-        border: calc(0.08 * var(--m)) solid transparent;
-        position: relative;
-        color: #f3f3f3;
-        font-family: "montserrat-bold";
-        {% comment %} font-size: var(--m); {% endcomment %}
-        font-size: 20px;
+  gap: 20px;
+        }
 
-        border-radius: calc(0.7 * var(--m));
-        padding: calc(0.5 * var(--m)) calc(1 * var(--m));
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        {% comment %} flex: 1; {% endcomment %}
-        width: 500.633px;
 
-        background: linear-gradient(var(--color-main), var(--color-main)),
-          linear-gradient(var(--color-main) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
-          linear-gradient(
+        .neon-button::before {
+          content: "";
+          background: linear-gradient(
             90deg,
             var(--orange),
             var(--yellow),
@@ -200,35 +64,181 @@
             var(--pink),
             var(--red)
           );
-        background-origin: border-box;
-        background-clip: padding-box, border-box, border-box;
-        background-size: 200%;
-        animation: animate 2s infinite linear;
-      }
-
-
-
-      .neon-button:hover,
-      .neon-button:hover::before {
-        animation: animate 0.5s infinite linear;
-      }
-      .neon-button2:hover,
-      .neon-button2:hover::before {
-        animation: animate 0.5s infinite linear;
-      }
-
-      @keyframes animate {
-        0% {
-          background-position: 0;
+          height: 30%;
+          width: 60%;
+          position: absolute;
+          bottom: -20%;
+          z-index: -1;
+          background-size: 200%;
+          animation: animate 2s infinite linear;
+          filter: blur(calc(0.8 * var(--m)));
         }
-        100% {
-          background-position: 200%;
+        .neon-button2::before {
+          content: "";
+          background: linear-gradient(
+            90deg,
+            var(--orange),
+            var(--yellow),
+            var(--yellowish),
+            var(--yellow),
+            var(--yellowish),
+            var(--yellow),
+            var(--orange)
+          );
+          height: 30%;
+          width: 60%;
+          position: absolute;
+          bottom: -20%;
+          z-index: -1;
+          background-size: 200%;
+          animation: animate 2s infinite linear;
+          filter: blur(calc(0.8 * var(--m)));
+
         }
       }
 
-      @media screen and (max-width: 1000px) {
-        :root {
-          --m: 2rem;
-        }
+      @media (min-width: 2500px) {
+
       }
+
+
+
+      :root {
+          --m: 4rem;
+
+          --red: #ff6565;
+          --pink: #ff64f9;
+          --purple: #6b5fff;
+          --blue: #4d8aff;
+          --green: #5bff89;
+          --yellow: #ffee55;
+          --orange: #ff6d1b;
+          --yellowish: #E8D5AB;
+        }
+
+
+          @media (max-width: 641px) {
+            .neon-button {
+              width: 100% !important;
+            }
+            .neon-button2 {
+              width: 100% !important;
+              margin-bottom: 20px;
+            }
+
+            .custom-banner-container {
+              background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner-02.jpg?v=1718174034");
+              background-size: cover;
+              /* aspect-ratio: 3339/4999; */
+              aspect-ratio: 3339/4000;
+              background-position-y: center;
+              justify-content: center;
+              padding-bottom: 30px;
+              gap: 20px;
+              position: sticky;
+              align-content: end;
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+
+        .neon-button {
+          text-align: center;
+          text-decoration: none;
+          border: calc(0.08 * var(--m)) solid transparent;
+          position: relative;
+          color: #f3f3f3;
+          font-family: "montserrat-bold";
+          {% comment %} font-size: var(--m); {% endcomment %}
+          font-size: 20px;
+
+          border-radius: calc(0.7 * var(--m));
+          padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          {% comment %} flex: 1; {% endcomment %}
+          width: 500.633px;
+
+
+          background: linear-gradient(var(--color-secondary), var(--color-secondary)),
+            linear-gradient(var(--color-secondary) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+            linear-gradient(
+              90deg,
+              var(--orange),
+              var(--yellow),
+              var(--green),
+              var(--blue),
+              var(--purple),
+              var(--pink),
+              var(--red)
+            );
+          background-origin: border-box;
+          background-clip: padding-box, border-box, border-box;
+          background-size: 200%;
+          animation: animate 2s infinite linear;
+        }
+        .neon-button2 {
+    margin-top: auto;
+          text-decoration: none;
+          border: calc(0.08 * var(--m)) solid transparent;
+          position: relative;
+          color: #f3f3f3;
+          font-family: "montserrat-bold";
+          {% comment %} font-size: var(--m); {% endcomment %}
+          font-size: 20px;
+
+          border-radius: calc(0.7 * var(--m));
+          padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          {% comment %} flex: 1; {% endcomment %}
+          width: 500.633px;
+
+          background: linear-gradient(var(--color-main), var(--color-main)),
+            linear-gradient(var(--color-main) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+            linear-gradient(
+              90deg,
+              var(--orange),
+              var(--yellow),
+              var(--green),
+              var(--blue),
+              var(--purple),
+              var(--pink),
+              var(--red)
+            );
+          background-origin: border-box;
+          background-clip: padding-box, border-box, border-box;
+          background-size: 200%;
+          animation: animate 2s infinite linear;
+        }
+
+
+
+        .neon-button:hover,
+        .neon-button:hover::before {
+          animation: animate 0.5s infinite linear;
+        }
+        .neon-button2:hover,
+        .neon-button2:hover::before {
+          animation: animate 0.5s infinite linear;
+        }
+
+        @keyframes animate {
+          0% {
+            background-position: 0;
+          }
+          100% {
+            background-position: 200%;
+          }
+        }
+
+        @media screen and (max-width: 1000px) {
+          :root {
+            --m: 2rem;
+          }
+        }
 </style>
