@@ -66,7 +66,21 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-
+    <style>
+     /* Styles for screen sizes between 760px and 1023px */
+      @media (min-width: 760px) and (max-width: 1023px) {
+        .upload-banner-container {
+          width: 250px;
+        }
+      }
+      
+      /* Styles for desktop view (1024px and above) */
+      @media (min-width: 1024px) {
+        .upload-banner-container {
+          width: 360px;
+        }
+      }
+    </style>
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
