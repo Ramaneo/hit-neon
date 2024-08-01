@@ -1,17 +1,17 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
-    "logo": "shopify://shop_images/hitneon-logo_1.png?v=1722249587",
+    "logo": "shopify:\/\/shop_images\/hitneon-logo_1.png?v=1722249587",
     "logo_width": 120,
-    "favicon": "shopify://shop_images/Favicon_Hitneon.svg?v=1722066175",
+    "favicon": "shopify:\/\/shop_images\/Favicon_Hitneon.svg?v=1722066175",
     "type_header_font": "montserrat_n4",
     "heading_scale": 100,
     "type_body_font": "montserrat_n4",
@@ -108,7 +108,7 @@
     "sale_badge_color_scheme": "inverse",
     "sold_out_badge_color_scheme": "background-1",
     "brand_headline": "HitNeon Neon Signs",
-    "brand_description": "<p>Custom Neon Signs</p><p>Farko Tech Inc</p><p>98 Cuttermill Road Suite #466S</p><p>Great Neck, NY 11021</p><p><strong>PHONE: </strong><a href=\"tel:0018339464422\" title=\"tel:0018339464422\">+1 (833) 946 44 22</a></p><p><strong>EMAIL:</strong> hello@hitneon.com</p>",
+    "brand_description": "<p>Custom Neon Signs<\/p><p>Farko Tech Inc<\/p><p>98 Cuttermill Road Suite #466S<\/p><p>Great Neck, NY 11021<\/p><p><strong>PHONE: <\/strong><a href=\"tel:0018339464422\" title=\"tel:0018339464422\">+1 (833) 946 44 22<\/a><\/p><p><strong>EMAIL:<\/strong> hello@hitneon.com<\/p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -138,7 +138,7 @@
               "name": "montserrat-regular",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Regular.ttf?v=1710922370",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Regular.ttf?v=1710922370",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -156,7 +156,7 @@
               "name": "montserrat-light",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Light.otf?v=1710922482",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Light.otf?v=1710922482",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -174,7 +174,7 @@
               "name": "montserrat-medium",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Medium.otf?v=1710922569",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Medium.otf?v=1710922569",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -192,7 +192,7 @@
               "name": "montserrat-bold",
               "custom_font_weight": "none",
               "custom_font_style": "none",
-              "custom_font_url": "https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Montserrat-Bold.ttf?v=1710922812",
+              "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0626\/5992\/0039\/files\/Montserrat-Bold.ttf?v=1710922812",
               "apply_h1": false,
               "apply_h2": false,
               "apply_h3": false,
@@ -235,25 +235,30 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "319724205969189013": {
-        "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "14327677521557774844": {
-        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "type": "shopify:\/\/apps\/simprosys-google-shopping-feed\/blocks\/core_settings_block\/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#0080ff",
@@ -263,7 +268,7 @@
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "greeting_message": "👋 Hi, message us with any questions. You can also reach out to us at hello@hitneon.com!"
+          "greeting_message": "Hi, message us with any questions! You can also reach out to us at hello@hitneon.com!"
         }
       }
     },
@@ -492,7 +497,7 @@
       "sale_badge_color_scheme": "inverse",
       "sold_out_badge_color_scheme": "background-1",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

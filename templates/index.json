@@ -1,17 +1,18 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "custom-banner-one": {
       "type": "custom-banner-one",
-      "settings": {}
+      "settings": {
+      }
     },
     "multicolumn_hgL4KE": {
       "type": "multicolumn",
@@ -19,42 +20,46 @@
         "column_9za3HP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/create-your-neon.jpg?v=1722525334",
+            "image": "shopify:\/\/shop_images\/create-your-neon.jpg?v=1722525334",
             "title": "Create Your Neon Sign: Effortless Customization!",
             "text": "",
             "link_label": "Create and Checkout",
-            "link": "/products/create-your-own-custom-neon-sign"
+            "link": "\/products\/create-your-own-custom-neon-sign"
           }
         },
         "column_UVEwKJ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/upload-your-design.jpg?v=1722525353",
+            "image": "shopify:\/\/shop_images\/upload-your-design.jpg?v=1722525353",
             "title": "Turn Your Vision into Reality: Upload Your Design!",
             "text": "",
             "link_label": "Get a Free Quote",
-            "link": "/pages/custom-designed-led-neon-sign"
+            "link": "\/pages\/custom-designed-led-neon-sign"
           }
         },
         "column_KpUeVh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/explore-designs.jpg?v=1722525368",
+            "image": "shopify:\/\/shop_images\/explore-designs.jpg?v=1722525368",
             "title": "Explore Stunning Creations: We've Got You Covered",
             "text": "",
             "link_label": "Get Started",
-            "link": "/collections/gift-neon-signs"
+            "link": "\/collections\/gift-neon-signs"
           }
         }
       },
-      "block_order": ["column_9za3HP", "column_UVEwKJ", "column_KpUeVh"],
+      "block_order": [
+        "column_9za3HP",
+        "column_UVEwKJ",
+        "column_KpUeVh"
+      ],
       "custom_css": [
         "@media (min-width: 641px) {.multicolumn-list {justify-content: center; }}",
         ".filled-button {border: 1px solid var(--color-main); transition: 150ms all; color: white;}",
         ".filled-button:hover {background-color: white; border: 1px solid var(--color-main); color: var(--color-main);}"
       ],
       "settings": {
-        "title": "<strong>Let's Create</strong>",
+        "title": "<strong>Let's Create<\/strong>",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "portrait",
@@ -73,11 +78,13 @@
     "neon_marquee_BcDkck": {
       "type": "neon-marquee",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "collection_products_carousel_TCRbyM": {
       "type": "collection-products-carousel",
-      "settings": {}
+      "settings": {
+      }
     },
     "custom_marquee_why_choose_us": {
       "type": "custom-marquee",
@@ -88,7 +95,8 @@
     },
     "why_choose_us_KBzaJ3": {
       "type": "why-choose-us",
-      "settings": {}
+      "settings": {
+      }
     },
     "custom_marquee_satisfied_customers": {
       "type": "custom-marquee",
@@ -101,29 +109,34 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_9ih3Pk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1180
           }
         }
       },
-      "block_order": ["judge_me_reviews_featured_carousel_9ih3Pk"],
+      "block_order": [
+        "judge_me_reviews_featured_carousel_9ih3Pk"
+      ],
       "settings": {
         "include_margins": true
       }
     },
     "see_our_best": {
       "type": "see-our-best",
-      "settings": {}
+      "settings": {
+      }
     },
     "faq_iUizgD": {
       "type": "faq",
-      "settings": {}
+      "settings": {
+      }
     },
     "about_hit_neon_4FNBDE": {
       "type": "about-hit-neon",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "newsletter_kgiXCR": {
       "type": "newsletter",
@@ -138,12 +151,13 @@
         "paragraph_cVNLDe": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to hear about our new arrivals and exclusive offers.</p>"
+            "text": "<p>Be the first to hear about our new arrivals and exclusive offers.<\/p>"
           }
         },
         "email_form_pfrcKg": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
