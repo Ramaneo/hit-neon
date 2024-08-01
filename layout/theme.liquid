@@ -67,10 +67,17 @@
 
     {% render 'meta-tags' %}
     <style>
-      /* Styles for desktop view */
+     /* Styles for screen sizes between 760px and 1023px */
+      @media (min-width: 760px) and (max-width: 1023px) {
+        .upload-banner-container {
+          width: 250px;
+        }
+      }
+      
+      /* Styles for desktop view (1024px and above) */
       @media (min-width: 1024px) {
         .upload-banner-container {
-          width: 360px !important;
+          width: 360px;
         }
       }
     </style>
