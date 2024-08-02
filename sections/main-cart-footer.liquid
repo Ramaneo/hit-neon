@@ -24,6 +24,20 @@
       value: 1.0,
       currency: 'USD',
     });
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        send_to: 'AW-16588561317/U7cNCNuKxMcZEKW3heY9',
+        value: 1.0,
+        currency: 'USD',
+        event_callback: callback,
+      });
+      return false;
+    }
   </script>
 </head>
 
@@ -100,6 +114,7 @@
                   id="checkout"
                   class="cart__checkout-button button"
                   name="checkout"
+                  onclick="gtag_report_conversion()"
                   {% if cart == empty %}
                     disabled
                   {% endif %}
