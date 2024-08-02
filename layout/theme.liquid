@@ -7,6 +7,20 @@
     <meta name="theme-color" content="">
 
     <!-- Google tag (gtag.js) -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-57QZGPLC');
+    </script>
+    <!-- End Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16588561317"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -67,13 +81,13 @@
 
     {% render 'meta-tags' %}
     <style>
-     /* Styles for screen sizes between 760px and 1023px */
+      /* Styles for screen sizes between 760px and 1023px */
       @media (min-width: 760px) and (max-width: 1023px) {
         .upload-banner-container {
           width: 250px;
         }
       }
-      
+
       /* Styles for desktop view (1024px and above) */
       @media (min-width: 1024px) {
         .upload-banner-container {
@@ -350,6 +364,16 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-57QZGPLC"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {% section 'custom-font-hitneon' %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
