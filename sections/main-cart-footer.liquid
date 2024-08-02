@@ -21,7 +21,7 @@
   <script>
     gtag('event', 'conversion', {
       send_to: 'AW-16588561317/9NrECILDu8cZEKW3heY9',
-      value: {{ cart.total_price | money}},
+      value: {{ cart.total_price | divided_by: 100.00  }},
       currency: 'USD',
     });
     function gtag_report_conversion(url) {
@@ -32,7 +32,7 @@
       };
       gtag('event', 'conversion', {
         send_to: 'AW-16588561317/U7cNCNuKxMcZEKW3heY9',
-        value: {{ cart.total_price | money}},
+        value: {{ cart.total_price | divided_by: 100.00 }},
         currency: 'USD',
         event_callback: callback,
       });
