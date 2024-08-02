@@ -17,6 +17,16 @@
   }
 {%- endstyle -%}
 
+<head>
+  <script>
+    gtag('event', 'conversion', {
+      send_to: 'AW-16588561317/9NrECILDu8cZEKW3heY9',
+      value: 1.0,
+      currency: 'USD',
+    });
+  </script>
+</head>
+
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
   id="main-cart-footer"
@@ -60,7 +70,9 @@
 
                 <div class="totals">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-                  <p  data-hulkapps-cart-total class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+                  <p data-hulkapps-cart-total class="totals__total-value">
+                    {{ cart.total_price | money_with_currency }}
+                  </p>
                 </div>
 
                 <small class="tax-note caption-large rte">
