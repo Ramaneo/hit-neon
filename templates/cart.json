@@ -1,1 +1,35 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"color_scheme":"background-1","padding_top":0,"padding_bottom":0}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{"color_scheme":"background-1","padding_top":20,"padding_bottom":40}}},"order":["cart-items","cart-footer"]}
+{
+  "sections": {
+    "custom_liquid_gtm": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<head>\n  <script>\n    gtag('event', 'conversion', {\n      send_to: 'AW-16588561317/9NrECILDu8cZEKW3heY9',\n      value: {{ cart.total_price | divided_by: 100.00  }},\n      currency: 'USD',\n    });\n    function gtag_report_conversion(url) {\n      var callback = function () {\n        if (typeof url != 'undefined') {\n          window.location = url;\n        }\n      };\n      gtag('event', 'conversion', {\n        send_to: 'AW-16588561317/U7cNCNuKxMcZEKW3heY9',\n        value: {{ cart.total_price | divided_by: 100.00 }},\n        currency: 'USD',\n        event_callback: callback,\n      });\n      return false;\n    }\n  </script>\n</head>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": { "type": "subtotal", "settings": {} },
+        "buttons": { "type": "buttons", "settings": {} }
+      },
+      "block_order": ["subtotal", "buttons"],
+      "settings": {
+        "color_scheme": "background-1",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": ["custom_liquid_gtm", "cart-items", "cart-footer"]
+}

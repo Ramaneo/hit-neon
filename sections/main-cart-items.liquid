@@ -434,9 +434,12 @@
                         {%- else -%}
                           <span data-hulkapps-line-price data-key="{{item.key}}" class="price price--end">
                             {{ item.original_line_price | money }}
-                            <span style="text-decoration: line-through;">
-                              {{ item.product.compare_at_price | times: item.quantity | money }}
-                            </span>
+                            {%- assign total_compare_at_price = item.product.compare_at_price | times: item.quantity -%}
+                            {%- if total_compare_at_price > item.original_line_price -%}
+                              <span style="text-decoration: line-through;">
+                                {{ item.product.compare_at_price | times: item.quantity | money }}
+                              </span>
+                            {%- endif -%}
                           </span>
                         {%- endif -%}
 
