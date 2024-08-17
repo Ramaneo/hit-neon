@@ -363,6 +363,12 @@
     <meta name="google-site-verification" content="t4R9DPumfxToymL6mkdi0Ivu_E6Z9duuyIp8N33zWHc">
   </head>
 
+  {% if page.handle == 'create-your-own-custom-neon-sign' %}
+  <style>
+    #shopify-chat-dummy{display:none !important;}
+  </style>
+{% endif %}
+  
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <!-- Google Tag Manager (noscript) -->
     <noscript
