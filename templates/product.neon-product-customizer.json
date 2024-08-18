@@ -191,7 +191,6 @@
     },
     "faq": {
       "type": "faq",
-      "disabled": true,
       "settings": {
       }
     },
