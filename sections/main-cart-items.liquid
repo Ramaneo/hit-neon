@@ -215,6 +215,18 @@
                         {%- else -%}
                           <span data-hulkapps-line-price data-key="{{item.key}}" class="price price--end">
                             {{ item.original_line_price | money }}
+
+                            {%- assign total_compare_at_price = item.product.compare_at_price
+                              | times: item.quantity
+                              | money_without_currency
+                            -%}
+                            {%- assign original_line_price = item.original_line_price | money_without_currency -%}
+
+                            {%- if total_compare_at_price > original_line_price -%}
+                              <span style="text-decoration: line-through;">
+                                {{ item.product.compare_at_price | times: item.quantity | money }}
+                              </span>
+                            {%- endif -%}
                           </span>
                         {%- endif -%}
 
@@ -434,8 +446,16 @@
                         {%- else -%}
                           <span data-hulkapps-line-price data-key="{{item.key}}" class="price price--end">
                             {{ item.original_line_price | money }}
-                            {%- assign total_compare_at_price = item.product.compare_at_price | times: item.quantity -%}
-                            {%- if total_compare_at_price > item.original_line_price -%}
+                            {%- assign total_compare_at_price = item.product.compare_at_price
+                              | times: item.quantity
+                              | money_without_currency
+                            -%}
+                            {%- assign original_line_price = item.original_line_price | money_without_currency -%}
+                            {% comment %}
+                              {{ item.product.compare_at_price | times: 1 | money_without_currency }}
+                              {{ original_line_price }}
+                            {% endcomment %}
+                            {%- if total_compare_at_price > original_line_price -%}
                               <span style="text-decoration: line-through;">
                                 {{ item.product.compare_at_price | times: item.quantity | money }}
                               </span>
