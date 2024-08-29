@@ -123,7 +123,7 @@
       "type": "apps",
       "blocks": {
         "neon_sign_customiser_neon_customiser_eecRDW": {
-          "type": "shopify:\/\/apps\/neon-sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515",
+          "type": "shopify:\/\/apps\/sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515",
           "settings": {
             "customiser_id": "",
             "scroll_order": false,
@@ -140,6 +140,15 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_6EAbDW": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.npc-frame-preview canvas {\n  transform: scale(1);\n  transition: all .2s;\n}\n.npc-main-container:has(.npc-selection-button:nth-child(1).npc-selected) .npc-frame-preview canvas {\n  transform: scale(0.9);\n}\n.npc-main-container:has(.npc-selection-button:nth-child(2).npc-selected) .npc-frame-preview canvas {\n  transform: scale(0.95);\n}\n.npc-main-container:has(.npc-selection-button:nth-child(3).npc-selected) .npc-frame-preview canvas {\n  transform: scale(1);\n}\n\n<\/style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "whats_in_tabs": {
@@ -208,6 +217,7 @@
     "rich_text_YcNMfy",
     "main",
     "170497290749eb8e9d",
+    "custom_liquid_6EAbDW",
     "whats_in_tabs",
     "related-products",
     "why_choose_us",
