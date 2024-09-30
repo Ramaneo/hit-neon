@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "SUMMER SALE - 20% OFF SITEWIDE",
+            "text": "Fall Sale! 20% OFF Sitewide | Auto-applied on All Items",
             "link": ""
           }
         },
@@ -33,7 +33,6 @@
         "announcement-bar-0",
         "announcement_NWgkcr"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d0ae5861-4a00-46fa-8278-5d475304c1d8",
         "show_line_separator": true,
