@@ -123,7 +123,7 @@
       "type": "apps",
       "blocks": {
         "neon_sign_customiser_neon_customiser_eecRDW": {
-          "type": "shopify:\/\/apps\/sign-customiser\/blocks\/neon-customiser\/29c3b558-f454-440f-b53e-26c5e867a515",
+          "type": "shopify://apps/sign-customiser/blocks/neon-customiser/29c3b558-f454-440f-b53e-26c5e867a515",
           "settings": {
             "customiser_id": "",
             "scroll_order": false,
@@ -145,7 +145,16 @@
     "custom_liquid_6EAbDW": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.npc-frame-preview canvas {\n  transform: scale(1);\n  transition: all .2s;\n}\n.npc-main-container:has(.npc-selection-button:nth-child(1).npc-selected) .npc-frame-preview canvas {\n  transform: scale(0.9);\n}\n.npc-main-container:has(.npc-selection-button:nth-child(2).npc-selected) .npc-frame-preview canvas {\n  transform: scale(0.95);\n}\n.npc-main-container:has(.npc-selection-button:nth-child(3).npc-selected) .npc-frame-preview canvas {\n  transform: scale(1);\n}\n\n<\/style>",
+        "custom_liquid": "<style>\n.npc-frame-preview canvas {\n  transform: scale(1);\n  transition: all .2s;\n}\n.npc-main-container:has(.npc-selection-button:nth-child(1).npc-selected) .npc-frame-preview canvas {\n  transform: scale(0.9);\n}\n.npc-main-container:has(.npc-selection-button:nth-child(2).npc-selected) .npc-frame-preview canvas {\n  transform: scale(0.95);\n}\n.npc-main-container:has(.npc-selection-button:nth-child(3).npc-selected) .npc-frame-preview canvas {\n  transform: scale(1);\n}\n\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_KmJ8zz": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n@media (min-width: 1025px) {\n    .npc-selections-additional > div:nth-of-type(3) .npc-list {\n        display: grid;\n        grid-template-columns: repeat(4, minmax(0, 1fr));\n    }\n}\n</style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -185,7 +194,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_9ih3Pk": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
@@ -206,7 +215,7 @@
     "custom_liquid_wB7NJL": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h1 style=\"display: none;\">{{product.title}}<\/h1>",
+        "custom_liquid": "<h1 style=\"display: none;\">{{product.title}}</h1>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -218,6 +227,7 @@
     "main",
     "170497290749eb8e9d",
     "custom_liquid_6EAbDW",
+    "custom_liquid_KmJ8zz",
     "whats_in_tabs",
     "related-products",
     "why_choose_us",
