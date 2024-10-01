@@ -154,7 +154,7 @@
     "custom_liquid_KmJ8zz": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n@media (min-width: 1025px) {\n    .npc-selections-additional > div:nth-of-type(3) .npc-list {\n        display: grid;\n        grid-template-columns: repeat(4, minmax(0, 1fr));\n    }\n}\n</style>",
+        "custom_liquid": "<style>\n@media (min-width: 1025px) {\n    .npc-selections-additional > div:nth-of-type(3) .npc-list {\n        display: grid;\n        grid-template-columns: repeat(4, minmax(0, 1fr));\n    }\n}\n\n@media (max-width: 1025px) {\n    .npc-selections-additional > div:nth-of-type(3) .npc-preview-selector span {\n        width: 120px; height: 120px;\n    }\n}\n</style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
