@@ -155,9 +155,11 @@
   <ul class="tabs">
     {% assign collection_titles = collections | sort: 'products_count' | reverse %}
     {% for collection in collection_titles %}
+      {% unless collection.title == "Custom Neon Collection" %}
       <li>
         <button class="collection-button" data-collection-id="{{ collection.handle }}">{{ collection.title }}</button>
       </li>
+      {% endunless %}
     {% endfor %}
   </ul>
   {% for collection in collections %}
