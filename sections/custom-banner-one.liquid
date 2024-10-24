@@ -1,8 +1,37 @@
 <section id="section-{{ section.id }}" class="section-banner-one">
   <div class="custom-banner-container">
-    <div class="button-holders">
-      <a href="/products/create-your-own-custom-neon-sign" class="neon-button2"><h2>Create Your Design</h2></a>
-      <a href="/pages/custom-designed-led-neon-sign" class="neon-button"><h2>Upload Your Design/Logo</h2></a>
+    {% comment %} <div class="button-holders">
+            <a href="/products/create-your-own-custom-neon-sign" class="neon-button2"><h2>Create Your Design</h2></a>
+            <a href="/pages/custom-designed-led-neon-sign" class="neon-button"><h2>Upload Your Design/Logo</h2></a>
+          </div> {% endcomment %}
+    <div class="button-holders-desktop" style="margin-left: 120px; align-content: center;">
+      <div style="margin-bottom: 25px;">
+
+        <span class="text-logo">HIT NEON</span>
+      </div>
+      <span class="desc-text">Endless Customization<br>
+        High Quality<br>
+        Incredible Price</span>
+      <div style="display: flex; gap: 20px; margin-top: 25px;">
+
+        <a href="/products/create-your-own-custom-neon-sign" class="neon-button">
+          <h2>Create Your Design</h2>
+        </a>
+        <a href="/pages/custom-designed-led-neon-sign" class="neon-button2">
+          <h2>Upload Your Design/Logo</h2>
+        </a>
+      </div>
+    </div>
+    <div class="button-holders-mobile" style="align-content: center;">
+      <div style="display: flex; flex-direction: column; gap: 20px; bottom: 60px;position: absolute;right: 40px;left: 40px;">
+
+        <a href="/products/create-your-own-custom-neon-sign" class="neon-button">
+          <h2>Create Your Design</h2>
+        </a>
+        <a href="/pages/custom-designed-led-neon-sign" class="neon-button2">
+          <h2>Upload Your Design/Logo</h2>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -24,222 +53,260 @@
 </script>
 
 <style>
-      .neon-button h2, .neon-button2 h2{
-        color: inherit;
-        font-family: inherit;
-        line-height: inherit;
-        margin: 0;
-      }
-      .button-holders {
-        margin-top: auto;
-      }
 
-      @media (min-width: 641px) {
-        .custom-banner-container {
-          background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner_V2_1.jpg?v=1718119240");
-          background-size: cover;
-          aspect-ratio: 3;
-          display: flex;
-          justify-content: center;
-          padding-bottom: 30px;
-          gap: 20px;
-          position: sticky;
-        }
-        .button-holders {
-          display: flex;
-  margin-top: auto;
-  gap: 20px;
-  max-width: 1000px;
-  padding: 0 20px;
-  width: 100%;
-        }
+  .text-logo {
+    background: linear-gradient(90deg, #FF00BD 8.11%, #2693FF 99.65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'montserrat-bold';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: inline;
+  }
 
-
-        .neon-button::before {
-          content: "";
-          background: linear-gradient(
-            90deg,
-            var(--orange),
-            var(--yellow),
-            var(--green),
-            var(--blue),
-            var(--purple),
-            var(--pink),
-            var(--red)
-          );
-          height: 30%;
-          width: 60%;
-          position: absolute;
-          bottom: -20%;
-          z-index: -1;
-          background-size: 200%;
-          animation: animate 2s infinite linear;
-          filter: blur(calc(0.8 * var(--m)));
-        }
-        .neon-button2::before {
-          content: "";
-          background: linear-gradient(
-            90deg,
-            var(--orange),
-            var(--yellow),
-            var(--yellowish),
-            var(--yellow),
-            var(--yellowish),
-            var(--yellow),
-            var(--orange)
-          );
-          height: 30%;
-          width: 60%;
-          position: absolute;
-          bottom: -20%;
-          z-index: -1;
-          background-size: 200%;
-          animation: animate 2s infinite linear;
-          filter: blur(calc(0.8 * var(--m)));
-
-        }
-      }
-
-      @media (min-width: 2500px) {
-
-      }
-
-
-
-      :root {
-          --m: 4rem;
-
-          --red: #ff6565;
-          --pink: #ff64f9;
-          --purple: #6b5fff;
-          --blue: #4d8aff;
-          --green: #5bff89;
-          --yellow: #ffee55;
-          --orange: #ff6d1b;
-          --yellowish: #E8D5AB;
-        }
-
-
-          @media (max-width: 641px) {
-            .neon-button {
-              width: 100% !important;
-            }
-            .neon-button2 {
-              width: 100% !important;
-              margin-bottom: 20px;
-            }
-
-            .custom-banner-container {
-              background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/Hit-Neon-Website-Banner-02.jpg?v=1718174034");
-              background-size: cover;
-              /* aspect-ratio: 3339/4999; */
-              aspect-ratio: 3339/4000;
-              background-position-y: center;
-              justify-content: center;
-              padding-bottom: 30px;
-              gap: 20px;
-              position: sticky;
-              align-content: end;
-              padding: 20px;
-              display: flex;
-              flex-direction: column;
-            }
-          }
-
-
-        .neon-button {
-          text-align: center;
-          text-decoration: none;
-          border: calc(0.08 * var(--m)) solid transparent;
-          position: relative;
-          color: #f3f3f3;
-          font-family: "montserrat-bold";
-          {% comment %} font-size: var(--m); {% endcomment %}
-          font-size: 20px;
-
-          border-radius: calc(0.7 * var(--m));
-          padding: calc(0.5 * var(--m)) calc(1 * var(--m));
-          display: flex;
-          justify-content: center;
-          cursor: pointer;
-          flex: 1;
-
-
-          background: linear-gradient(var(--color-secondary), var(--color-secondary)),
-            linear-gradient(var(--color-secondary) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
-            linear-gradient(
-              90deg,
-              var(--orange),
-              var(--yellow),
-              var(--green),
-              var(--blue),
-              var(--purple),
-              var(--pink),
-              var(--red)
-            );
-          background-origin: border-box;
-          background-clip: padding-box, border-box, border-box;
-          background-size: 200%;
-          animation: animate 2s infinite linear;
-        }
-        .neon-button2 {
+  .desc-text {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 125% */
+    letter-spacing: 0.6px;
+  }
+  .neon-button h2,
+  .neon-button2 h2 {
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+  .button-holders {
     margin-top: auto;
-          text-decoration: none;
-          border: calc(0.08 * var(--m)) solid transparent;
-          position: relative;
-          color: #f3f3f3;
-          font-family: "montserrat-bold";
-          {% comment %} font-size: var(--m); {% endcomment %}
-          font-size: 20px;
+  }
 
-          border-radius: calc(0.7 * var(--m));
-          padding: calc(0.5 * var(--m)) calc(1 * var(--m));
-          display: flex;
-          justify-content: center;
-          cursor: pointer;
-          flex: 1;
-
-          background: linear-gradient(var(--color-main), var(--color-main)),
-            linear-gradient(var(--color-main) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
-            linear-gradient(
-              90deg,
-              var(--orange),
-              var(--yellow),
-              var(--green),
-              var(--blue),
-              var(--purple),
-              var(--pink),
-              var(--red)
-            );
-          background-origin: border-box;
-          background-clip: padding-box, border-box, border-box;
-          background-size: 200%;
-          animation: animate 2s infinite linear;
-        }
+  @media (min-width: 641px) {
+    .button-holders-mobile {
+      display: none;
+    }
+    .custom-banner-container {
+      background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/hitneon-banner.jpg?v=1729762886");
+      background-size: cover;
+      aspect-ratio: 3;
+      display: flex;
+      padding-bottom: 30px;
+      gap: 20px;
+      position: sticky;
+    }
+    .button-holders {
+      display: flex;
+      margin-top: auto;
+      gap: 20px;
+      max-width: 1000px;
+      padding: 0 20px;
+      width: 100%;
+    }
 
 
+    .neon-button::before {
+      content: "";
+      background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+      height: 30%;
+      width: 60%;
+      position: absolute;
+      bottom: -20%;
+      z-index: -1;
+      background-size: 200%;
+      animation: animate 28s infinite linear;
+      filter: blur(calc(0.8 * var(--m)));
+    }
+    .neon-button2::before {
 
-        .neon-button:hover,
-        .neon-button:hover::before {
-          animation: animate 0.5s infinite linear;
-        }
-        .neon-button2:hover,
-        .neon-button2:hover::before {
-          animation: animate 0.5s infinite linear;
-        }
+    ;
 
-        @keyframes animate {
-          0% {
-            background-position: 0;
-          }
-          100% {
-            background-position: 200%;
-          }
-        }
 
-        @media screen and (max-width: 1000px) {
-          :root {
-            --m: 2rem;
-          }
-        }
+    /*
+   content: "";
+   background: linear-gradient(
+   90deg,
+   var(--orange),
+   var(--yellow),
+   var(--yellowish),
+   var(--yellow),
+   var(--yellowish),
+   var(--yellow),
+   var(--orange)
+   );
+   height: 30%;
+   width: 60%;
+   position: absolute;
+   bottom: -20%;
+   z-index: -1;
+   background-size: 200%;
+   animation: animate 2s infinite linear;
+   filter: blur(calc(0.8 * var(--m)));
+*/
+
+  }
+}
+
+@media (min-width: 2500px) {}
+
+
+:root {
+  --m: 4rem;
+
+  --red: #ff6565;
+  --pink: #ff64f9;
+  --purple: #6b5fff;
+  --blue: #4d8aff;
+  --green: #5bff89;
+  --yellow: #ffee55;
+  --orange: #ff6d1b;
+  --yellowish: #E8D5AB;
+}
+
+
+@media (max-width: 641px) {
+  .button-holders-desktop {
+    display: none;
+  }
+  .neon-button {
+    width: 100% !important;
+  }
+  .neon-button2 {
+    width: 100% !important;
+    margin-bottom: 20px;
+    background: linear-gradient(#06234B, #06234B), linear-gradient(90deg, #ff00bd, #0080ff, #ff00bd, #0080ff) !important;
+    background-size: 240% 240% !important;
+    animation: animate 8s ease infinite !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box, border-box !important;
+  }
+
+  .custom-banner-container {
+    background-image: url("https://cdn.shopify.com/s/files/1/0626/5992/0039/files/htineon-banner-mobile.jpg?v=1729762886");
+    background-size: cover;
+    /* aspect-ratio: 3339/4999; */
+    aspect-ratio: 1715 / 2562;
+
+    background-position-y: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    position: sticky;
+    align-content: end;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.neon-button {
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  position: relative;
+  color: #f3f3f3;
+  font-family: "montserrat";
+  align-items: center;
+  {% comment %} font-size: var(--m);
+{% endcomment %}
+font-size: 18px;
+
+border-radius: 4px;
+/* padding: calc(0.5 * var(--m)) calc(1 * var(--m)); */
+padding: 12px 20px;
+display: flex;
+justify-content: center;
+cursor: pointer;
+flex: 1;
+
+
+background: linear-gradient(90deg,#ff00bd,#0080ff,#ff00bd,#0080ff);
+background-size: 240% 240%;
+animation: animate 28s ease infinite;
+
+
+background-origin: border-box;
+background-clip: padding-box
+, border-box
+, border-box;
+}
+.neon-button2 {
+  text-align: center;
+  text-decoration: none;
+  border: calc(0.08 * var(--m)) solid transparent;
+  position: relative;
+  color: #f3f3f3;
+  font-family: "montserrat";
+  {% comment %} font-size: var(--m);
+{% endcomment %}
+font-size: 18px;
+
+border-radius: 4px;
+/* padding: calc(0.5 * var(--m)) calc(1 * var(--m)); */
+padding: 12px 20px;
+display: flex;
+justify-content: center;
+cursor: pointer;
+flex: 1;
+
+
+background: linear-gradient(#000C24, #000C24), linear-gradient(90deg, #ff00bd, #0080ff, #ff00bd, #0080ff);
+background-size: 240% 240%;
+animation: animate 8s ease infinite;
+
+
+background-origin: border-box;
+background-clip: padding-box
+, border-box
+, border-box;
+white-space: nowrap;
+}
+
+
+.neon-button:hover,
+.neon-button:hover::before {
+;
+/* animation: animate 0.5s infinite linear; */
+}
+.neon-button2:hover,
+.neon-button2:hover::before {
+;
+/* animation: animate 0.5s infinite linear; */
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 2rem;
+  }
+}
 </style>
