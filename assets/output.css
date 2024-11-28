@@ -704,3 +704,445 @@ video {
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
 }
+
+/* Collection Description-FAQ's */
+
+#description-header--Container {
+  margin-top: 50px;
+  overflow-y: hidden;
+}
+
+@media (min-width: 1024px) {
+  #description-header--Container {
+    margin-top: 70px;
+  }
+}
+
+#description-header--Container > h3 {
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#description-header--Container > p {
+  margin-bottom: 22px;
+  font-size: 16px;
+}
+
+#description-header--DesFaq {
+  margin-bottom: 1rem;
+  margin-right: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media not all and (min-width: 768px) {
+  #description-header--DesFaq {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  #description-header--DesFaq {
+    justify-content: center;
+  }
+}
+
+#header--DesFac-Up {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media not all and (min-width: 768px) {
+  #header--DesFac-Up {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  #header--DesFac-Up {
+    position: relative;
+    font-size: 25px;
+  }
+}
+
+#header--DesFac-Up span {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+}
+
+@media (min-width: 768px) {
+  #header--DesFac-Up span {
+    right: -30px;
+  }
+}
+
+#faqs--Container {
+  margin-top: 20px;
+  margin-right: 1.25rem;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  #faqs--Container {
+    margin-top: 30px;
+  }
+}
+
+#faqs--Header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media not all and (min-width: 768px) {
+  #faqs--Header {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  #faqs--Header {
+    justify-content: center;
+  }
+}
+
+#header--DesFac-Down {
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  #header--DesFac-Down {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+#header--DesFac-Down span {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+}
+
+@media (min-width: 768px) {
+  #header--DesFac-Down span {
+    right: -30px;
+  }
+}
+
+.description-header--sub-header {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(47 47 47 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 1024px) {
+  .description-header--sub-header {
+    padding-right: 30px;
+    font-size: 14px;
+  }
+}
+
+.list-paragraph {
+  margin-bottom: 22px;
+}
+
+/* end collection faq */
+
+.h-\[137px\] {
+  height: 137px;
+}
+
+.h-\[183px\] {
+  height: 183px;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[3\.5rem\] {
+  height: 3.5rem;
+}
+
+.h-\[318px\] {
+  height: 318px;
+}
+
+.h-\[36px\] {
+  height: 36px;
+}
+
+.h-\[44px\] {
+  height: 44px;
+}
+
+.h-\[46px\] {
+  height: 46px;
+}
+
+.h-\[calc\(100vh-110px\)\] {
+  height: calc(100vh - 110px);
+}
+.h-\[calc\(75vh-110px\)\] {
+  height: calc(75vh - 110px);
+}
+
+.h-full {
+  height: 100%;
+}
+
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
+.max-h-\[550px\] {
+  max-height: 550px;
+}
+
+.max-h-\[80vh\] {
+  max-height: 80vh;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
+}
+
+.w-\[13rem\] {
+  width: 13rem;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[16rem\] {
+  width: 16rem;
+}
+
+.w-\[200\%\] {
+  width: 200%;
+}
+
+.w-\[202px\] {
+  width: 202px;
+}
+
+.w-\[216px\] {
+  width: 216px;
+}
+
+.w-\[261px\] {
+  width: 261px;
+}
+
+.w-\[264px\] {
+  width: 264px;
+}
+
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[32\%\] {
+  width: 32%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[77px\] {
+  width: 77px;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
+}
+
+.w-\[95\%\] {
+  width: 95%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.min-w-\[106px\] {
+  min-width: 106px;
+}
+
+.min-w-\[77px\] {
+  min-width: 77px;
+}
+
+.\!max-w-\[300px\] {
+  max-width: 300px !important;
+}
+
+.max-w-\[1030px\] {
+  max-width: 1030px;
+}
+
+.max-w-\[1080px\] {
+  max-width: 1080px;
+}
+
+.max-w-\[1500px\] {
+  max-width: 1500px;
+}
+
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
+.max-w-\[200\%\] {
+  max-width: 200%;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[302px\] {
+  max-width: 302px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[420px\] {
+  max-width: 420px;
+}
+
+.max-w-\[475px\] {
+  max-width: 475px;
+}
+
+.max-w-\[492px\] {
+  max-width: 492px;
+}
+
+.max-w-\[580px\] {
+  max-width: 580px;
+}
+
+.max-w-\[619px\] {
+  max-width: 619px;
+}
+
+.max-w-\[650px\] {
+  max-width: 650px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
+.max-w-\[948px\] {
+  max-width: 948px;
+}
+
+.max-w-\[990px\] {
+  max-width: 990px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-\[2px\] {
+  border-bottom-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:mx-\[20px\] {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .max-sm\:hidden {
+    display: none;
+  }
+
+  .max-sm\:translate-y-4 {
+    --tw-translate-y: 1rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-sm\:translate-y-\[-10px\] {
+    --tw-translate-y: -10px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-sm\:items-center {
+    align-items: center;
+  }
+
+  .max-sm\:pr-1 {
+    padding-right: 0.25rem;
+  }
+}

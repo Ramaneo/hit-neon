@@ -1,6 +1,7 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
@@ -25,6 +26,27 @@
     }
   }
 {%- endstyle -%}
+
+<header class="PageHeader">
+        <div class="Container">
+          <div class="SectionHeader SectionHeader--center">
+            {% if collection.handle == "all" %}
+              <div class="collection-hero__inner page-width  scroll-trigger animate--fade-in">
+              <div class="collection-hero__text-wrapper">
+              <h1 class="dropdown-toggle SectionHeader__Heading Heading u-h1 collection-hero__title" style="cursor: pointer;">Custom Neon Signs </h1>
+              </div>
+              </div>
+              {% else %}
+              <div class="collection-hero__inner page-width  scroll-trigger animate--fade-in">
+              <div class="collection-hero__text-wrapper">
+              <h1 class="dropdown-toggle SectionHeader__Heading Heading u-h1 collection-hero__title" style="cursor: pointer;">{{collection.title}} </h1>
+              </div>
+              </div>
+            {% endif %}
+
+          </div>
+        </div>
+</header>
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}

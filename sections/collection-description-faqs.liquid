@@ -1,0 +1,242 @@
+<section id="section-{{ section.id }}" class="max-w-[1500px] mx-auto  mb-[100px] max-sm:mx-[20px] max-3xl:mx-[50px] border-t" style="justify-self: center;">
+
+
+  {% if collection.handle == "all" %}
+    <div id="description-header--Container" class="deactive--DesFaq__one">
+
+
+  <div id="description-header--DesFaq">
+    <h2 id="header--DesFac-Up" class="optima-h1-normal">Eye Catching and Durable: Neon Led Signs
+      <span>
+        {%- render 'icon' with 'down-icon' -%}
+      </span>
+    </h2>
+  </div>
+
+  <p>Looking for a way to light up and personalize your home, office, cafe or maybe a special event? Hitneon offers fun, custom neon signs you can use to decorate any space you can think of. From lovely <a href="/collections/wedding-neon-signs" target="_blank">neon wedding signs</a> to thoughtful name <a href="/collections/name-neon-signs" target="_blank">neon sign gifts</a>, our collection illuminates with creativity. Explore Hitneon’s selection of neon light signs now to express your vision brightly.</p>
+  <p>Hitneon’s colorful collection is full of original neon signs custom-made just for you, so that you can choose among different color, size and mounting options for any design that captures your essence. Plus, if you have a creative design in mind for that perfect sign to light up your space, we also offer custom, <a href="/products/create-your-own-custom-neon-sign" target="_blank">personalized neon signs</a> in our collection. Just type your text, choose a neon sign font, and let your creativity run wild!</p>
+
+</div>
+
+<div id="faqs--Container" class="deactive--DesFaq__two">
+  <div id="faqs--Header" class="">
+    <h2 id="header--DesFac-Down" class="optima-h1-normal">
+      Custom Neon Signs FAQs
+      <span>
+        {%- render 'icon' with 'down-icon' -%}
+      </span>
+    </h2>
+  </div>
+
+  {% render "faqs-item"
+    , i: "0"
+    , q: "How can I set up my custom neon sign?"
+    , a: 'It’s pretty easy. We ship our neon signs equipped with pre-drilled holes. Moreover, you are going to find an installation kit and an instruction guide inside your package for a stress-free process.' %}
+  {% render "faqs-item"
+    , i: "1"
+    , q: "Can I design my own neon sign?"
+    , a: "Of course. We have two options for personalized neon signs. Firstly, you can use our <a href='/products/create-your-own-custom-neon-sign' target='_blank'>customizer</a> and choose among various fonts, colors and sizes. You can also type out your text and speak your mind using this option. Secondly, you can <a href='/pages/custom-designed-led-neon-sign' target='_blank'>upload your design</a> or logo to get a free quote. Afterwards, our in-house designers will turn your design into a custom neon sign." %}
+  {% render "faqs-item"
+    , i: "2"
+    , q: "Is it hard to maintain a custom neon sign?"
+    , a: "Not at all. At Hitneon, we prepare all of our creative designs to be easy to maintain. You can follow our cleaning guide included in the package to take care of your sign appropriately. Using a dry, soft cloth for dusting and being gentle when moving the sign would be enough." %}
+  {% render "faqs-item"
+    , i: "3"
+    , q: "Can I use a neon sign for a business?"
+    , a: "Yes, you can. You can use our <a href='/pages/custom-designed-led-neon-sign' target='_blank'>upload your design</a> service to turn your logo into a luminous neon sign. Plus, you can shop <a href='/collections/all' target='_blank'>our own designs</a> to light up your business place with unique signs." %}
+</div>
+
+<h3 style="margin-bottom: 22px;font-size: 16px;font-weight: 600; margin-top: 50px; text-align: center;">Neon Light Signs with Hitneon</h3>
+    <p style="margin-bottom: 22px;font-size: 16px;">At Hitneon, we work hard to come up with creative designs that will last long. While preparing your custom neon signs, we use sturdy and high quality materials so that you can lighten your space with our products for years to come. Additionally, each neon sign comes with a 2 year warranty at Hitneon. In the rare case of a problem with one of our colorful designs, you can contact us at <a href="mailto:hello@hitneon.com" target="_blank">hello@hitneon.com</a> for a replacement or a <a href="/policies/refund-policy" target="_blank">refund</a>.</p>
+    <p style="margin-bottom: 22px;font-size: 16px;">As Hitneon, transferring your vision into bright neon led signs while providing a fun and seamless shopping experience is our top priority. We offer a stress-free process by including an installation kit along with our instruction guide in our secure packages and ship them fast and safe. Note that each piece comes with pre-drilled holes to make the installations of our custom pieces a breeze. You can contact us at <a href="mailto:hello@hitneon.com" target="_blank">hello@hitneon</a>.com for any questions you may have, before or after the purchase.</p>
+
+
+  {% endif %}
+
+  {% comment %} {% render "sitemap" %} {% endcomment %}
+
+</section>
+
+
+<script>
+
+
+    setTimeout(()=> {
+    
+
+            const headerDesFacHeightUp = document.getElementById("description-header--DesFaq").clientHeight;
+            document.getElementById("description-header--Container").style.setProperty("--height",headerDesFacHeightUp + "px")
+
+
+            const headerDesFacHeightDown = document.getElementById("faqs--Header").clientHeight;
+            document.getElementById("faqs--Container").style.setProperty("--height",headerDesFacHeightDown +"px");
+
+
+        if (window.innerWidth > 641 )  {
+        
+            document.getElementById("description-header--Container").classList.toggle("active--DesFaq");
+            document.getElementById("faqs--Container").classList.toggle("active--DesFaq");
+        
+        }
+
+            const e1 = document.getElementById("description-header--DesFaq")
+            const e2 =  document.getElementById("faqs--Header")
+
+            e1.addEventListener("click",(e)=> {
+
+                //if (!e1.contains("active--DesFaq") && window.innerWidth <  641)  document.getElementById("faqs--Container").classList.remove("active--DesFaq");
+
+                document.getElementById("description-header--Container").classList.toggle("active--DesFaq");
+
+            
+        });
+
+            e2.addEventListener("click",(e)=> {
+
+                //if (!e1.contains("active--DesFaq") && window.innerWidth <  641)  document.getElementById("description-header--Container").classList.remove("active--DesFaq");
+
+                document.getElementById("faqs--Container").classList.toggle("active--DesFaq");
+        });
+    
+    
+    },300)
+</script>
+
+
+<style>
+
+
+  #description-header--Container,
+  #faqs--Container {
+
+    transition: all ease 1s;
+
+  }
+
+  .#description-header--Container {
+
+    --height: 40px;
+    height: var(--height)
+  }
+
+  .#faqs--Container {
+
+    --height: 40px;
+    height: var(--height)
+  }
+
+  .deactive--DesFaq__one {
+    --height: 55px;
+    height: var(--height)
+  }
+
+  .deactive--DesFaq__one span, .deactive--DesFaq__two span {
+  
+      transform: translateY(-50%);
+  
+  }
+
+
+  .deactive--DesFaq__two {
+    --height: 40px;
+    height: var(--height)
+  }
+
+  .active--DesFaq {
+    height: auto;
+  }
+
+
+  #section-{{ section.id }}
+  a {
+
+    text-decoration: underline;
+
+  }
+
+  .active--DesFaq span {
+    transform: rotate(180deg) translateY(50%);
+
+  }
+
+  #description-header--Container p {
+
+    font-family: "avenir-light";
+
+  }
+
+
+  @media(max-width: 641px) {
+
+    #section-{{ section.id }}h2:not(.description-header--sub-header) {
+
+      text-align: left;
+      width: 100%;
+      font-size: 18px;
+      font-family: "avenir-light";
+
+    }
+
+    #section-{{ section.id }}
+    #description-header--Container p {
+
+      font-size: 14px;
+
+    }
+    #faqs--Container,
+    #description-header--DesFaq {
+
+      margin-right: 0;
+
+    }
+
+    #header--DesFac-Up,
+    #header--DesFac-Down {
+      padding-right: 20px;
+    }
+
+  }
+
+</style>
+
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I set up my custom neon sign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It’s pretty easy. We ship our neon signs equipped with pre-drilled holes. Moreover, you are going to find an installation kit and an instruction guide inside your package for a stress-free process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I design my own neon sign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Of course. We have two options for personalized neon signs. Firstly, you can use our customizer and choose among various fonts, colors and sizes. You can also type out your text and speak your mind using this option. Secondly, you can upload your design or logo to get a free quote. Afterwards, our in-house designers will turn your design into a custom neon sign."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it hard to maintain a custom neon sign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. At Hitneon, we prepare all of our creative designs to be easy to maintain. You can follow our cleaning guide included in the package to take care of your sign appropriately. Using a dry, soft cloth for dusting and being gentle when moving the sign would be enough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a neon sign for a business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can. You can use our upload your design service to turn your logo into a luminous neon sign. Plus, you can shop our own designs to light up your business place with unique signs."
+          }
+        }
+      ]
+    }
+</script>

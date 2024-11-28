@@ -1,0 +1,98 @@
+<div data-open="false" class="custom-made__collapse-faq cursor-pointer relative max-lg:min-h[50px] lg:min-h-[50px] py-[10px] flex flex-col justify-center border-b transition-all custom-made__collapse-faq-{{ i }}" >
+
+    <h3 class="max-lg:text-[14px] text-[#2f2f2f] avenir-text text-[16px] w-full relative max-lg:pr-[30px]" > 
+      {{ q }} 
+      <span class="cursor-pointer absolute right-0 top-[50%] translate-y-[-50%] custom-made-fq-plus custom-made-fq-plus-{{ i }}" style="right: 0;top: 50%; "> {%- render 'icon' with 'down-icon' -%}</span> 
+      <span class="cursor-pointer absolute right-0 top-[50%] translate-y-[-50%] custom-made-fq-minus custom-made-fq-minus-{{ i }}" style="right: 0;top: 50%; display: none;">{%- render 'icon' with 'down-icon' -%}</span>
+    
+    </h3>  
+
+    <p  data-anchor= '{
+        "a1": "{{ a1 }}",
+        "l1": "{{ l1 }}",
+        "a2": "{{ a2 }}",
+        "l2": "{{ l2 }}",
+        "a3": "{{ a3 }}",
+        "l3": "{{ l3 }}",
+        "a4": "{{ a4 }}",
+        "l4": "{{ l4 }}",
+        "a5": "{{ a5 }}",
+        "l5": "{{ l5 }}"
+         }'
+class="text-[14px] md:text-[16px] mt-2 font-avenir-light {% if isWhiteSpace %}  whitespace-break-spaces {% endif %} custom-made-answer custom-made-answer-{{ i }}">{{ a }}</p>  
+
+</div>
+
+<script>
+
+
+                const replaceWordtoLink{{ i }} = (a,u)=> {
+           
+                let originalParagraph = document.querySelector(".custom-made-answer-{{ i }}");
+                let originalText = originalParagraph.innerHTML;
+                let wordToReplace = a ;
+                let url = u;
+                let replacementWord = '<a href="' + url + '">' + wordToReplace + '</a>';
+                let newText = originalText.replace(wordToReplace, replacementWord);
+                originalParagraph.innerHTML = newText;
+
+                }
+
+
+                let anchors_faq_{{ i }} = JSON.parse(document.querySelector(".custom-made-answer-{{ i }}").dataset.anchor) 
+
+                Object.keys(anchors_faq_{{ i }}).forEach((i)=> {
+                    if ( anchors_faq_{{ i }}[i] != "" && i.startsWith("a") ) {
+                        replaceWordtoLink{{ i }}(anchors_faq_{{ i }}[i],anchors_faq_{{ i }}["l"+i.slice(1)])
+                    }
+                })
+
+
+            document.querySelector(".custom-made__collapse-faq-{{ i }}").addEventListener("click",(e)=> {
+
+                if (document.querySelector(".custom-made__collapse-faq-{{ i }}").dataset.open == "false") {
+                
+                    let allMinus = document.querySelectorAll(".custom-made-fq-minus");
+                    let allPlus = document.querySelectorAll(".custom-made-fq-plus");
+                    let allAnswers = document.querySelectorAll(".custom-made-answer");
+                    let wrappers = document.querySelectorAll(".custom-made__collapse-faq")
+        
+                    allAnswers.forEach((i)=>i.classList.remove("custom-made-answer--active"));
+                    allMinus.forEach((i)=>i.style.display ="none");
+                    allPlus.forEach((i)=>i.style.display ="block");
+                    wrappers.forEach((i)=>i.dataset.open = "false")
+        
+                    document.querySelector(".custom-made-answer-{{ i }}").classList.toggle("custom-made-answer--active");
+                    document.querySelector(".custom-made-fq-plus-{{ i }}").style.display ="none";
+                    document.querySelector(".custom-made-fq-minus-{{ i }}").style.display ="block";
+                    document.querySelector(".custom-made__collapse-faq-{{ i }}").dataset.open = "true"
+                
+                } else {
+
+                    document.querySelector(".custom-made-answer-{{ i }}").classList.toggle("custom-made-answer--active");
+                    document.querySelector(".custom-made-fq-minus-{{ i }}").style.display ="none";
+                    document.querySelector(".custom-made-fq-plus-{{ i }}").style.display ="block";
+                    document.querySelector(".custom-made__collapse-faq-{{ i }}").dataset.open = "false"
+                
+                }
+        
+        });
+
+</script>
+
+
+<style>
+    .custom-made-fq-plus {
+        transform: rotate(0deg) !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .custom-made-answer-{{ i }} {
+        display:none;
+    }
+    .custom-made-answer--active {
+        display:initial;
+    }
+
+
+</style>
